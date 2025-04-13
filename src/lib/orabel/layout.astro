@@ -1,0 +1,45 @@
+---
+import Preloader from "./preloader.astro";
+import Header from "./header.astro";
+import Stylesheets from "./stylesheets.astro";
+import Collapsible from "./collapsible.astro";
+import Scripts from "./scripts.astro";
+---
+
+<!doctype html>
+<html lang="en" class="is-preload">
+  <!-- Mirrored from ultimatewebsolutions.net/orabel/home-4.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Apr 2025 16:56:25 GMT -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- favicon  -->
+    <link
+      rel="shortcut icon"
+      href="orabel/img/ui/logo.ico"
+      type="image/x-icon"
+    />
+    <Stylesheets />
+    <!-- page title -->
+    <title>Orabel</title>
+  </head>
+
+  <body>
+    <div class="orb-wrapper">
+      <!-- page loader -->
+      <Preloader />
+      <!-- page loader end -->
+      <div id="orb-dynamic-content" class="transition-fade">
+        <div class="orb-page-frame orb-home-4">
+          <Header />
+
+          <slot name="body" />
+        </div>
+
+        <Collapsible />
+      </div>
+    </div>
+
+    <Scripts />
+  </body><!-- Mirrored from ultimatewebsolutions.net/orabel/home-4.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Apr 2025 16:56:48 GMT -->
+</html>
