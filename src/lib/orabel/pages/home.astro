@@ -1,9 +1,43 @@
 ---
 import Layout from "../layout.astro";
+import Cursor from "../../creative-mighty/cursor.astro";
 ---
 
 <Layout>
+  <Fragment slot="head">
+    <link
+      rel="stylesheet"
+      href="creative-mighty/assets/css/plugins/fontawesome-6.css"
+    />
+    <link
+      rel="stylesheet"
+      href="creative-mighty/assets/css/plugins/swiper.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="creative-mighty/assets/css/vendor/metismenu.css"
+    />
+    <link
+      rel="stylesheet"
+      href="creative-mighty/assets/css/plugins/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="creative-mighty/assets/css/vendor/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="creative-mighty/assets/css/style.css" />
+  </Fragment>
+
   <Fragment slot="body">
+    <div class="loading-screen" id="loading-screen">
+      <span class="bar top-bar"></span>
+      <span class="bar down-bar"></span>
+      <span class="progress-line"></span>
+      <span class="loading-counter"> </span>
+    </div>
+
+    <div class="bg-noise"></div>
+
     <div class="orb-content">
       <div class="orb-grid">
         <div class="orb-g-25 orb-sm-100">
@@ -24,7 +58,7 @@ import Layout from "../layout.astro";
               <div class="orb-btn-label">Show more photo for this project</div>
               <a href="portfolio-5.html" class="orb-sm-button">
                 <div class="orb-arrow">
-                  <img src="/orabel/img/ui/arrow-1.svg" alt="arrow" />
+                  <img src="/orabel/img/ui/arrow-2.svg" alt="arrow" />
                 </div>
               </a>
             </div>
@@ -42,5 +76,51 @@ import Layout from "../layout.astro";
         </div>
       </div>
     </div>
+
+    <Cursor />
+
+    <script defer src="creative-mighty/assets/js/vendor/jquery.min.js"></script>
+    <script defer src="creative-mighty/assets/js/plugins/bootstrap.min.js"
+    ></script>
+    <script defer src="creative-mighty/assets/js/plugins/contact.form.js"
+    ></script>
+    <script defer src="creative-mighty/assets/js/vendor/waypoint.js"></script>
+    <script defer src="creative-mighty/assets/js/plugins/swiper.js"></script>
+
+    <!-- for side bar sticky -->
+    <script defer src="creative-mighty/assets/js/plugins/resizer-sensor.js"
+    ></script>
+    <script defer src="creative-mighty/assets/js/plugins/sticky-sidebar.js"
+    ></script>
+    <!-- for side bar sticky end-->
+    <script defer src="creative-mighty/assets/js/plugins/isotop.js"></script>
+    <script
+      defer
+      src="creative-mighty/assets/js/plugins/imagesloaded.pkgd.min.js"></script>
+
+    <script
+      defer
+      src="creative-mighty/assets/js/plugins/smoothscroll-varticle.js"></script>
+    <script defer src="creative-mighty/assets/js/vendor/gsap.js"></script>
+    <script defer src="creative-mighty/assets/js/plugins/scrolltiger.js"
+    ></script>
+    <script defer src="creative-mighty/assets/js/plugins/scrolltoplugin.js"
+    ></script>
+    <script defer src="creative-mighty/assets/js/plugins/splittext.js"></script>
+    <script defer src="creative-mighty/assets/js/plugins/smoothscroll.js"
+    ></script>
+
+    <!-- title opacity scroll magix -->
+    <script defer src="creative-mighty/assets/js/plugins/scrollmagic.js"
+    ></script>
+    <script defer src="creative-mighty/assets/js/plugins/animate-scrollmagic.js"
+    ></script>
+    <!-- title opacity scroll magic end -->
+    <script defer src="creative-mighty/assets/js/plugins/tilt.js"></script>
+    <script defer src="creative-mighty/assets/js/plugins/counterup.js"></script>
+
+    <script defer src="creative-mighty/assets/js/vendor/waw.js"></script>
+    <!-- custom javascripts -->
+    <script defer src="creative-mighty/assets/js/main.js"></script>
   </Fragment>
 </Layout>
