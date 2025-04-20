@@ -1,3 +1,8 @@
+---
+import Cursor from "../lib/creative-mighty/cursor.astro";
+import Header from "../lib/creative-mighty/header.astro";
+---
+
 <!doctype html>
 <html lang="en">
   <!-- Mirrored from artemsemkin.com/kinsey/html/007-portfolio-horizontal-scrolling-columns-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Apr 2025 16:06:13 GMT -->
@@ -12,6 +17,28 @@
     <meta content="telephone=no" name="format-detection" />
     <meta name="HandheldFriendly" content="true" />
     <meta name="description" content="Kinsey – AJAX Agency HTML5 Template" />
+    <link
+      rel="stylesheet"
+      href="/creative-mighty/assets/css/plugins/fontawesome-6.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/creative-mighty/assets/css/plugins/swiper.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/creative-mighty/assets/css/vendor/metismenu.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/creative-mighty/assets/css/plugins/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/creative-mighty/assets/css/vendor/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/creative-mighty/assets/css/style.css" />
+
     <link
       rel="preload"
       href="https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2"
@@ -205,7 +232,7 @@
       body {
         width: 100%;
         min-width: 320px;
-        color: var(--paragraph-color-dark);
+        color: #fff;
         word-wrap: break-word;
         overflow-wrap: anywhere;
         overflow-x: hidden;
@@ -497,19 +524,6 @@
           margin-right: 6px;
         }
       }
-      .preloader[data-arts-theme-text="light"]:not(.preloader_ended)
-        + #page-header
-        .header__label {
-        color: #fff;
-      }
-      .preloader[data-arts-theme-text="light"]:not(.preloader_ended)
-        + #page-header
-        .header__burger-line:after,
-      .preloader[data-arts-theme-text="light"]:not(.preloader_ended)
-        + #page-header
-        .header__burger-line:before {
-        background-color: #fff;
-      }
       .mt-auto {
         margin-top: auto !important;
       }
@@ -518,6 +532,14 @@
       }
       .ms-auto {
         margin-left: auto !important;
+      }
+
+      .font-white {
+        color: white !important;
+      }
+
+      .mt-0 {
+        margin-top: 0rem !important;
       }
     </style>
     <!-- Google Fonts -->
@@ -614,1859 +636,24 @@
     />
   </head>
   <body>
-    <div data-barba="wrapper">
-      <!-- PAGE PRELOADER -->
-      <div
-        class="preloader preloader_header-menu-hidden mask-reveal"
-        id="js-preloader"
-        data-arts-theme-text="light"
-        data-arts-preloader-logo="secondary"
-      >
-        <div class="mask-reveal__layer mask-reveal__layer-1 bg-dark-1">
-          <div class="mask-reveal__layer mask-reveal__layer-2">
-            <div class="preloader__wrapper">
-              <div
-                class="preloader__counter preloader__counter_started me-auto mt-auto underline js-preloader__counter"
-              >
-                00%
-              </div>
-              <div
-                class="preloader__content ms-auto mt-auto js-preloader__content"
-              >
-                <div class="h6">Loading</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- - PAGE PRELOADER -->
-      <!-- PAGE HEADER -->
-      <header
-        class="header header_fixed container-fluid js-header-sticky"
-        id="page-header"
-        data-arts-theme-text="dark"
-        data-arts-header-sticky-theme="header_sticky_no-shadow"
-        data-arts-header-logo="primary"
-        data-arts-header-sticky-logo="primary"
-        data-arts-header-overlay-theme-text="light"
-      >
-        <!-- top bar -->
-        <div class="header__container header__controls">
-          <div class="row justify-content-between align-items-center">
-            <!-- logo -->
-            <div class="col-auto header__col header__col-left">
-              <a class="logo" href="index.html">
-                <div class="logo__wrapper-img">
-                  <!-- primary logo version (for light backgrounds)-->
-                  <img
-                    class="logo__img-primary"
-                    src="/kinsey/img/general/logo/kinsey-dark.svg"
-                    alt="Kinsey HTML5 Template"
-                    width="52"
-                    height="19"
-                  />
-                  <!-- secondary logo version (for dark backgrounds)-->
-                  <img
-                    class="logo__img-secondary"
-                    src="/kinsey/img/general/logo/kinsey-light.svg"
-                    alt="Kinsey HTML5 Template"
-                    width="52"
-                    height="19"
-                  />
-                </div></a
-              >
-            </div>
-            <!-- - logo -->
-            <!-- burger icon -->
-            <div class="col-auto header__col d-flex align-items-center">
-              <div
-                class="ms-auto header__burger"
-                id="js-burger"
-                data-arts-cursor="data-arts-cursor"
-                data-arts-cursor-scale="1.7"
-                data-arts-cursor-magnetic="data-arts-cursor-magnetic"
-                data-arts-cursor-hide-native="true"
-              >
-                <div class="header__burger-line"></div>
-                <div class="header__burger-line"></div>
-                <!-- burger labels -->
-                <div class="header__label header__burger-label">
-                  <div
-                    class="header__label-burger header__label-burger_inner header__label-burger_closed-open"
-                  >
-                    Menu
-                  </div>
-                  <div
-                    class="header__label-burger header__label-burger_inner header__label-burger_closed-hover"
-                  >
-                    Open
-                  </div>
-                  <div
-                    class="header__label-burger header__label-burger_inner header__label-burger_opened-open"
-                  >
-                    Close
-                  </div>
-                  <div
-                    class="header__label-burger header__label-burger_inner header__label-burger_opened-hover"
-                  >
-                    Close
-                  </div>
-                </div>
-                <!-- - burger labels -->
-              </div>
-            </div>
-            <!-- - burger icon -->
-            <!-- "back" button for submenu nav -->
-            <div
-              class="header__overlay-menu-back"
-              id="js-submenu-back"
-              data-arts-cursor="data-arts-cursor"
-              data-arts-cursor-scale="1.7"
-              data-arts-cursor-magnetic="data-arts-cursor-magnetic"
-              data-arts-cursor-hide-native="true"
-            >
-              <i class="material-icons">arrow_back</i>
-              <div class="header__label header__label_status">
-                <div class="js-header-label-submenu"></div>
-              </div>
-              <div class="header__label header__label_opened-back">Back</div>
-            </div>
-            <!-- - "back" button for submenu nav -->
-            <!-- slider label -->
-            <div
-              class="header__overlay-menu-info header__label header__label_side"
-            >
-              Selected Projects
-            </div>
-            <!-- - slider label -->
-          </div>
-        </div>
-        <!-- - top bar -->
-        <!-- fullscreen overlay container -->
-        <div class="header__wrapper-overlay-menu" data-arts-theme-text="light">
-          <div class="mask-reveal w-100 h-100">
-            <div class="mask-reveal__layer mask-reveal__layer-1 bg-dark-1">
-              <div class="mask-reveal__layer mask-reveal__layer-2">
-                <div class="row align-items-center h-100">
-                  <!-- menu & bottom widgets -->
-                  <div
-                    class="header__menu-column col-lg-7 order-lg-2 h-100 d-flex flex-column position-relative bg-dark-2"
-                  >
-                    <!-- top gradient-->
-                    <div
-                      class="header__menu-gradient header__menu-gradient_top"
-                    >
-                    </div>
-                    <!-- - top gradient-->
-                    <!-- virtual scrolling container -->
-                    <div
-                      class="header__scroll-container js-header-smooth-scroll-container overflow pointer-events-auto"
-                    >
-                      <div class="header__wrapper-menu">
-                        <ul class="menu-overlay js-menu-overlay">
-                          <li
-                            class="menu-item-has-children current-menu-ancestor"
-                          >
-                            <a href="#" data-pjax-link="overlayMenu">
-                              <div
-                                class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                data-arts-split-text="lines,words"
-                                data-arts-split-text-set="lines"
-                                data-arts-split-text-overflow-wrap="lines"
-                              >
-                                <span
-                                  class="menu-overlay__subheading small mb-1"
-                                  >01&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;Fullscreen
-                                  & Halfscreen</span
-                                >
-                                <div class="menu-overlay__heading h2">
-                                  Sliders
-                                </div>
-                              </div></a
-                            >
-                            <ul class="sub-menu pointer-events-none">
-                              <li class="menu-item-has-children">
-                                <a href="#" data-pjax-link="overlayMenu">
-                                  <div
-                                    class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                    data-arts-split-text="lines,words"
-                                    data-arts-split-text-set="lines"
-                                    data-arts-split-text-overflow-wrap="lines"
-                                  >
-                                    <div class="menu-overlay__heading h3">
-                                      Fullscreen Sliders
-                                    </div>
-                                  </div></a
-                                >
-                                <ul class="sub-menu pointer-events-none">
-                                  <li>
-                                    <a
-                                      href="001-portfolio-fullscreen-slider-background-color-1.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Slider / Background Color 1
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="002-portfolio-fullscreen-slider-background-color-2.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Slider / Background Color 2
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="003-portfolio-fullscreen-slider-background-image-1.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Slider / Background Image 1
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="004-portfolio-fullscreen-slider-background-image-2.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Slider / Background Image 2
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="005-portfolio-fullscreen-slider-bottom-navigation.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Slider / Bottom Navigation
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="006-portfolio-fullscreen-slider-horizontal-cards.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Slider / Horizontal Cards
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                </ul>
-                              </li>
-                              <li
-                                class="menu-item-has-children current-menu-ancestor"
-                              >
-                                <a href="#" data-pjax-link="overlayMenu">
-                                  <div
-                                    class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                    data-arts-split-text="lines,words"
-                                    data-arts-split-text-set="lines"
-                                    data-arts-split-text-overflow-wrap="lines"
-                                  >
-                                    <div class="menu-overlay__heading h3">
-                                      Horizontal Scrolling
-                                    </div>
-                                  </div></a
-                                >
-                                <ul class="sub-menu pointer-events-none">
-                                  <li class="current-menu-item">
-                                    <a
-                                      href="007-portfolio-horizontal-scrolling-columns-1.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Horizontal Scrolling / Columns 1
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="008-portfolio-horizontal-scrolling-columns-2.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Horizontal Scrolling / Columns 2
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                </ul>
-                              </li>
-                              <li class="menu-item-has-children">
-                                <a href="#" data-pjax-link="overlayMenu">
-                                  <div
-                                    class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                    data-arts-split-text="lines,words"
-                                    data-arts-split-text-set="lines"
-                                    data-arts-split-text-overflow-wrap="lines"
-                                  >
-                                    <div class="menu-overlay__heading h3">
-                                      Halfscreen Sliders
-                                    </div>
-                                  </div></a
-                                >
-                                <ul class="sub-menu pointer-events-none">
-                                  <li>
-                                    <a
-                                      href="009-portfolio-halfscreen-slider-vertical-1.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Slider / Halfscreen 1
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="010-portfolio-halfscreen-slider-vertical-2.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Slider / Halfscreen 2
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                </ul>
-                              </li>
-                            </ul>
-                          </li>
-                          <li class="menu-item-has-children">
-                            <a href="#" data-pjax-link="overlayMenu">
-                              <div
-                                class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                data-arts-split-text="lines,words"
-                                data-arts-split-text-set="lines"
-                                data-arts-split-text-overflow-wrap="lines"
-                              >
-                                <span
-                                  class="menu-overlay__subheading small mb-1"
-                                  >02&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;Introduction
-                                  Pages</span
-                                >
-                                <div class="menu-overlay__heading h2">
-                                  Landing Pages
-                                </div>
-                              </div></a
-                            >
-                            <ul class="sub-menu pointer-events-none">
-                              <li>
-                                <a
-                                  href="011-landing-page-1.html"
-                                  data-pjax-link="overlayMenu"
-                                >
-                                  <div
-                                    class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                    data-arts-split-text="lines,words"
-                                    data-arts-split-text-set="lines"
-                                    data-arts-split-text-overflow-wrap="lines"
-                                  >
-                                    <div class="menu-overlay__heading h3">
-                                      Landing Page 1
-                                    </div>
-                                  </div></a
-                                >
-                              </li>
-                              <li>
-                                <a
-                                  href="012-landing-page-2.html"
-                                  data-pjax-link="overlayMenu"
-                                >
-                                  <div
-                                    class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                    data-arts-split-text="lines,words"
-                                    data-arts-split-text-set="lines"
-                                    data-arts-split-text-overflow-wrap="lines"
-                                  >
-                                    <div class="menu-overlay__heading h3">
-                                      Landing Page 2
-                                    </div>
-                                  </div></a
-                                >
-                              </li>
-                            </ul>
-                          </li>
-                          <li class="menu-item-has-children">
-                            <a href="#" data-pjax-link="overlayMenu">
-                              <div
-                                class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                data-arts-split-text="lines,words"
-                                data-arts-split-text-set="lines"
-                                data-arts-split-text-overflow-wrap="lines"
-                              >
-                                <span
-                                  class="menu-overlay__subheading small mb-1"
-                                  >03&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;Set
-                                  of Portfolio Details</span
-                                >
-                                <div class="menu-overlay__heading h2">
-                                  Works
-                                </div>
-                              </div></a
-                            >
-                            <ul class="sub-menu pointer-events-none">
-                              <li class="menu-item-has-children">
-                                <a href="#" data-pjax-link="overlayMenu">
-                                  <div
-                                    class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                    data-arts-split-text="lines,words"
-                                    data-arts-split-text-set="lines"
-                                    data-arts-split-text-overflow-wrap="lines"
-                                  >
-                                    <div class="menu-overlay__heading h3">
-                                      Works 01 – 06
-                                    </div>
-                                  </div></a
-                                >
-                                <ul class="sub-menu pointer-events-none">
-                                  <li>
-                                    <a
-                                      href="013-portfolio-details-masthead-boxed-horizontal.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Errica Fashion Store
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="014-portfolio-details-masthead-boxed-horizontal.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Zero Audio Speaker
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="015-portfolio-details-masthead-boxed-vertical.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Contemporary Workplace
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="016-portfolio-details-masthead-boxed-vertical.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Cassio Apartments
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="017-portfolio-details-masthead-fullwidth-horizontal.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Winter Villa
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="018-portfolio-details-masthead-boxed-vertical.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Portable Stereo
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                </ul>
-                              </li>
-                              <li class="menu-item-has-children">
-                                <a href="#" data-pjax-link="overlayMenu">
-                                  <div
-                                    class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                    data-arts-split-text="lines,words"
-                                    data-arts-split-text-set="lines"
-                                    data-arts-split-text-overflow-wrap="lines"
-                                  >
-                                    <div class="menu-overlay__heading h3">
-                                      Works 07 – 12
-                                    </div>
-                                  </div></a
-                                >
-                                <ul class="sub-menu pointer-events-none">
-                                  <li>
-                                    <a
-                                      href="019-portfolio-details-masthead-boxed-horizontal.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Coffee &amp; Milk Website
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="020-portfolio-details-masthead-fullwidth-horizontal.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Modern Furniture Shop
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="021-portfolio-details-masthead-boxed-vertical.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Minimalex
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="022-portfolio-details-masthead-boxed-vertical.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Arrigo Accessories Shop
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="023-portfolio-details-masthead-fullwidth-horizontal.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Arte
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="024-portfolio-details-masthead-boxed-vertical.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Anagrama
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                </ul>
-                              </li>
-                            </ul>
-                          </li>
-                          <li class="menu-item-has-children">
-                            <a href="#" data-pjax-link="overlayMenu">
-                              <div
-                                class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                data-arts-split-text="lines,words"
-                                data-arts-split-text-set="lines"
-                                data-arts-split-text-overflow-wrap="lines"
-                              >
-                                <span
-                                  class="menu-overlay__subheading small mb-1"
-                                  >04&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;Different
-                                  Portfolio Views</span
-                                >
-                                <div class="menu-overlay__heading h2">
-                                  Grids &amp; Lists
-                                </div>
-                              </div></a
-                            >
-                            <ul class="sub-menu pointer-events-none">
-                              <li class="menu-item-has-children">
-                                <a href="#" data-pjax-link="overlayMenu">
-                                  <div
-                                    class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                    data-arts-split-text="lines,words"
-                                    data-arts-split-text-set="lines"
-                                    data-arts-split-text-overflow-wrap="lines"
-                                  >
-                                    <div class="menu-overlay__heading h3">
-                                      Grids
-                                    </div>
-                                  </div></a
-                                >
-                                <ul class="sub-menu pointer-events-none">
-                                  <li>
-                                    <a
-                                      href="025-portfolio-grid-2-columns-aligned.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Grid / 2 Columns / Aligned
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="026-portfolio-grid-2-columns.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Grid / 2 Columns / Fancy
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="027-portfolio-grid-3-columns.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Grid / 3 Columns
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                </ul>
-                              </li>
-                              <li class="menu-item-has-children">
-                                <a href="#" data-pjax-link="overlayMenu">
-                                  <div
-                                    class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                    data-arts-split-text="lines,words"
-                                    data-arts-split-text-set="lines"
-                                    data-arts-split-text-overflow-wrap="lines"
-                                  >
-                                    <div class="menu-overlay__heading h3">
-                                      Lists
-                                    </div>
-                                  </div></a
-                                >
-                                <ul class="sub-menu pointer-events-none">
-                                  <li>
-                                    <a
-                                      href="028-portfolio-list-cards-fullwidth.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          List / Cards / Fullwidth
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="029-portfolio-list-cards-boxed.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          List / Cards / Boxed
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="030-portfolio-list-backgrounds.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          List / Backgrounds / Parallax
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="031-portfolio-list-hover-backgrounds.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          List / Backgrounds / Hover
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                </ul>
-                              </li>
-                              <li class="menu-item-has-children">
-                                <a href="#" data-pjax-link="overlayMenu">
-                                  <div
-                                    class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                    data-arts-split-text="lines,words"
-                                    data-arts-split-text-set="lines"
-                                    data-arts-split-text-overflow-wrap="lines"
-                                  >
-                                    <div class="menu-overlay__heading h3">
-                                      Categories
-                                    </div>
-                                  </div></a
-                                >
-                                <ul class="sub-menu pointer-events-none">
-                                  <li>
-                                    <a
-                                      href="032-portfolio-categories.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Categories Listing
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="033-portfolio-categories-details.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Category Single
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                </ul>
-                              </li>
-                            </ul>
-                          </li>
-                          <li class="menu-item-has-children">
-                            <a href="#" data-pjax-link="overlayMenu">
-                              <div
-                                class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                data-arts-split-text="lines,words"
-                                data-arts-split-text-set="lines"
-                                data-arts-split-text-overflow-wrap="lines"
-                              >
-                                <span
-                                  class="menu-overlay__subheading small mb-1"
-                                  >05&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;Essential
-                                  Site Pages</span
-                                >
-                                <div class="menu-overlay__heading h2">
-                                  Pages
-                                </div>
-                              </div></a
-                            >
-                            <ul class="sub-menu pointer-events-none">
-                              <li>
-                                <a
-                                  href="034-services.html"
-                                  data-pjax-link="overlayMenu"
-                                >
-                                  <div
-                                    class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                    data-arts-split-text="lines,words"
-                                    data-arts-split-text-set="lines"
-                                    data-arts-split-text-overflow-wrap="lines"
-                                  >
-                                    <div class="menu-overlay__heading h3">
-                                      Services
-                                    </div>
-                                  </div></a
-                                >
-                              </li>
-                              <li>
-                                <a
-                                  href="035-about.html"
-                                  data-pjax-link="overlayMenu"
-                                >
-                                  <div
-                                    class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                    data-arts-split-text="lines,words"
-                                    data-arts-split-text-set="lines"
-                                    data-arts-split-text-overflow-wrap="lines"
-                                  >
-                                    <div class="menu-overlay__heading h3">
-                                      About
-                                    </div>
-                                  </div></a
-                                >
-                              </li>
-                              <li>
-                                <a
-                                  href="036-contacts.html"
-                                  data-pjax-link="overlayMenu"
-                                >
-                                  <div
-                                    class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                    data-arts-split-text="lines,words"
-                                    data-arts-split-text-set="lines"
-                                    data-arts-split-text-overflow-wrap="lines"
-                                  >
-                                    <div class="menu-overlay__heading h3">
-                                      Contacts
-                                    </div>
-                                  </div></a
-                                >
-                              </li>
-                              <li class="menu-item-has-children">
-                                <a href="#" data-pjax-link="overlayMenu">
-                                  <div
-                                    class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                    data-arts-split-text="lines,words"
-                                    data-arts-split-text-set="lines"
-                                    data-arts-split-text-overflow-wrap="lines"
-                                  >
-                                    <div class="menu-overlay__heading h3">
-                                      Special Pages
-                                    </div>
-                                  </div></a
-                                >
-                                <ul class="sub-menu pointer-events-none">
-                                  <li>
-                                    <a
-                                      href="046-404-page-dark.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          404 Page / Dark
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="047-404-page-light.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          404 Page / Light
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="048-coming-soon-dark.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Coming Soon / Dark
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="049-coming-soon-light.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Coming Soon / Light
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                </ul>
-                              </li>
-                              <li class="menu-item-has-children">
-                                <a href="#" data-pjax-link="overlayMenu">
-                                  <div
-                                    class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                    data-arts-split-text="lines,words"
-                                    data-arts-split-text-set="lines"
-                                    data-arts-split-text-overflow-wrap="lines"
-                                  >
-                                    <div class="menu-overlay__heading h3">
-                                      Classic Menu
-                                    </div>
-                                  </div></a
-                                >
-                                <ul class="sub-menu pointer-events-none">
-                                  <li class="no-ajax">
-                                    <a
-                                      href="050-classic-menu-right.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Logo Left / Menu Right
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li class="no-ajax">
-                                    <a
-                                      href="051-classic-menu-center.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Logo Left / Menu Center
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li class="no-ajax">
-                                    <a
-                                      href="052-classic-menu-split-center.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Logo Center / Split Menu
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                </ul>
-                              </li>
-                              <li>
-                                <a
-                                  href="053-fullscreen-menu-light-theme.html"
-                                  data-pjax-link="overlayMenu"
-                                >
-                                  <div
-                                    class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                    data-arts-split-text="lines,words"
-                                    data-arts-split-text-set="lines"
-                                    data-arts-split-text-overflow-wrap="lines"
-                                  >
-                                    <div class="menu-overlay__heading h3">
-                                      Fullscreen Menu / Light Theme
-                                    </div>
-                                  </div></a
-                                >
-                              </li>
-                            </ul>
-                          </li>
-                          <li class="menu-item-has-children">
-                            <a href="#" data-pjax-link="overlayMenu">
-                              <div
-                                class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                data-arts-split-text="lines,words"
-                                data-arts-split-text-set="lines"
-                                data-arts-split-text-overflow-wrap="lines"
-                              >
-                                <span
-                                  class="menu-overlay__subheading small mb-1"
-                                  >06&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;Latest
-                                  Agency News</span
-                                >
-                                <div class="menu-overlay__heading h2">Blog</div>
-                              </div></a
-                            >
-                            <ul class="sub-menu pointer-events-none">
-                              <li class="menu-item-has-children">
-                                <a href="#" data-pjax-link="overlayMenu">
-                                  <div
-                                    class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                    data-arts-split-text="lines,words"
-                                    data-arts-split-text-set="lines"
-                                    data-arts-split-text-overflow-wrap="lines"
-                                  >
-                                    <div class="menu-overlay__heading h3">
-                                      Blog Posts
-                                    </div>
-                                  </div></a
-                                >
-                                <ul class="sub-menu pointer-events-none">
-                                  <li>
-                                    <a
-                                      href="037-blog-posts-list-backgrounds.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          List / Backgrounds
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="038-blog-posts-list.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          List
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="039-blog-posts-list-sidebar.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          List / Sidebar
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="040-blog-posts-grid-2-columns.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Grid / 2 Columns
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="041-blog-posts-grid-3-columns.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Grid / 3 Columns
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="042-blog-posts-grid-2-columns-sidebar.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Grid / 3 Columns / Sidebar
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                </ul>
-                              </li>
-                              <li class="menu-item-has-children">
-                                <a href="#" data-pjax-link="overlayMenu">
-                                  <div
-                                    class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                    data-arts-split-text="lines,words"
-                                    data-arts-split-text-set="lines"
-                                    data-arts-split-text-overflow-wrap="lines"
-                                  >
-                                    <div class="menu-overlay__heading h3">
-                                      Blog Single Post
-                                    </div>
-                                  </div></a
-                                >
-                                <ul class="sub-menu pointer-events-none">
-                                  <li>
-                                    <a
-                                      href="043-blog-single-post.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Single Post 1
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="044-blog-single-post-sidebar.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Single Post 2 / Sidebar
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="045-blog-single-post-fullscreen.html"
-                                      data-pjax-link="overlayMenu"
-                                    >
-                                      <div
-                                        class="menu-overlay__item-wrapper arts-split-text js-arts-split-text"
-                                        data-arts-split-text="lines,words"
-                                        data-arts-split-text-set="lines"
-                                        data-arts-split-text-overflow-wrap="lines"
-                                      >
-                                        <div class="menu-overlay__heading h3">
-                                          Single Post 3 / Fullscreen
-                                        </div>
-                                      </div></a
-                                    >
-                                  </li>
-                                </ul>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- - virtual scrolling container -->
-                    <!-- bottom gradient-->
-                    <div
-                      class="header__menu-gradient header__menu-gradient_bottom"
-                    >
-                    </div>
-                    <!-- - bottom gradient-->
-                  </div>
-                  <!-- - menu & bottom widgets -->
-                  <!-- featured projects slider -->
-                  <div
-                    class="header__slider-column col-lg-5 order-lg-1 h-100 d-none d-lg-flex flex-column position-relative bg-dark-1"
-                  >
-                    <div class="header__wrapper-slider">
-                      <div class="header__label d-lg-none mb-4">
-                        Selected Projects
-                      </div>
-                      <div
-                        class="slider-menu swiper-container js-slider-menu"
-                        data-speed="1200"
-                        data-centered-slides="true"
-                        data-drag-mouse="true"
-                        data-drag-cursor="true"
-                        data-drag-label="Drag"
-                        data-drag-hide-cursor="true"
-                        data-drag-class="slider-projects-fullscreen__images_scale-up"
-                        data-mousewheel-enabled="true"
-                        data-keyboard-enabled="true"
-                      >
-                        <div class="swiper-wrapper">
-                          <!-- item -->
-                          <div
-                            class="swiper-slide slider-menu__slide"
-                            data-arts-hover-class="hover-zoom-underline"
-                          >
-                            <div data-swiper-parallax-opacity="0.3">
-                              <a
-                                class="slider-menu__wrapper-image"
-                                href="013-portfolio-details-masthead-boxed-horizontal.html"
-                                data-arts-hover="trigger"
-                                data-arts-cursor="true"
-                                data-arts-cursor-hide-native="true"
-                                data-arts-cursor-label="View Project"
-                                data-arts-cursor-scale="2.4"
-                                data-arts-cursor-color="#fff"
-                                data-arts-cursor-background-color="#ed4830"
-                              >
-                                <div
-                                  class="overflow"
-                                  data-swiper-parallax-y="-25%"
-                                >
-                                  <div
-                                    class="w-100 h-100"
-                                    data-swiper-parallax="true"
-                                    data-swiper-parallax-y="25%"
-                                  >
-                                    <img
-                                      class="swiper-lazy of-cover hover-zoom__zoom"
-                                      src="#"
-                                      data-src="/kinsey/img/assets/projects/project1/img-cover-1.jpg"
-                                      width="1920"
-                                      height="1280"
-                                      alt=""
-                                    />
-                                  </div>
-                                </div></a
-                              >
-                              <div
-                                class="slider-menu__header"
-                                data-swiper-parallax-y="-50%"
-                              >
-                                <a
-                                  class="d-inline-block"
-                                  href="013-portfolio-details-masthead-boxed-horizontal.html"
-                                  data-arts-hover="trigger"
-                                  data-arts-cursor="true"
-                                  data-arts-cursor-hide-native="true"
-                                  data-arts-cursor-label="View Project"
-                                  data-arts-cursor-scale="2.4"
-                                  data-arts-cursor-color="#fff"
-                                  data-arts-cursor-background-color="#ed4830"
-                                >
-                                  <h3
-                                    class="h3 mt-0 mb-2 slider__heading underline-hover__target"
-                                  >
-                                    Errica Fashion Store
-                                  </h3></a
-                                >
-                                <div class="w-100"></div>
-                                <div class="d-inline-block slider__subheading">
-                                  <ul class="post-meta post-meta_mini">
-                                    <li>
-                                      <a href="#">Identity</a>
-                                      <div class="post-meta__divider"></div>
-                                    </li>
-                                    <li><a href="#">2025</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- item -->
-                          <div
-                            class="swiper-slide slider-menu__slide"
-                            data-arts-hover-class="hover-zoom-underline"
-                          >
-                            <div data-swiper-parallax-opacity="0.3">
-                              <a
-                                class="slider-menu__wrapper-image"
-                                href="014-portfolio-details-masthead-boxed-horizontal.html"
-                                data-arts-hover="trigger"
-                                data-arts-cursor="true"
-                                data-arts-cursor-hide-native="true"
-                                data-arts-cursor-label="View Project"
-                                data-arts-cursor-scale="2.4"
-                                data-arts-cursor-color="#fff"
-                                data-arts-cursor-background-color="#ed4830"
-                              >
-                                <div
-                                  class="overflow"
-                                  data-swiper-parallax-y="-25%"
-                                >
-                                  <div
-                                    class="w-100 h-100"
-                                    data-swiper-parallax="true"
-                                    data-swiper-parallax-y="25%"
-                                  >
-                                    <img
-                                      class="swiper-lazy of-cover hover-zoom__zoom"
-                                      src="#"
-                                      data-src="/kinsey/img/assets/projects/project2/img-cover-2.jpg"
-                                      width="1920"
-                                      height="1280"
-                                      alt=""
-                                    />
-                                  </div>
-                                </div></a
-                              >
-                              <div
-                                class="slider-menu__header"
-                                data-swiper-parallax-y="-50%"
-                              >
-                                <a
-                                  class="d-inline-block"
-                                  href="014-portfolio-details-masthead-boxed-horizontal.html"
-                                  data-arts-hover="trigger"
-                                  data-arts-cursor="true"
-                                  data-arts-cursor-hide-native="true"
-                                  data-arts-cursor-label="View Project"
-                                  data-arts-cursor-scale="2.4"
-                                  data-arts-cursor-color="#fff"
-                                  data-arts-cursor-background-color="#ed4830"
-                                >
-                                  <h3
-                                    class="h3 mt-0 mb-2 slider__heading underline-hover__target"
-                                  >
-                                    Zero Audio Speaker
-                                  </h3></a
-                                >
-                                <div class="w-100"></div>
-                                <div class="d-inline-block slider__subheading">
-                                  <ul class="post-meta post-meta_mini">
-                                    <li>
-                                      <a href="#">Concept</a>
-                                      <div class="post-meta__divider"></div>
-                                    </li>
-                                    <li><a href="#">2024</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- item -->
-                          <div
-                            class="swiper-slide slider-menu__slide"
-                            data-arts-hover-class="hover-zoom-underline"
-                          >
-                            <div data-swiper-parallax-opacity="0.3">
-                              <a
-                                class="slider-menu__wrapper-image"
-                                href="017-portfolio-details-masthead-fullwidth-horizontal.html"
-                                data-arts-hover="trigger"
-                                data-arts-cursor="true"
-                                data-arts-cursor-hide-native="true"
-                                data-arts-cursor-label="View Project"
-                                data-arts-cursor-scale="2.4"
-                                data-arts-cursor-color="#fff"
-                                data-arts-cursor-background-color="#ed4830"
-                              >
-                                <div
-                                  class="overflow"
-                                  data-swiper-parallax-y="-25%"
-                                >
-                                  <div
-                                    class="w-100 h-100"
-                                    data-swiper-parallax="true"
-                                    data-swiper-parallax-y="25%"
-                                  >
-                                    <img
-                                      class="swiper-lazy of-cover hover-zoom__zoom"
-                                      src="#"
-                                      data-src="/kinsey/img/assets/projects/project5/img-cover-5.jpg"
-                                      width="1920"
-                                      height="1280"
-                                      alt=""
-                                    />
-                                  </div>
-                                </div></a
-                              >
-                              <div
-                                class="slider-menu__header"
-                                data-swiper-parallax-y="-50%"
-                              >
-                                <a
-                                  class="d-inline-block"
-                                  href="017-portfolio-details-masthead-fullwidth-horizontal.html"
-                                  data-arts-hover="trigger"
-                                  data-arts-cursor="true"
-                                  data-arts-cursor-hide-native="true"
-                                  data-arts-cursor-label="View Project"
-                                  data-arts-cursor-scale="2.4"
-                                  data-arts-cursor-color="#fff"
-                                  data-arts-cursor-background-color="#ed4830"
-                                >
-                                  <h3
-                                    class="h3 mt-0 mb-2 slider__heading underline-hover__target"
-                                  >
-                                    Winter Villa
-                                  </h3></a
-                                >
-                                <div class="w-100"></div>
-                                <div class="d-inline-block slider__subheading">
-                                  <ul class="post-meta post-meta_mini">
-                                    <li>
-                                      <a href="#">Interior</a>
-                                      <div class="post-meta__divider"></div>
-                                    </li>
-                                    <li><a href="#">2023</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- item -->
-                          <div
-                            class="swiper-slide slider-menu__slide"
-                            data-arts-hover-class="hover-zoom-underline"
-                          >
-                            <div data-swiper-parallax-opacity="0.3">
-                              <a
-                                class="slider-menu__wrapper-image"
-                                href="019-portfolio-details-masthead-boxed-horizontal.html"
-                                data-arts-hover="trigger"
-                                data-arts-cursor="true"
-                                data-arts-cursor-hide-native="true"
-                                data-arts-cursor-label="View Project"
-                                data-arts-cursor-scale="2.4"
-                                data-arts-cursor-color="#fff"
-                                data-arts-cursor-background-color="#ed4830"
-                              >
-                                <div
-                                  class="overflow"
-                                  data-swiper-parallax-y="-25%"
-                                >
-                                  <div
-                                    class="w-100 h-100"
-                                    data-swiper-parallax="true"
-                                    data-swiper-parallax-y="25%"
-                                  >
-                                    <img
-                                      class="swiper-lazy of-cover hover-zoom__zoom"
-                                      src="#"
-                                      data-src="/kinsey/img/assets/projects/project7/img-cover-7.jpg"
-                                      width="1920"
-                                      height="1280"
-                                      alt=""
-                                    />
-                                  </div>
-                                </div></a
-                              >
-                              <div
-                                class="slider-menu__header"
-                                data-swiper-parallax-y="-50%"
-                              >
-                                <a
-                                  class="d-inline-block"
-                                  href="019-portfolio-details-masthead-boxed-horizontal.html"
-                                  data-arts-hover="trigger"
-                                  data-arts-cursor="true"
-                                  data-arts-cursor-hide-native="true"
-                                  data-arts-cursor-label="View Project"
-                                  data-arts-cursor-scale="2.4"
-                                  data-arts-cursor-color="#fff"
-                                  data-arts-cursor-background-color="#ed4830"
-                                >
-                                  <h3
-                                    class="h3 mt-0 mb-2 slider__heading underline-hover__target"
-                                  >
-                                    Coffee &amp; Milk Website
-                                  </h3></a
-                                >
-                                <div class="w-100"></div>
-                                <div class="d-inline-block slider__subheading">
-                                  <ul class="post-meta post-meta_mini">
-                                    <li>
-                                      <a href="#">UI / UX</a>
-                                      <div class="post-meta__divider"></div>
-                                    </li>
-                                    <li><a href="#">2025</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- item -->
-                          <div
-                            class="swiper-slide slider-menu__slide"
-                            data-arts-hover-class="hover-zoom-underline"
-                          >
-                            <div data-swiper-parallax-opacity="0.3">
-                              <a
-                                class="slider-menu__wrapper-image"
-                                href="020-portfolio-details-masthead-fullwidth-horizontal.html"
-                                data-arts-hover="trigger"
-                                data-arts-cursor="true"
-                                data-arts-cursor-hide-native="true"
-                                data-arts-cursor-label="View Project"
-                                data-arts-cursor-scale="2.4"
-                                data-arts-cursor-color="#fff"
-                                data-arts-cursor-background-color="#ed4830"
-                              >
-                                <div
-                                  class="overflow"
-                                  data-swiper-parallax-y="-25%"
-                                >
-                                  <div
-                                    class="w-100 h-100"
-                                    data-swiper-parallax="true"
-                                    data-swiper-parallax-y="25%"
-                                  >
-                                    <img
-                                      class="swiper-lazy of-cover hover-zoom__zoom"
-                                      src="#"
-                                      data-src="/kinsey/img/assets/projects/project8/img-cover-8.jpg"
-                                      width="1920"
-                                      height="1280"
-                                      alt=""
-                                    />
-                                  </div>
-                                </div></a
-                              >
-                              <div
-                                class="slider-menu__header"
-                                data-swiper-parallax-y="-50%"
-                              >
-                                <a
-                                  class="d-inline-block"
-                                  href="020-portfolio-details-masthead-fullwidth-horizontal.html"
-                                  data-arts-hover="trigger"
-                                  data-arts-cursor="true"
-                                  data-arts-cursor-hide-native="true"
-                                  data-arts-cursor-label="View Project"
-                                  data-arts-cursor-scale="2.4"
-                                  data-arts-cursor-color="#fff"
-                                  data-arts-cursor-background-color="#ed4830"
-                                >
-                                  <h3
-                                    class="h3 mt-0 mb-2 slider__heading underline-hover__target"
-                                  >
-                                    Modern Furniture Shop
-                                  </h3></a
-                                >
-                                <div class="w-100"></div>
-                                <div class="d-inline-block slider__subheading">
-                                  <ul class="post-meta post-meta_mini">
-                                    <li>
-                                      <a href="#">UI / UX</a>
-                                      <div class="post-meta__divider"></div>
-                                    </li>
-                                    <li><a href="#">2024</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- item -->
-                          <div
-                            class="swiper-slide slider-menu__slide"
-                            data-arts-hover-class="hover-zoom-underline"
-                          >
-                            <div data-swiper-parallax-opacity="0.3">
-                              <a
-                                class="slider-menu__wrapper-image"
-                                href="023-portfolio-details-masthead-fullwidth-horizontal.html"
-                                data-arts-hover="trigger"
-                                data-arts-cursor="true"
-                                data-arts-cursor-hide-native="true"
-                                data-arts-cursor-label="View Project"
-                                data-arts-cursor-scale="2.4"
-                                data-arts-cursor-color="#fff"
-                                data-arts-cursor-background-color="#ed4830"
-                              >
-                                <div
-                                  class="overflow"
-                                  data-swiper-parallax-y="-25%"
-                                >
-                                  <div
-                                    class="w-100 h-100"
-                                    data-swiper-parallax="true"
-                                    data-swiper-parallax-y="25%"
-                                  >
-                                    <img
-                                      class="swiper-lazy of-cover hover-zoom__zoom"
-                                      src="#"
-                                      data-src="/kinsey/img/assets/projects/project11/img-cover-11.jpg"
-                                      width="1920"
-                                      height="1280"
-                                      alt=""
-                                    />
-                                  </div>
-                                </div></a
-                              >
-                              <div
-                                class="slider-menu__header"
-                                data-swiper-parallax-y="-50%"
-                              >
-                                <a
-                                  class="d-inline-block"
-                                  href="023-portfolio-details-masthead-fullwidth-horizontal.html"
-                                  data-arts-hover="trigger"
-                                  data-arts-cursor="true"
-                                  data-arts-cursor-hide-native="true"
-                                  data-arts-cursor-label="View Project"
-                                  data-arts-cursor-scale="2.4"
-                                  data-arts-cursor-color="#fff"
-                                  data-arts-cursor-background-color="#ed4830"
-                                >
-                                  <h3
-                                    class="h3 mt-0 mb-2 slider__heading underline-hover__target"
-                                  >
-                                    Arte
-                                  </h3></a
-                                >
-                                <div class="w-100"></div>
-                                <div class="d-inline-block slider__subheading">
-                                  <ul class="post-meta post-meta_mini">
-                                    <li>
-                                      <a href="#">Identity</a>
-                                      <div class="post-meta__divider"></div>
-                                    </li>
-                                    <li><a href="#">2024</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="is-dragging__blocker"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- - featured projects slider -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- - fullscreen overlay container // - fullscreen overlay container 
-        -->
-        <!-- - fullscreen overlay container -->
-      </header>
-      <!-- - PAGE HEADER -->
-      <!-- PAGE MAIN CONTAINER -->
+    <div class="loading-screen" id="loading-screen">
+      <span class="bar top-bar"></span>
+      <span class="bar down-bar"></span>
+      <span class="progress-line"></span>
+      <span class="loading-counter"> </span>
+    </div>
+
+    <div class="bg-noise"></div>
+
+    <Header />
+
+    <div data-barba="wrapper" class="inner-page">
       <div class="js-smooth-scroll" id="page-wrapper" data-barba="container">
         <!-- PAGE CONTENT -->
         <main class="page-wrapper__content">
           <!-- section HORIZONTAL SCROLLING COLUMNS -->
           <section
-            class="section section-fullheight section-content section-fullscreen-columns section-horizontal-scroll js-section-horizontal-scroll bg-light-1"
+            class="section section-fullheight section-content section-fullscreen-columns section-horizontal-scroll js-section-horizontal-scroll inner-page"
             data-arts-horizontal-scroll="container"
             data-arts-horizontal-scroll-type="modular"
             data-arts-horizontal-scroll-toggle-class="in-view"
@@ -2486,7 +673,7 @@
                 >
                   <div class="w-100 mt-auto">
                     <h1
-                      class="h1 section__heading js-arts-split-text arts-split-text my-0"
+                      class="js-arts-split-text arts-split-text my-0 font-white"
                       data-arts-split-text="lines"
                       data-arts-split-text-set="lines"
                       data-arts-split-text-set-direction="y"
@@ -2498,7 +685,7 @@
                   </div>
                   <div class="w-100 align-self-end">
                     <div
-                      class="h6 js-arts-split-text arts-split-text"
+                      class="h6 js-arts-split-text arts-split-text font-white"
                       data-arts-split-text="lines"
                       data-arts-split-text-set="lines"
                       data-arts-split-text-set-direction="y"
@@ -2519,8 +706,8 @@
                   <div class="mask-reveal__layer mask-reveal__layer-1">
                     <div class="mask-reveal__layer mask-reveal__layer-2">
                       <div
-                        class="pt-medium pb-small container-fluid h-100 bg-portfolio-3"
-                        data-arts-theme-text="dark"
+                        class="pt-medium pb-small container-fluid h-100 bg-dark-3"
+                        data-arts-theme-text="light"
                       >
                         <div
                           class="figure-project d-flex justify-content-between flex-column w-100 h-100"
@@ -2594,7 +781,7 @@
                                 data-arts-split-text-set="lines"
                                 data-arts-split-text-overflow-wrap="lines"
                               >
-                                Contemporary Workplace
+                                Contemporary
                               </h2></a
                             >
                           </div>
@@ -2613,8 +800,8 @@
                   <div class="mask-reveal__layer mask-reveal__layer-1">
                     <div class="mask-reveal__layer mask-reveal__layer-2">
                       <div
-                        class="pt-medium pb-small container-fluid h-100 bg-light-3"
-                        data-arts-theme-text="dark"
+                        class="pt-medium pb-small container-fluid h-100 bg-dark-3"
+                        data-arts-theme-text="light"
                       >
                         <div
                           class="figure-project d-flex justify-content-between flex-column w-100 h-100"
@@ -2707,8 +894,8 @@
                   <div class="mask-reveal__layer mask-reveal__layer-1">
                     <div class="mask-reveal__layer mask-reveal__layer-2">
                       <div
-                        class="pt-medium pb-small container-fluid h-100 bg-portfolio-4"
-                        data-arts-theme-text="dark"
+                        class="pt-medium pb-small container-fluid h-100 bg-dark-3"
+                        data-arts-theme-text="light"
                       >
                         <div
                           class="figure-project d-flex justify-content-between flex-column w-100 h-100"
@@ -2801,8 +988,8 @@
                   <div class="mask-reveal__layer mask-reveal__layer-1">
                     <div class="mask-reveal__layer mask-reveal__layer-2">
                       <div
-                        class="pt-medium pb-small container-fluid h-100 bg-light-3"
-                        data-arts-theme-text="dark"
+                        class="pt-medium pb-small container-fluid h-100 bg-dark-3"
+                        data-arts-theme-text="light"
                       >
                         <div
                           class="figure-project d-flex justify-content-between flex-column w-100 h-100"
@@ -2989,8 +1176,8 @@
                   <div class="mask-reveal__layer mask-reveal__layer-1">
                     <div class="mask-reveal__layer mask-reveal__layer-2">
                       <div
-                        class="pt-medium pb-small container-fluid h-100 bg-portfolio-11"
-                        data-arts-theme-text="dark"
+                        class="pt-medium pb-small container-fluid h-100 bg-dark-3"
+                        data-arts-theme-text="light"
                       >
                         <div
                           class="figure-project d-flex justify-content-between flex-column w-100 h-100"
@@ -3064,7 +1251,7 @@
                                 data-arts-split-text-set="lines"
                                 data-arts-split-text-overflow-wrap="lines"
                               >
-                                Arrigo Accessories Shop
+                                Arrigo
                               </h2></a
                             >
                           </div>
@@ -3083,8 +1270,8 @@
                   <div class="mask-reveal__layer mask-reveal__layer-1">
                     <div class="mask-reveal__layer mask-reveal__layer-2">
                       <div
-                        class="pt-medium pb-small container-fluid h-100 bg-light-3"
-                        data-arts-theme-text="dark"
+                        class="pt-medium pb-small container-fluid h-100 bg-dark-3"
+                        data-arts-theme-text="light"
                       >
                         <div
                           class="figure-project d-flex justify-content-between flex-column w-100 h-100"
@@ -3172,263 +1359,98 @@
           </section>
           <!-- - section HORIZONTAL SCROLLING COLUMNS -->
         </main>
-        <!-- - PAGE CONTENT -->
-        <!-- PAGE FOOTER -->
-        <footer
-          class="footer pt-medium bg-dark-1"
-          id="page-footer"
-          data-arts-theme-text="light"
-          data-arts-fixed-reveal="data-arts-fixed-reveal"
-          data-arts-fixed-reveal-from="-20vh"
-          data-arts-fixed-reveal-from-opacity="0"
-        >
-          <div class="footer__inner">
-            <div class="container">
-              <!-- widget area #1 [wide] -->
-              <div class="row pb-md-3">
-                <div class="col">
-                  <section class="widget widget_text">
-                    <div class="textwidget">
-                      <h3>
-                        Kinsey has more than 5 years of crafting digital
-                        experiences for the various brands. <em
-                          >Would you like to share your project with us?</em
-                        ><br /><br /><a class="underline-hover-self" href="#"
-                          >hello@example.com</a
-                        >
-                      </h3>
-                    </div>
-                  </section>
-                </div>
-              </div>
-              <!-- - widget area #1 [wide] -->
-              <!-- widget area #2 [4 columns] -->
-              <div
-                class="row justify-content-between position-relative pt-md-5 pt-4 pb-md-3"
-              >
-                <div class="footer__divider"></div>
-                <div class="col-lg-3 col-sm-6">
-                  <section class="widget widget_nav_menu">
-                    <h2 class="widgettitle">Quick Links</h2>
-                    <div>
-                      <ul class="menu">
-                        <li class="menu-item"><a href="index.html">Home</a></li>
-                        <li class="menu-item">
-                          <a href="027-portfolio-grid-3-columns.html"
-                            >Portfolio</a
+
+        <div class="footer rts-footer-two-area bg-footer-2 bg_image-1 mt-0">
+          <div class="container-140">
+            <div class="row">
+              <div class="col-lg-12 pt--130 pt_sm--60 pb--100 pb_sm--60">
+                <div class="footer-two-wrapper-content">
+                  <!-- footer left start -->
+                  <div class="footer-left-two">
+                    <a href="index.html" class="logo">
+                      <img
+                        src="/creative-mighty/assets/images/logo/03.svg"
+                        alt="logo"
+                      />
+                    </a>
+                    <p class="disc">
+                      Teor facilis porta maurs ligula vivamus <br /> nullam laoreet
+                      pharetra posuere.
+                    </p>
+                    <div class="rts-social-area-one">
+                      <ul>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-facebook-f"></i></a
                           >
                         </li>
-                        <li class="menu-item">
-                          <a href="034-services.html">Services</a>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-twitter"></i></a>
                         </li>
-                        <li class="menu-item">
-                          <a href="035-about.html">About</a>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                         </li>
-                        <li class="menu-item">
-                          <a href="037-blog-posts-list-backgrounds.html">Blog</a
-                          >
-                        </li>
-                        <li class="menu-item">
-                          <a href="036-contacts.html">Contacts</a>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-skype"></i></a>
                         </li>
                       </ul>
                     </div>
-                  </section>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                  <section class="widget widget_nav_menu">
-                    <h2 class="widgettitle">Latest Works</h2>
-                    <div>
-                      <ul class="menu">
-                        <li class="menu-item">
-                          <a
-                            href="013-portfolio-details-masthead-boxed-horizontal.html"
-                            >Errica Fashion Store</a
-                          >
-                        </li>
-                        <li class="menu-item">
-                          <a
-                            href="014-portfolio-details-masthead-boxed-horizontal.html"
-                            >Zero Audio Speaker</a
-                          >
-                        </li>
-                        <li class="menu-item">
-                          <a
-                            href="015-portfolio-details-masthead-boxed-vertical.html"
-                            >Contemporary Workplace</a
-                          >
-                        </li>
-                        <li class="menu-item">
-                          <a
-                            href="016-portfolio-details-masthead-boxed-vertical.html"
-                            >Cassio Apartments</a
-                          >
-                        </li>
-                        <li class="menu-item">
-                          <a
-                            href="017-portfolio-details-masthead-fullwidth-horizontal.html"
-                            >Winter Villa</a
-                          >
-                        </li>
-                        <li class="menu-item">
-                          <a
-                            href="018-portfolio-details-masthead-boxed-vertical.html"
-                            >Portable Stereo</a
-                          >
-                        </li>
-                      </ul>
+                  </div>
+                  <!-- footer left end -->
+
+                  <!-- footer right area start -->
+                  <div class="footer-right-two">
+                    <!-- contact info -->
+                    <div class="contact-information">
+                      <h5 class="title">Contact Info</h5>
+                      <a href="#" class="map"
+                        >Maxuel Street, Frankfurt <br /> 2589 Germany.</a
+                      >
+                      <a href="#" class="mail">information.mighty.com</a>
+                      <a href="tel:28586235932159" class="number"
+                        >+2858 62359 32159</a
+                      >
                     </div>
-                  </section>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                  <section class="widget widget_text">
-                    <h2 class="widgettitle">Office Location</h2>
-                    <div class="textwidget">
-                      <p>
-                        4903 Mayo Street<br />Cincinnati<br />KY 45202<br />USA
+                    <!-- contact info end -->
+                    <!-- contact info -->
+                    <div class="contact-information input">
+                      <h5 class="title">Subscribe Newsletter</h5>
+                      <p class="map">
+                        Subscribe our newsletter for future updates. don’t <br
+                        /> worry we don’t spam your email address
                       </p>
-                    </div>
-                  </section>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                  <section class="widget widget_text">
-                    <h2 class="widgettitle">Contacts</h2>
-                    <div class="textwidget">
-                      <p>
-                        <a href="#">hello@example.com</a><br />+1 501 639 5134<br
-                        />+1 707 748 9334
-                      </p>
-                    </div>
-                  </section>
-                </div>
-              </div>
-              <!-- - widget area #2 [4 columns] -->
-              <!-- widget area #3 [2 columns] -->
-              <div
-                class="row justify-content-between align-items-center position-relative pt-4"
-              >
-                <div class="footer__divider"></div>
-                <div class="col-lg-4 order-lg-2 text-lg-end text-center">
-                  <section class="widget widget_kinsey_social">
-                    <ul class="social">
-                      <li class="social__item">
-                        <a class="social__icon fa-fw fab fa-facebook-f" href="#"
-                        ></a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__icon fa-fw fab fa-instagram" href="#"
-                        ></a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__icon fa-fw fab fa-behance" href="#"
-                        ></a>
-                      </li>
-                    </ul>
-                  </section>
-                </div>
-                <div class="col-lg-8 text-lg-start text-center">
-                  <section class="widget widget_text">
-                    <div class="textwidget">
-                      <p>
-                        <small
-                          >© 2025 Kinsey – AJAX Agency HTML5 Template. Crafted
-                          by <a
-                            href="https://themeforest.net/user/artemsemkin"
-                            target="_blank">Artem Semkin.</a
-                          ></small
+                      <form action="#" class="form-footer-2">
+                        <label for="email-1"
+                          ><i class="fa-regular fa-envelope"></i></label
                         >
-                      </p>
+                        <input
+                          id="email-1"
+                          type="email"
+                          placeholder="Enter your email..."
+                          required
+                        />
+                        <button type="submit">Subscribe</button>
+                      </form>
                     </div>
-                  </section>
+                    <!-- contact info end -->
+                  </div>
+                  <!-- footer right area end -->
                 </div>
               </div>
-              <!-- - widget area #3 [2 columns] -->
+              <div class="col-lg-12">
+                <!-- copyright-area-start -->
+                <div class="copy-right-area-start-two">
+                  <p class="left">2023 © Mighty. All rights reserved.</p>
+                </div>
+                <!-- copyright-area-end -->
+              </div>
             </div>
           </div>
-        </footer>
-        <!-- - PAGE FOOTER -->
+        </div>
       </div>
       <!-- - PAGE MAIN CONTAINER -->
     </div>
     <canvas id="js-webgl"></canvas>
-    <!-- Cursor Follower -->
-    <div class="arts-cursor" id="js-arts-cursor">
-      <div class="arts-cursor__wrapper">
-        <!-- circles-->
-        <div class="arts-cursor__follower js-arts-cursor__follower">
-          <svg
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <circle
-              class="arts-cursor__stroke-inner js-arts-cursor__stroke-inner"
-              cx="25"
-              cy="25"
-              r="24"
-              style="opacity: 0.6;"></circle>
-            <circle
-              class="arts-cursor__stroke-outer js-arts-cursor__stroke-outer"
-              cx="25"
-              cy="25"
-              r="24"
-              style="stroke-dashoffset: 252.327; stroke-dasharray: 0px, 999999px;"
-            ></circle>
-          </svg>
-        </div>
-        <!-- arrows-->
-        <div class="arts-cursor__arrows">
-          <div
-            class="arts-cursor__arrow arts-cursor__arrow_up material-icons keyboard_arrow_up js-arts-cursor__arrow-up"
-          >
-          </div>
-          <div
-            class="arts-cursor__arrow arts-cursor__arrow_right material-icons keyboard_arrow_right js-arts-cursor__arrow-right"
-          >
-          </div>
-          <div
-            class="arts-cursor__arrow arts-cursor__arrow_down material-icons keyboard_arrow_down js-arts-cursor__arrow-down"
-          >
-          </div>
-          <div
-            class="arts-cursor__arrow arts-cursor__arrow_left material-icons keyboard_arrow_left js-arts-cursor__arrow-left"
-          >
-          </div>
-        </div>
-        <!-- label holder-->
-        <div class="arts-cursor__wrapper-label">
-          <div class="arts-cursor__label js-arts-cursor__label"></div>
-        </div>
-        <!-- icon holder-->
-        <div class="arts-cursor__wrapper-icon">
-          <div class="arts-cursor__icon js-arts-cursor__icon"></div>
-        </div>
-      </div>
-    </div>
-    <!-- - Cursor Follower -->
-    <!-- Mobile Loading Spinner -->
-    <svg
-      class="spinner d-lg-none"
-      id="js-spinner"
-      width="65px"
-      height="65px"
-      viewBox="0 0 66 66"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <circle
-        class="spinner__path"
-        fill="none"
-        stroke-width="6"
-        stroke-linecap="round"
-        cx="33"
-        cy="33"
-        r="30"></circle>
-    </svg>
-    <!-- - Mobile Loading Spinner -->
-    <!-- Curtain AJAX Transition -->
-    <div class="transition-curtain" id="js-page-transition-curtain"></div>
-    <!-- - Curtain AJAX Transition -->
-    <!-- PhotoSwipe Lightbox Container -->
+
     <div
       class="pswp"
       tabindex="-1"
@@ -3508,8 +1530,83 @@
         </div>
         <!-- - UI -->
       </div>
-      <!-- slider wrapper -->
     </div>
+
+    <Cursor />
+
+    <!--Load JavaScript-->
+    <script defer type="text/javascript" src="/cocobasic/js/jquery.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="/cocobasic/js/imagesloaded.pkgd.js"></script>
+    <script defer type="text/javascript" src="/cocobasic/js/jquery.fitvids.js"
+    ></script>
+    <script
+      defer
+      type="text/javascript"
+      src="/cocobasic/js/jquery.smartmenus.min.js"></script>
+    <script defer type="text/javascript" src="/cocobasic/js/isotope.pkgd.js"
+    ></script>
+    <script
+      defer
+      type="text/javascript"
+      src="/cocobasic/js/jquery.easing.1.3.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="/cocobasic/js/jquery.justifiedGallery.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="/cocobasic/js/jquery.prettyPhoto.js"></script>
+    <script defer type="text/javascript" src="/cocobasic/js/slick.min.js"
+    ></script>
+    <script defer type="text/javascript" src="/cocobasic/js/main.js"></script>
+
+    <script defer src="creative-mighty/assets/js/vendor/jquery.min.js"></script>
+    <script defer src="creative-mighty/assets/js/plugins/bootstrap.min.js"
+    ></script>
+    <script defer src="creative-mighty/assets/js/plugins/contact.form.js"
+    ></script>
+    <script defer src="creative-mighty/assets/js/vendor/waypoint.js"></script>
+    <script defer src="creative-mighty/assets/js/plugins/swiper.js"></script>
+
+    <!-- for side bar sticky -->
+    <script defer src="creative-mighty/assets/js/plugins/resizer-sensor.js"
+    ></script>
+    <script defer src="creative-mighty/assets/js/plugins/sticky-sidebar.js"
+    ></script>
+    <!-- for side bar sticky end-->
+    <script defer src="creative-mighty/assets/js/plugins/isotop.js"></script>
+    <script
+      defer
+      src="creative-mighty/assets/js/plugins/imagesloaded.pkgd.min.js"></script>
+
+    <script
+      defer
+      src="creative-mighty/assets/js/plugins/smoothscroll-varticle.js"></script>
+    <script defer src="creative-mighty/assets/js/vendor/gsap.js"></script>
+    <script defer src="creative-mighty/assets/js/plugins/scrolltiger.js"
+    ></script>
+    <script defer src="creative-mighty/assets/js/plugins/scrolltoplugin.js"
+    ></script>
+    <script defer src="creative-mighty/assets/js/plugins/splittext.js"></script>
+    <script defer src="creative-mighty/assets/js/plugins/smoothscroll.js"
+    ></script>
+
+    <!-- title opacity scroll magix -->
+    <script defer src="creative-mighty/assets/js/plugins/scrollmagic.js"
+    ></script>
+    <script defer src="creative-mighty/assets/js/plugins/animate-scrollmagic.js"
+    ></script>
+    <!-- title opacity scroll magic end -->
+    <script defer src="creative-mighty/assets/js/plugins/tilt.js"></script>
+    <script defer src="creative-mighty/assets/js/plugins/counterup.js"></script>
+
+    <script defer src="creative-mighty/assets/js/vendor/waw.js"></script>
+    <!-- custom javascripts -->
+    <script defer src="creative-mighty/assets/js/main.js"></script>
     <!-- - PhotoSwipe Lightbox Container -->
     <!-- VENDOR SCRIPTS -->
     <script defer src="/kinsey/js/vendor.js"></script>
