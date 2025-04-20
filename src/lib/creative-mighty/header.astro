@@ -9,9 +9,13 @@ const navLinks = [
   { title: "Art Gallery", href: "/art-gallery" },
   { title: "Contact", href: "/contact-us" },
 ];
+
+const { containerStyles = "" } = Astro.props;
 ---
 
-<div class="rts-header-area-two header--sticky">
+<style></style>
+
+<div class="rts-header-area-two header--sticky" style={containerStyles}>
   <div class="container-150">
     <div class="row">
       <div class="col-lg-12">

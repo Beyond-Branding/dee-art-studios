@@ -1,3 +1,7 @@
+---
+import Header from "../../creative-mighty/header.astro";
+---
+
 <!doctype html>
 <html lang="en">
   <!-- Mirrored from artemsemkin.com//arrigo/html/homepage-slider-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Apr 2025 18:11:29 GMT -->
@@ -26,17 +30,9 @@
     <link rel="preload" href="/arrigo/css/main.css" as="style" />
     <link rel="preload" href="/arrigo/fontawesome/brands.css" as="style" />
     <link rel="preload" href="/arrigo/fontawesome/fontawesome.css" as="style" />
-    <!-- - Preloads -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta content="telephone=no" name="format-detection" />
-    <meta name="HandheldFriendly" content="true" />
-    <meta
-      name="description"
-      content="/Arrigo – Minimal Portfolio Contemporary HTML5 Template"
-    />
+
+    <link rel="stylesheet" href="creative-mighty/assets/css/style.css" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Material+Icons%7CPoppins:300,300i,400,400i,600,600i%7CPlayfair+Display:400i"
@@ -46,478 +42,10 @@
     <link rel="stylesheet" href="/arrigo/css/vendor.css" />
     <link rel="stylesheet" href="/arrigo/css/main.css" />
     <!-- ICONS-->
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="/arrigo//arrigo/img/content/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="/arrigo//arrigo/img/content/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="/arrigo//arrigo/img/content/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="/arrigo//arrigo/img/content/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="/arrigo/img/content/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="/arrigo/img/content/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="/arrigo/img/content/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="/arrigo/img/content/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/arrigo/img/content/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="/arrigo/img/content/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/arrigo/img/content/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="/arrigo/img/content/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/arrigo/img/content/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/arrigo/img/content/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="/arrigo/img/content/ms-icon-144x144.png"
-    />
-    <meta name="theme-color" content="#ffffff" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/arrigo/img/content/favicon.ico"
-    />
   </head>
-  <body>
-    <!-- PAGE PRELOADER -->
-    <div class="preloader">
-      <div class="preloader__curtain bg-light"></div>
-      <div class="preloader__wrapper-logo">
-        <div class="preloader__logo">
-          <svg
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <g fill="none" fill-rule="evenodd">
-              <rect class="rect" width="100%" height="100%"></rect>
-            </g>
-          </svg>
-          <div class="logo">
-            <div class="logo__text">/Arrigo Sabbani</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- - PAGE PRELOADER -->
+  <body class="inner-page">
+    <Header containerStyles="z-index: 100;" />
     <div class="page-wrapper">
-      <!-- PAGE HEADER -->
-      <header
-        class="header header_fixed js-header-sticky site-header header_dark"
-      >
-        <div class="container-fluid">
-          <div class="row justify-content-between align-items-center">
-            <div class="col-auto">
-              <a class="logo" href="index.html">
-                <h1 class="logo__text">/Arrigo Sabbani</h1></a
-              >
-            </div>
-            <div class="header__overlay-menu-back js-submenu-back">
-              keyboard_arrow_up
-            </div>
-            <div class="col-auto">
-              <div class="burger js-burger">
-                <div class="burger__line"></div>
-                <div class="burger__line"></div>
-                <div class="burger__line"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="header__wrapper-overlay-menu">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-auto">
-                <ul class="overlay-menu js-overlay-menu">
-                  <li class="menu-item-has-children">
-                    <a href="#">
-                      <div class="overlay-menu__item-wrapper">
-                        <div class="overlay-menu__item-line"></div>
-                        <div class="overlay-menu__item-counter">01</div><span
-                          >Homepages</span
-                        >
-                      </div></a
-                    >
-                    <ul class="overlay-sub-menu">
-                      <li>
-                        <a href="index.html">
-                          <div class="overlay-menu__item-wrapper">
-                            <span>Landing Page</span>
-                          </div></a
-                        >
-                      </li>
-                      <li>
-                        <a href="homepage-slider-1.html">
-                          <div class="overlay-menu__item-wrapper">
-                            <span>Fullscreen Slider 1</span>
-                          </div></a
-                        >
-                      </li>
-                      <li>
-                        <a href="homepage-slider-4-light.html">
-                          <div class="overlay-menu__item-wrapper">
-                            <span>Fullscreen Slider 4 &lt;Light&gt;</span>
-                          </div></a
-                        >
-                      </li>
-                      <li>
-                        <a href="homepage-slider-4-dark.html">
-                          <div class="overlay-menu__item-wrapper">
-                            <span>Fullscreen Slider 4 &lt;Dark&gt;</span>
-                          </div></a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="#">
-                      <div class="overlay-menu__item-wrapper">
-                        <div class="overlay-menu__item-line"></div>
-                        <div class="overlay-menu__item-counter">02</div><span
-                          >Inner Pages</span
-                        >
-                      </div></a
-                    >
-                    <ul class="overlay-sub-menu">
-                      <li>
-                        <a href="pricing.html">
-                          <div class="overlay-menu__item-wrapper">
-                            <span>Pricing</span>
-                          </div></a
-                        >
-                      </li>
-                      <li>
-                        <a href="service-details.html">
-                          <div class="overlay-menu__item-wrapper">
-                            <span>Service Details</span>
-                          </div></a
-                        >
-                      </li>
-                      <li>
-                        <a href="team.html">
-                          <div class="overlay-menu__item-wrapper">
-                            <span>Team</span>
-                          </div></a
-                        >
-                      </li>
-                      <li>
-                        <a href="404.html">
-                          <div class="overlay-menu__item-wrapper">
-                            <span>404 Page</span>
-                          </div></a
-                        >
-                      </li>
-                      <li class="menu-item-has-children">
-                        <a href="#">
-                          <div class="overlay-menu__item-wrapper">
-                            <span>Submenu Depth Test</span>
-                          </div></a
-                        >
-                        <ul class="overlay-sub-menu">
-                          <li class="menu-item-has-children">
-                            <a href="#">
-                              <div class="overlay-menu__item-wrapper">
-                                <span>Depth 2</span>
-                              </div></a
-                            >
-                            <ul class="overlay-sub-menu">
-                              <li class="menu-item-has-children">
-                                <a href="#">
-                                  <div class="overlay-menu__item-wrapper">
-                                    <span>Depth 3</span>
-                                  </div></a
-                                >
-                                <ul class="overlay-sub-menu">
-                                  <li class="menu-item-has-children">
-                                    <a href="#">
-                                      <div class="overlay-menu__item-wrapper">
-                                        <span>Depth 4</span>
-                                      </div></a
-                                    >
-                                    <ul class="overlay-sub-menu">
-                                      <li>
-                                        <a href="#">
-                                          <div
-                                            class="overlay-menu__item-wrapper"
-                                          >
-                                            <span>Depth 5</span>
-                                          </div></a
-                                        >
-                                      </li>
-                                      <li>
-                                        <a href="#">
-                                          <div
-                                            class="overlay-menu__item-wrapper"
-                                          >
-                                            <span>Depth 5</span>
-                                          </div></a
-                                        >
-                                      </li>
-                                      <li>
-                                        <a href="#">
-                                          <div
-                                            class="overlay-menu__item-wrapper"
-                                          >
-                                            <span>Depth 5</span>
-                                          </div></a
-                                        >
-                                      </li>
-                                      <li>
-                                        <a href="#">
-                                          <div
-                                            class="overlay-menu__item-wrapper"
-                                          >
-                                            <span>Depth 5</span>
-                                          </div></a
-                                        >
-                                      </li>
-                                      <li>
-                                        <a href="#">
-                                          <div
-                                            class="overlay-menu__item-wrapper"
-                                          >
-                                            <span>Depth 5</span>
-                                          </div></a
-                                        >
-                                      </li>
-                                    </ul>
-                                  </li>
-                                  <li>
-                                    <a href="#">
-                                      <div class="overlay-menu__item-wrapper">
-                                        <span>Depth 4</span>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="#">
-                                      <div class="overlay-menu__item-wrapper">
-                                        <span>Depth 4</span>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="#">
-                                      <div class="overlay-menu__item-wrapper">
-                                        <span>Depth 4</span>
-                                      </div></a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="#">
-                                      <div class="overlay-menu__item-wrapper">
-                                        <span>Depth 4</span>
-                                      </div></a
-                                    >
-                                  </li>
-                                </ul>
-                              </li>
-                              <li>
-                                <a href="#">
-                                  <div class="overlay-menu__item-wrapper">
-                                    <span>Depth 3</span>
-                                  </div></a
-                                >
-                              </li>
-                              <li>
-                                <a href="#">
-                                  <div class="overlay-menu__item-wrapper">
-                                    <span>Depth 3</span>
-                                  </div></a
-                                >
-                              </li>
-                              <li>
-                                <a href="#">
-                                  <div class="overlay-menu__item-wrapper">
-                                    <span>Depth 3</span>
-                                  </div></a
-                                >
-                              </li>
-                              <li>
-                                <a href="#">
-                                  <div class="overlay-menu__item-wrapper">
-                                    <span>Depth 3</span>
-                                  </div></a
-                                >
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <div class="overlay-menu__item-wrapper">
-                                <span>Depth 2</span>
-                              </div></a
-                            >
-                          </li>
-                          <li>
-                            <a href="#">
-                              <div class="overlay-menu__item-wrapper">
-                                <span>Depth 2</span>
-                              </div></a
-                            >
-                          </li>
-                          <li>
-                            <a href="#">
-                              <div class="overlay-menu__item-wrapper">
-                                <span>Depth 2</span>
-                              </div></a
-                            >
-                          </li>
-                          <li>
-                            <a href="#">
-                              <div class="overlay-menu__item-wrapper">
-                                <span>Depth 2</span>
-                              </div></a
-                            >
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="#">
-                      <div class="overlay-menu__item-wrapper">
-                        <div class="overlay-menu__item-line"></div>
-                        <div class="overlay-menu__item-counter">03</div><span
-                          >Portfolio</span
-                        >
-                      </div></a
-                    >
-                    <ul class="overlay-sub-menu">
-                      <li>
-                        <a href="portfolio-grid.html">
-                          <div class="overlay-menu__item-wrapper">
-                            <span>Portfolio Grid</span>
-                          </div></a
-                        >
-                      </li>
-                      <li>
-                        <a href="portfolio-details-1-light.html">
-                          <div class="overlay-menu__item-wrapper">
-                            <span>Portfolio Details 1 &lt;Light&gt;</span>
-                          </div></a
-                        >
-                      </li>
-                      <li>
-                        <a href="portfolio-details-1-dark.html">
-                          <div class="overlay-menu__item-wrapper">
-                            <span>Portfolio Details 1 &lt;Dark&gt;</span>
-                          </div></a
-                        >
-                      </li>
-                      <li>
-                        <a href="portfolio-details-2-light.html">
-                          <div class="overlay-menu__item-wrapper">
-                            <span>Portfolio Details 2 &lt;Light&gt;</span>
-                          </div></a
-                        >
-                      </li>
-                      <li>
-                        <a href="portfolio-details-2-dark.html">
-                          <div class="overlay-menu__item-wrapper">
-                            <span>Portfolio Details 2 &lt;Dark&gt;</span>
-                          </div></a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="services.html">
-                      <div class="overlay-menu__item-wrapper">
-                        <div class="overlay-menu__item-line"></div>
-                        <div class="overlay-menu__item-counter">04</div><span
-                          >Services</span
-                        >
-                      </div></a
-                    >
-                  </li>
-                  <li>
-                    <a href="blog-list.html">
-                      <div class="overlay-menu__item-wrapper">
-                        <div class="overlay-menu__item-line"></div>
-                        <div class="overlay-menu__item-counter">05</div><span
-                          >Blog</span
-                        >
-                      </div></a
-                    >
-                  </li>
-                  <li>
-                    <a href="about.html">
-                      <div class="overlay-menu__item-wrapper">
-                        <div class="overlay-menu__item-line"></div>
-                        <div class="overlay-menu__item-counter">06</div><span
-                          >About</span
-                        >
-                      </div></a
-                    >
-                  </li>
-                  <li>
-                    <a href="contact.html">
-                      <div class="overlay-menu__item-wrapper">
-                        <div class="overlay-menu__item-line"></div>
-                        <div class="overlay-menu__item-counter">07</div><span
-                          >Contact</span
-                        >
-                      </div></a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <!-- - PAGE HEADER -->
       <main class="site-main">
         <!-- section FULLSCREEN -->
         <section
@@ -697,7 +225,9 @@
                         <div class="slider-fullscreen__slide-content">
                           <header class="slider-fullscreen__slide-header">
                             <a href="portfolio-details-1-light.html">
-                              <h2>Vehicle of the Future</h2></a
+                              <h2 style="color: black; font-weight: bold  ;">
+                                Vehicle of the Future
+                              </h2></a
                             >
                             <p>
                               Residence gentleman yet preserved few convinced.
@@ -711,6 +241,7 @@
                             <a
                               class="slider-fullscreen__slide-button button-square"
                               href="portfolio-details-1-light.html"
+                              style="z-index: 100;"
                               ><svg
                                 version="1.1"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -754,7 +285,10 @@
         <!-- - section FULLSCREEN -->
       </main>
       <!-- PAGE FOOTER -->
-      <footer class="footer footer_fixed site-footer">
+      <footer
+        class="footer footer_fixed site-footer"
+        style="width: fit-content;"
+      >
         <div class="container-fluid">
           <div class="footer__inner">
             <div
@@ -785,9 +319,44 @@
     <!-- - VENDOR SCRIPTS -->
     <!-- COMPONENTS -->
     <script defer src="/arrigo/js/components.js"></script>
-    <!-- - COMPONENTS -->
-    <!-- PAGE SCRIPTS-->
-    <!-- - PAGE SCRIPTS-->
+
+    <script defer src="creative-mighty/assets/js/vendor/jquery.min.js"></script>
+    <script defer src="creative-mighty/assets/js/plugins/bootstrap.min.js"
+    ></script>
+    <script defer src="creative-mighty/assets/js/vendor/waypoint.js"></script>
+
+    <!-- for side bar sticky -->
+    <script defer src="creative-mighty/assets/js/plugins/resizer-sensor.js"
+    ></script>
+    <script defer src="creative-mighty/assets/js/plugins/sticky-sidebar.js"
+    ></script>
+    <!-- for side bar sticky end-->
+    <script defer src="creative-mighty/assets/js/plugins/isotop.js"></script>
+
+    <script
+      defer
+      src="creative-mighty/assets/js/plugins/smoothscroll-varticle.js"></script>
+    <script defer src="creative-mighty/assets/js/vendor/gsap.js"></script>
+    <script defer src="creative-mighty/assets/js/plugins/scrolltiger.js"
+    ></script>
+    <script defer src="creative-mighty/assets/js/plugins/scrolltoplugin.js"
+    ></script>
+    <script defer src="creative-mighty/assets/js/plugins/splittext.js"></script>
+    <script defer src="creative-mighty/assets/js/plugins/smoothscroll.js"
+    ></script>
+
+    <!-- title opacity scroll magix -->
+    <script defer src="creative-mighty/assets/js/plugins/scrollmagic.js"
+    ></script>
+    <script defer src="creative-mighty/assets/js/plugins/animate-scrollmagic.js"
+    ></script>
+    <!-- title opacity scroll magic end -->
+    <script defer src="creative-mighty/assets/js/plugins/tilt.js"></script>
+    <script defer src="creative-mighty/assets/js/plugins/counterup.js"></script>
+
+    <script defer src="creative-mighty/assets/js/vendor/waw.js"></script>
+    <!-- custom javascripts -->
+    <script defer src="creative-mighty/assets/js/main.js"></script>
   </body>
 
   <!-- Mirrored from artemsemkin.com//arrigo/html/homepage-slider-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Apr 2025 18:12:03 GMT -->
