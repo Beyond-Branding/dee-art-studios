@@ -5,6 +5,7 @@ import Scripts from "./scripts.astro";
 import PreLoader from "./preloader.astro";
 import Progress from "./progress.astro";
 import Cursor from "./cursor.astro";
+import Footer from "./footer.astro";
 ---
 
 <!doctype html>
@@ -21,9 +22,11 @@ import Cursor from "./cursor.astro";
     />
     <title>Mighty - Creative Portfolio Template Accordion</title>
     <StyleSheets />
+
+    <slot name="head" />
   </head>
 
-  <body class="inner-page coming-soon">
+  <body class="inner-page">
     <!-- Scripts style two -->
     <!-- header area srtart -->
     <Header />
@@ -31,6 +34,8 @@ import Cursor from "./cursor.astro";
     <!-- Scripts style two End -->
 
     <slot name="body" />
+
+    <Footer />
 
     <!-- Scripts style two -->
     <PreLoader />
@@ -43,6 +48,8 @@ import Cursor from "./cursor.astro";
     <Cursor />
     <!-- pre loader end -->
     <Scripts />
+
+    <slot name="scripts" />
     <!-- Scripts style two End -->
   </body><!-- Mirrored from html.themewant.com/mighty/coming-soon.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Apr 2025 15:17:11 GMT -->
 </html>
