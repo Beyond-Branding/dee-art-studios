@@ -2,7 +2,20 @@
 import PreLoader from "../preloader.astro";
 import Cursor from "../cursor.astro";
 import Progress from "../progress.astro";
-import Header from "../header.astro";
+
+const socials = [
+  {
+    icon: "fa-brands fa-instagram",
+    href: "https://www.instagram.com/deeeartstudios?igsh=dnhodzE4ZjcxbDB3",
+  },
+  {
+    icon: "fa-brands fa-facebook-f",
+    href: "https://www.facebook.com/share/1APmAFFcLx/",
+  },
+] as {
+  icon: string;
+  href: string;
+}[];
 ---
 
 <html lang="en" class="rts-dark">
@@ -16,7 +29,12 @@ import Header from "../header.astro";
       type="image/x-icon"
       href="creative-mighty/assets/images/fav.png"
     />
-    <title>Mighty - Creative Portfolio Template Accordion</title>
+    <title>Deee's Art Studio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i%7CLato:300,300i,400,400i,700,700i,900%7CMontserrat:900"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link
       rel="stylesheet"
       href="/creative-mighty/assets/css/plugins/fontawesome-6.css"
@@ -38,19 +56,26 @@ import Header from "../header.astro";
       href="/creative-mighty/assets/css/vendor/bootstrap.min.css"
     />
     <link rel="stylesheet" href="/creative-mighty/assets/css/style.css" />
+
+    <style>
+      .font-playfair {
+        font-family: "Playfair Display", serif !important;
+      }
+    </style>
   </head>
 
   <body class="inner-page coming-soon">
-    <!-- Scripts style two -->
-    <!-- header area srtart -->
-    <Header />
-    <!-- header area end -->
-    <!-- Scripts style two End -->
-
     <div class="rts-coming-soon">
       <div class="container">
+        <div
+          style="height: 56px; width: fit-content; margin-inline: auto; margin-block: 3rem;"
+        >
+          <img src="/assets/logo.png" style="height: 100%; width: auto;" />
+        </div>
         <div class="section-inner text-center">
-          <h2 class="title-elements-parent">We're Coming Soon!</h2>
+          <h2 class="title-elements-parent font-playfair">
+            We're <i>Coming Soon</i>!
+          </h2>
           <div id="countdown-time" class="countdown-time rt-coming-soon">
             <span></span> : <span></span> : <span></span> : <span></span>
           </div>
@@ -61,11 +86,15 @@ import Header from "../header.astro";
           <div class="social-area">
             <h4 class="title">Follow Us</h4>
             <ul class="social-wrapper">
-              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-skype"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+              {
+                socials.map((social) => (
+                  <li>
+                    <a href={social.href}>
+                      <i class={social.icon} />
+                    </a>
+                  </li>
+                ))
+              }
             </ul>
           </div>
         </div>
