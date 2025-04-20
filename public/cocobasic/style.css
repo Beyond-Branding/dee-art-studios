@@ -121,6 +121,10 @@ body a:hover {
   width: 570px;
 }
 
+.content-540 {
+  width: 540px !important;
+}
+
 .content-1170 img,
 .content-970 img,
 .content-830 img,
@@ -1488,6 +1492,10 @@ body a:hover {
 }
 
 @media screen and (max-width: 630px) {
+  .content-540 {
+    width: 100% !important;
+  }
+
   .sm li {
     min-width: 170px;
   }

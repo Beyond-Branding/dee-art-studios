@@ -6,6 +6,12 @@ import PreLoader from "./preloader.astro";
 import Progress from "./progress.astro";
 import Cursor from "./cursor.astro";
 import Footer from "./footer.astro";
+
+import clsx from "clsx";
+
+const { bodyClass = "" } = Astro.props as {
+  bodyClass: string;
+};
 ---
 
 <!doctype html>
@@ -26,7 +32,7 @@ import Footer from "./footer.astro";
     <slot name="head" />
   </head>
 
-  <body class="inner-page">
+  <body class={clsx("inner-page", bodyClass)}>
     <!-- Scripts style two -->
     <!-- header area srtart -->
     <Header />
