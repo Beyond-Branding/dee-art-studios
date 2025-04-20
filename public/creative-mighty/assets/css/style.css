@@ -141,6 +141,10 @@ body {
   body {
     overflow: hidden;
   }
+
+  .footer {
+    margin-top: 45rem;
+  }
 }
 body::before {
   content: "";
@@ -29347,5 +29351,9 @@ body.servi-ce-details .rts-footer-two-area {
 }
 .header-three .logo-area-white {
   display: none;
+}
+
+.footer {
+  margin-top: 5rem;
 }
 /*# sourceMappingURL=../maps/style.css.map */

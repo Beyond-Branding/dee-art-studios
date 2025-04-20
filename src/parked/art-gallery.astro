@@ -1,0 +1,1542 @@
+---
+import Cursor from "../lib/creative-mighty/cursor.astro";
+import Header from "../lib/creative-mighty/header.astro";
+import Footer from "../lib/creative-mighty/footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <!-- Mirrored from artemsemkin.com/kinsey/html/007-portfolio-horizontal-scrolling-columns-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Apr 2025 16:06:13 GMT -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Kinsey – AJAX Agency HTML5 Template</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="description" content="Kinsey – AJAX Agency HTML5 Template" />
+    <link
+      rel="stylesheet"
+      href="/creative-mighty/assets/css/plugins/fontawesome-6.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/creative-mighty/assets/css/plugins/swiper.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/creative-mighty/assets/css/vendor/metismenu.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/creative-mighty/assets/css/plugins/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/creative-mighty/assets/css/vendor/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/creative-mighty/assets/css/style.css" />
+
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/kinsey/js/vendor.js"
+      as="script"
+      type="application/javascript"
+    />
+    <link
+      rel="preload"
+      href="/kinsey/js/components.js"
+      as="script"
+      type="application/javascript"
+    />
+    <link
+      rel="preload"
+      href="/kinsey/fonts/MaterialIcons-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/kinsey/fonts/kinsey.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/kinsey/fonts/fa-brands-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <style>
+      *,
+      ::before,
+      ::after {
+        box-sizing: border-box;
+      }
+      :root {
+        --bs-gutter-x: 20px;
+        --bs-gutter-y: 20px;
+        --font-primary: Inter, sans-serif;
+        --color-dark-1: #000;
+        --color-dark-2: #181818;
+        --color-dark-3: #333;
+        --color-dark-4: #555;
+        --color-light-1: #fff;
+        --color-light-2: #fafafa;
+        --color-light-3: #f8f8f8;
+        --color-light-4: #f2f2ed;
+        --color-gray-1: #b0b0b0;
+        --color-gray-2: #ccc;
+        --color-gray-3: #888;
+        --color-gray-4: #e8e8e8;
+        --color-portfolio-1: #f1f6f6;
+        --color-portfolio-2: #262626;
+        --color-portfolio-3: #f6f6f1;
+        --color-portfolio-4: #d7d7d9;
+        --color-portfolio-5: #dededb;
+        --color-portfolio-6: #f7f6f3;
+        --color-portfolio-7: #f0f0f0;
+        --color-portfolio-8: #eaeaea;
+        --color-portfolio-9: #f1f0f0;
+        --color-portfolio-10: #eeece6;
+        --color-portfolio-11: #fbf7f6;
+        --color-portfolio-12: #e9eaec;
+        --color-border-dark: rgba(136, 136, 136, 0.3);
+        --color-border-light: rgba(136, 136, 136, 0.3);
+        --xxl-max-font-size: 126;
+        --xxl-min-font-size: 54;
+        --xxl-line-height: 1;
+        --xxl-letter-spacing: -4;
+        --xxl-color-dark: #555;
+        --xxl-color-light: #fff;
+        --xl-max-font-size: 102;
+        --xl-min-font-size: 46;
+        --xl-line-height: 1.18;
+        --xl-letter-spacing: -2;
+        --xl-color-dark: #555;
+        --xl-color-light: #fff;
+        --h1-max-font-size: 80;
+        --h1-min-font-size: 40;
+        --h1-line-height: 1.2;
+        --h1-letter-spacing: -1;
+        --h1-color-dark: #555;
+        --h1-color-light: #fff;
+        --h2-max-font-size: 52;
+        --h2-min-font-size: 30;
+        --h2-line-height: 1.28;
+        --h2-letter-spacing: 0;
+        --h2-color-dark: #555;
+        --h2-color-light: #fff;
+        --h3-max-font-size: 32;
+        --h3-min-font-size: 24;
+        --h3-line-height: 1.5;
+        --h3-letter-spacing: 0;
+        --h3-color-dark: #555;
+        --h3-color-light: #fff;
+        --h4-max-font-size: 20;
+        --h4-min-font-size: 18;
+        --h4-line-height: 1.8;
+        --h4-letter-spacing: 0;
+        --h4-color-dark: #555;
+        --h4-color-light: #fff;
+        --h5-max-font-size: 18;
+        --h5-min-font-size: 16;
+        --h5-line-height: 1.8;
+        --h5-letter-spacing: 0;
+        --h5-color-dark: #555;
+        --h5-color-light: #fff;
+        --h6-max-font-size: 16;
+        --h6-min-font-size: 14;
+        --h6-line-height: 1.8;
+        --h6-letter-spacing: 0;
+        --h6-color-dark: #555;
+        --h6-color-light: #fff;
+        --subheading-max-font-size: 13;
+        --subheading-min-font-size: 10;
+        --subheading-line-height: 1;
+        --subheading-letter-spacing: 2;
+        --subheading-color-dark: #555;
+        --subheading-color-light: #b0b0b0;
+        --paragraph-max-font-size: 16;
+        --paragraph-min-font-size: 16;
+        --paragraph-line-height: 1.8;
+        --paragraph-letter-spacing: 0;
+        --paragraph-color-dark: #555;
+        --paragraph-color-light: #fff;
+        --blockquote-max-font-size: 24;
+        --blockquote-min-font-size: 16;
+        --blockquote-letter-spacing: 0;
+        --blockquote-color-dark: #555;
+        --blockquote-color-light: #fff;
+        --dropcap-max-font-size: 90;
+        --dropcap-min-font-size: 60;
+        --dropcap-color-dark: #111;
+        --dropcap-color-light: #fff;
+        --distance-min-xsmall: 30;
+        --distance-min-small: 40;
+        --distance-min-medium: 50;
+        --distance-min-large: 50;
+        --distance-min-xlarge: 90;
+        --distance-max-xsmall: 60;
+        --distance-max-small: 80;
+        --distance-max-medium: 100;
+        --distance-max-large: 160;
+        --distance-max-xlarge: 240;
+        --gutter-horizontal: 120px;
+        --gutter-vertical: 100px;
+      }
+      @media screen and (max-width: 1400px) {
+        :root {
+          --gutter-horizontal: 80px;
+          --gutter-vertical: 60px;
+        }
+      }
+      @media screen and (max-width: 1280px) {
+        :root {
+          --gutter-horizontal: 60px;
+          --gutter-vertical: 40px;
+        }
+      }
+      @media screen and (max-width: 991px) {
+        :root {
+          --gutter-horizontal: 20px;
+          --gutter-vertical: 20px;
+        }
+      }
+      @media (min-width: 1400px) {
+        .container {
+          max-width: 1140px;
+        }
+      }
+      html {
+        font-size: 16px;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeSpeed;
+        -webkit-text-rendering: optimizeSpeed;
+        -moz-osx-font-smoothing: grayscale;
+        font-kerning: none;
+        scroll-behavior: auto !important;
+      }
+      body {
+        width: 100%;
+        min-width: 320px;
+        color: #fff;
+        word-wrap: break-word;
+        overflow-wrap: anywhere;
+        overflow-x: hidden;
+        font: 100% / var(--paragraph-line-height) var(--font-primary);
+      }
+      .spinner {
+        position: fixed;
+        opacity: 0;
+        visibility: hidden;
+      }
+      .arts-cursor {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        pointer-events: none;
+        z-index: 10000;
+        display: none;
+      }
+      .pswp {
+        display: none;
+      }
+      #js-webgl {
+        display: none;
+      }
+      .transition-curtain {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: scaleY(0);
+      }
+      .container-fluid {
+        padding-left: var(--gutter-horizontal, 120);
+        padding-right: var(--gutter-horizontal, 120);
+      }
+      .bg-dark-1 {
+        background-color: var(--color-dark-1);
+      }
+      .mask-reveal {
+        position: relative;
+        overflow: hidden;
+      }
+      .mask-reveal__layer {
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .logo {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        vertical-align: middle;
+      }
+      .logo__wrapper-img {
+        position: relative;
+        align-items: center;
+        flex: 1 0 auto;
+        height: 100%;
+        margin-right: 15px;
+      }
+      .logo__wrapper-img img {
+        display: block;
+      }
+      .logo__img-secondary {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+      }
+      [data-arts-theme-text="light"] {
+        color: var(--color-gray-2);
+      }
+      [data-arts-theme-text="light"] .header__label {
+        color: #fff;
+      }
+      .h6,
+      h6 {
+        color: var(--h6-color-dark);
+        letter-spacing: calc(var(--h6-letter-spacing) * 1px);
+        font: 500 calc(var(--h6-min-font-size) * 1px) / var(--h6-line-height)
+          var(--font-primary);
+      }
+      @media screen and (min-width: 320px) {
+        .h6,
+        h6 {
+          font-size: calc(
+            var(--h6-min-font-size) * 1px +
+              (var(--h6-max-font-size) - var(--h6-min-font-size)) *
+              ((100vw - 320px) / 1600)
+          );
+        }
+      }
+      @media screen and (min-width: 1920px) {
+        .h6,
+        h6 {
+          font-size: calc(var(--h6-max-font-size) * 1px);
+        }
+      }
+      .preloader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 400;
+        overflow: hidden;
+      }
+      .preloader__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        position: fixed;
+        top: var(--gutter-vertical, 120px);
+        left: var(--gutter-horizontal, 120px);
+        right: var(--gutter-horizontal, 120px);
+        bottom: var(--gutter-vertical, 120px);
+      }
+      .preloader__counter {
+        letter-spacing: -10px;
+        white-space: nowrap;
+        font: 100 calc(106 * 1px) / 1 var(--font-primary);
+      }
+      @media screen and (min-width: 320px) {
+        .preloader__counter {
+          font-size: calc(106 * 1px + (212 - 106) * ((100vw - 320px) / 1600));
+        }
+      }
+      @media screen and (min-width: 1920px) {
+        .preloader__counter {
+          font-size: calc(212 * 1px);
+        }
+      }
+      .underline.preloader__counter_started {
+        -webkit-animation-name: loading;
+        animation-name: loading;
+        -webkit-animation-duration: 20s;
+        animation-duration: 20s;
+      }
+      @-webkit-keyframes loading {
+        0% {
+          background-size: 0 2px;
+        }
+        100% {
+          background-size: 100% 2px;
+        }
+      }
+      @keyframes loading {
+        0% {
+          background-size: 0 2px;
+        }
+        100% {
+          background-size: 100% 2px;
+        }
+      }
+      .header {
+        padding-top: calc(var(--gutter-vertical) / 1.5);
+      }
+      .header:not(.opened) .header__label-burger_closed-hover,
+      .header:not(.opened) .header__label-burger_opened-hover,
+      .header:not(.opened) .header__label-burger_opened-open {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      .header_fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 500;
+      }
+      .header__container {
+        padding-left: 0;
+        padding-right: 0;
+        position: relative;
+        z-index: 501;
+      }
+      .header__burger {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        vertical-align: middle;
+        z-index: 500;
+        margin-right: -12px;
+      }
+      .header__burger-label {
+        display: inline-block;
+        height: 14px;
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        transform: translate(0, -50%);
+        text-align: right;
+      }
+      .header__label-burger_inner {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .header__burger-line {
+        position: relative;
+        width: 26px;
+        height: 2px;
+        overflow: hidden;
+        margin: 2px auto;
+      }
+      .header__burger-line:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(0);
+        background-color: var(--color-dark-2);
+      }
+      .header__burger-line:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(calc(-100% - 4px));
+        background-color: var(--color-dark-2);
+      }
+      .header__wrapper-overlay-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 500;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+      }
+      .header__label {
+        white-space: nowrap;
+        font-size: 14px;
+        line-height: 0.9;
+        font-weight: 500;
+      }
+      .header__label_status {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: calc(100% + 2px);
+      }
+      .header__label_opened-back {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, 100%);
+        left: calc(100% + 2px);
+        opacity: 0;
+      }
+      .header__label_side {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        padding-left: 0;
+        padding-right: 0;
+        transform: translateY(-50%);
+      }
+      @media screen and (max-width: 991px) {
+        .header__burger {
+          width: 32px;
+          height: 32px;
+          margin-right: -3px;
+          margin-left: 3px;
+        }
+        .header__burger-label {
+          margin-right: 6px;
+        }
+      }
+      .mt-auto {
+        margin-top: auto !important;
+      }
+      .me-auto {
+        margin-right: auto !important;
+      }
+      .ms-auto {
+        margin-left: auto !important;
+      }
+
+      .font-white {
+        color: white !important;
+      }
+
+      .mt-0 {
+        margin-top: 0rem !important;
+      }
+    </style>
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap"
+    />
+    <!-- Template Vendor's Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/kinsey/css/vendor.css" />
+    <!-- Template Main Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/kinsey/css/main.css" />
+    <!-- Favicons & App Icons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/kinsey/img/content/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/kinsey/img/content/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/kinsey/img/content/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/kinsey/img/content/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/kinsey/img/content/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/kinsey/img/content/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/kinsey/img/content/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/kinsey/img/content/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/kinsey/img/content/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/kinsey/img/content/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/kinsey/img/content/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/kinsey/img/content/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/kinsey/img/content/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/content/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="/kinsey/img/content/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/kinsey/img/content/favicon.ico"
+    />
+  </head>
+  <body>
+    <div class="loading-screen" id="loading-screen">
+      <span class="bar top-bar"></span>
+      <span class="bar down-bar"></span>
+      <span class="progress-line"></span>
+      <span class="loading-counter"> </span>
+    </div>
+
+    <div class="bg-noise"></div>
+
+    <Header />
+
+    <div data-barba="wrapper" class="inner-page">
+      <div class="js-smooth-scroll" id="page-wrapper" data-barba="container">
+        <!-- PAGE CONTENT -->
+        <main class="page-wrapper__content">
+          <!-- section HORIZONTAL SCROLLING COLUMNS -->
+          <section
+            class="section section-fullheight section-content section-fullscreen-columns section-horizontal-scroll js-section-horizontal-scroll inner-page"
+            data-arts-horizontal-scroll="container"
+            data-arts-horizontal-scroll-type="modular"
+            data-arts-horizontal-scroll-toggle-class="in-view"
+          >
+            <div
+              class="section__content section-horizontal-scroll__wrapper"
+              data-arts-horizontal-scroll="wrapper"
+            >
+              <div
+                class="d-flex flex-wrap flex-lg-nowrap w-100vw h-lg-100vh-fix-bar"
+              >
+                <div
+                  class="section-fullscreen-columns__header d-flex flex-wrap col-lg-6 pt-xlarge pb-large container-fluid"
+                  data-arts-horizontal-scroll="section"
+                  data-arts-os-animation="true"
+                  data-arts-os-animation-name="animateText"
+                >
+                  <div class="w-100 mt-auto">
+                    <h1
+                      class="js-arts-split-text arts-split-text my-0 font-white"
+                      data-arts-split-text="lines"
+                      data-arts-split-text-set="lines"
+                      data-arts-split-text-set-direction="y"
+                      data-arts-split-text-set-distance="-100%"
+                      data-arts-split-text-overflow-wrap="lines"
+                    >
+                      Portfolio
+                    </h1>
+                  </div>
+                  <div class="w-100 align-self-end">
+                    <div
+                      class="h6 js-arts-split-text arts-split-text font-white"
+                      data-arts-split-text="lines"
+                      data-arts-split-text-set="lines"
+                      data-arts-split-text-set-direction="y"
+                      data-arts-split-text-set-distance="-100%"
+                      data-arts-split-text-overflow-wrap="lines"
+                    >
+                      Scroll
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="section-fullscreen-columns__border col-xl-4 col-lg-5 col-sm-6 col-12 mask-reveal"
+                  data-arts-horizontal-scroll="section"
+                  data-arts-os-animation="true"
+                  data-arts-os-animation-name="animateMask"
+                  data-arts-os-animation-params="{direction: 'down', scale: 1}"
+                >
+                  <div class="mask-reveal__layer mask-reveal__layer-1">
+                    <div class="mask-reveal__layer mask-reveal__layer-2">
+                      <div
+                        class="pt-medium pb-small container-fluid h-100 bg-dark-3"
+                        data-arts-theme-text="light"
+                      >
+                        <div
+                          class="figure-project d-flex justify-content-between flex-column w-100 h-100"
+                          data-arts-hover-class="hover-zoom-underline"
+                        >
+                          <a
+                            class="figure-project__wrapper-img h-100 mask-reveal js-arts-cursor-no-highlight"
+                            href="015-portfolio-details-masthead-boxed-vertical.html"
+                            data-arts-hover="trigger"
+                            data-arts-cursor="true"
+                            data-arts-cursor-hide-native="true"
+                            data-arts-cursor-label="View Project"
+                            data-arts-cursor-scale="2.4"
+                            data-arts-cursor-color="#fff"
+                            data-arts-cursor-background-color="#ed4830"
+                          >
+                            <div class="hover-zoom__inner">
+                              <div
+                                class="mask-reveal__layer mask-reveal__layer-1"
+                              >
+                                <div
+                                  class="mask-reveal__layer mask-reveal__layer-2"
+                                >
+                                  <img
+                                    class="of-cover lazy-bg"
+                                    src="#"
+                                    data-src="/kinsey/img/assets/projects/project3/img-cover-3.jpg"
+                                    width="1280"
+                                    height="1920"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div></a
+                          >
+                          <div
+                            class="figure-project__content mt-4"
+                            data-arts-os-animation="true"
+                            data-arts-os-animation-name="animateText"
+                            data-arts-os-animation-params="{delay: 0.3}"
+                          >
+                            <div
+                              class="section-fullscreen-columns__subheading mb-2 figure-project__wrapper-meta arts-split-text js-arts-split-text"
+                              data-arts-split-text="lines,words"
+                              data-arts-split-text-set="words"
+                              data-arts-split-text-overflow-wrap="lines"
+                            >
+                              <ul
+                                class="post-meta post-meta_mini post-meta_mini-small"
+                              >
+                                <li>
+                                  <a href="#">Interior</a>
+                                  <div class="post-meta__divider"></div>
+                                </li>
+                                <li><a href="#">2024</a></li>
+                              </ul>
+                            </div><a
+                              class="d-inline-block js-arts-cursor-no-highlight"
+                              href="015-portfolio-details-masthead-boxed-vertical.html"
+                              data-arts-hover="trigger"
+                              data-arts-cursor="true"
+                              data-arts-cursor-hide-native="true"
+                              data-arts-cursor-label="View Project"
+                              data-arts-cursor-scale="2.4"
+                              data-arts-cursor-color="#fff"
+                              data-arts-cursor-background-color="#ed4830"
+                            >
+                              <h2
+                                class="section-fullscreen-columns__heading h3 my-0 js-arts-split-text arts-split-text underline-hover__target"
+                                data-arts-split-text="lines"
+                                data-arts-split-text-set="lines"
+                                data-arts-split-text-overflow-wrap="lines"
+                              >
+                                Contemporary
+                              </h2></a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="section-fullscreen-columns__border col-xl-4 col-lg-5 col-sm-6 col-12 mask-reveal"
+                  data-arts-horizontal-scroll="section"
+                  data-arts-os-animation="true"
+                  data-arts-os-animation-name="animateMask"
+                  data-arts-os-animation-params="{direction: 'down', scale: 1}"
+                >
+                  <div class="mask-reveal__layer mask-reveal__layer-1">
+                    <div class="mask-reveal__layer mask-reveal__layer-2">
+                      <div
+                        class="pt-medium pb-small container-fluid h-100 bg-dark-3"
+                        data-arts-theme-text="light"
+                      >
+                        <div
+                          class="figure-project d-flex justify-content-between flex-column w-100 h-100"
+                          data-arts-hover-class="hover-zoom-underline"
+                        >
+                          <a
+                            class="figure-project__wrapper-img h-100 mask-reveal js-arts-cursor-no-highlight"
+                            href="018-portfolio-details-masthead-boxed-vertical.html"
+                            data-arts-hover="trigger"
+                            data-arts-cursor="true"
+                            data-arts-cursor-hide-native="true"
+                            data-arts-cursor-label="View Project"
+                            data-arts-cursor-scale="2.4"
+                            data-arts-cursor-color="#fff"
+                            data-arts-cursor-background-color="#ed4830"
+                          >
+                            <div class="hover-zoom__inner">
+                              <div
+                                class="mask-reveal__layer mask-reveal__layer-1"
+                              >
+                                <div
+                                  class="mask-reveal__layer mask-reveal__layer-2"
+                                >
+                                  <img
+                                    class="of-cover lazy-bg"
+                                    src="#"
+                                    data-src="/kinsey/img/assets/projects/project6/img-cover-6.jpg"
+                                    width="1280"
+                                    height="1920"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div></a
+                          >
+                          <div
+                            class="figure-project__content mt-4"
+                            data-arts-os-animation="true"
+                            data-arts-os-animation-name="animateText"
+                            data-arts-os-animation-params="{delay: 0.3}"
+                          >
+                            <div
+                              class="section-fullscreen-columns__subheading mb-2 figure-project__wrapper-meta arts-split-text js-arts-split-text"
+                              data-arts-split-text="lines,words"
+                              data-arts-split-text-set="words"
+                              data-arts-split-text-overflow-wrap="lines"
+                            >
+                              <ul
+                                class="post-meta post-meta_mini post-meta_mini-small"
+                              >
+                                <li>
+                                  <a href="#">Concept</a>
+                                  <div class="post-meta__divider"></div>
+                                </li>
+                                <li><a href="#">2022</a></li>
+                              </ul>
+                            </div><a
+                              class="d-inline-block js-arts-cursor-no-highlight"
+                              href="018-portfolio-details-masthead-boxed-vertical.html"
+                              data-arts-hover="trigger"
+                              data-arts-cursor="true"
+                              data-arts-cursor-hide-native="true"
+                              data-arts-cursor-label="View Project"
+                              data-arts-cursor-scale="2.4"
+                              data-arts-cursor-color="#fff"
+                              data-arts-cursor-background-color="#ed4830"
+                            >
+                              <h2
+                                class="section-fullscreen-columns__heading h3 my-0 js-arts-split-text arts-split-text underline-hover__target"
+                                data-arts-split-text="lines"
+                                data-arts-split-text-set="lines"
+                                data-arts-split-text-overflow-wrap="lines"
+                              >
+                                Portable Stereo
+                              </h2></a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="section-fullscreen-columns__border col-xl-4 col-lg-5 col-sm-6 col-12 mask-reveal"
+                  data-arts-horizontal-scroll="section"
+                  data-arts-os-animation="true"
+                  data-arts-os-animation-name="animateMask"
+                  data-arts-os-animation-params="{direction: 'down', scale: 1}"
+                >
+                  <div class="mask-reveal__layer mask-reveal__layer-1">
+                    <div class="mask-reveal__layer mask-reveal__layer-2">
+                      <div
+                        class="pt-medium pb-small container-fluid h-100 bg-dark-3"
+                        data-arts-theme-text="light"
+                      >
+                        <div
+                          class="figure-project d-flex justify-content-between flex-column w-100 h-100"
+                          data-arts-hover-class="hover-zoom-underline"
+                        >
+                          <a
+                            class="figure-project__wrapper-img h-100 mask-reveal js-arts-cursor-no-highlight"
+                            href="016-portfolio-details-masthead-boxed-vertical.html"
+                            data-arts-hover="trigger"
+                            data-arts-cursor="true"
+                            data-arts-cursor-hide-native="true"
+                            data-arts-cursor-label="View Project"
+                            data-arts-cursor-scale="2.4"
+                            data-arts-cursor-color="#fff"
+                            data-arts-cursor-background-color="#ed4830"
+                          >
+                            <div class="hover-zoom__inner">
+                              <div
+                                class="mask-reveal__layer mask-reveal__layer-1"
+                              >
+                                <div
+                                  class="mask-reveal__layer mask-reveal__layer-2"
+                                >
+                                  <img
+                                    class="of-cover lazy-bg"
+                                    src="#"
+                                    data-src="/kinsey/img/assets/projects/project4/img-cover-4.jpg"
+                                    width="1280"
+                                    height="1920"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div></a
+                          >
+                          <div
+                            class="figure-project__content mt-4"
+                            data-arts-os-animation="true"
+                            data-arts-os-animation-name="animateText"
+                            data-arts-os-animation-params="{delay: 0.3}"
+                          >
+                            <div
+                              class="section-fullscreen-columns__subheading mb-2 figure-project__wrapper-meta arts-split-text js-arts-split-text"
+                              data-arts-split-text="lines,words"
+                              data-arts-split-text-set="words"
+                              data-arts-split-text-overflow-wrap="lines"
+                            >
+                              <ul
+                                class="post-meta post-meta_mini post-meta_mini-small"
+                              >
+                                <li>
+                                  <a href="#">Interior</a>
+                                  <div class="post-meta__divider"></div>
+                                </li>
+                                <li><a href="#">2024</a></li>
+                              </ul>
+                            </div><a
+                              class="d-inline-block js-arts-cursor-no-highlight"
+                              href="016-portfolio-details-masthead-boxed-vertical.html"
+                              data-arts-hover="trigger"
+                              data-arts-cursor="true"
+                              data-arts-cursor-hide-native="true"
+                              data-arts-cursor-label="View Project"
+                              data-arts-cursor-scale="2.4"
+                              data-arts-cursor-color="#fff"
+                              data-arts-cursor-background-color="#ed4830"
+                            >
+                              <h2
+                                class="section-fullscreen-columns__heading h3 my-0 js-arts-split-text arts-split-text underline-hover__target"
+                                data-arts-split-text="lines"
+                                data-arts-split-text-set="lines"
+                                data-arts-split-text-overflow-wrap="lines"
+                              >
+                                Cassio Apartments
+                              </h2></a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="section-fullscreen-columns__border col-xl-4 col-lg-5 col-sm-6 col-12 mask-reveal"
+                  data-arts-horizontal-scroll="section"
+                  data-arts-os-animation="true"
+                  data-arts-os-animation-name="animateMask"
+                  data-arts-os-animation-params="{direction: 'down', scale: 1}"
+                >
+                  <div class="mask-reveal__layer mask-reveal__layer-1">
+                    <div class="mask-reveal__layer mask-reveal__layer-2">
+                      <div
+                        class="pt-medium pb-small container-fluid h-100 bg-dark-3"
+                        data-arts-theme-text="light"
+                      >
+                        <div
+                          class="figure-project d-flex justify-content-between flex-column w-100 h-100"
+                          data-arts-hover-class="hover-zoom-underline"
+                        >
+                          <a
+                            class="figure-project__wrapper-img h-100 mask-reveal js-arts-cursor-no-highlight"
+                            href="021-portfolio-details-masthead-boxed-vertical.html"
+                            data-arts-hover="trigger"
+                            data-arts-cursor="true"
+                            data-arts-cursor-hide-native="true"
+                            data-arts-cursor-label="View Project"
+                            data-arts-cursor-scale="2.4"
+                            data-arts-cursor-color="#fff"
+                            data-arts-cursor-background-color="#ed4830"
+                          >
+                            <div class="hover-zoom__inner">
+                              <div
+                                class="mask-reveal__layer mask-reveal__layer-1"
+                              >
+                                <div
+                                  class="mask-reveal__layer mask-reveal__layer-2"
+                                >
+                                  <img
+                                    class="of-cover lazy-bg"
+                                    src="#"
+                                    data-src="/kinsey/img/assets/projects/project9/img-cover-9.jpg"
+                                    width="1280"
+                                    height="1920"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div></a
+                          >
+                          <div
+                            class="figure-project__content mt-4"
+                            data-arts-os-animation="true"
+                            data-arts-os-animation-name="animateText"
+                            data-arts-os-animation-params="{delay: 0.3}"
+                          >
+                            <div
+                              class="section-fullscreen-columns__subheading mb-2 figure-project__wrapper-meta arts-split-text js-arts-split-text"
+                              data-arts-split-text="lines,words"
+                              data-arts-split-text-set="words"
+                              data-arts-split-text-overflow-wrap="lines"
+                            >
+                              <ul
+                                class="post-meta post-meta_mini post-meta_mini-small"
+                              >
+                                <li>
+                                  <a href="#">Concept</a>
+                                  <div class="post-meta__divider"></div>
+                                </li>
+                                <li><a href="#">2024</a></li>
+                              </ul>
+                            </div><a
+                              class="d-inline-block js-arts-cursor-no-highlight"
+                              href="021-portfolio-details-masthead-boxed-vertical.html"
+                              data-arts-hover="trigger"
+                              data-arts-cursor="true"
+                              data-arts-cursor-hide-native="true"
+                              data-arts-cursor-label="View Project"
+                              data-arts-cursor-scale="2.4"
+                              data-arts-cursor-color="#fff"
+                              data-arts-cursor-background-color="#ed4830"
+                            >
+                              <h2
+                                class="section-fullscreen-columns__heading h3 my-0 js-arts-split-text arts-split-text underline-hover__target"
+                                data-arts-split-text="lines"
+                                data-arts-split-text-set="lines"
+                                data-arts-split-text-overflow-wrap="lines"
+                              >
+                                Minimalex
+                              </h2></a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="section-fullscreen-columns__border col-xl-4 col-lg-5 col-sm-6 col-12 mask-reveal"
+                  data-arts-horizontal-scroll="section"
+                  data-arts-os-animation="true"
+                  data-arts-os-animation-name="animateMask"
+                  data-arts-os-animation-params="{direction: 'down', scale: 1}"
+                >
+                  <div class="mask-reveal__layer mask-reveal__layer-1">
+                    <div class="mask-reveal__layer mask-reveal__layer-2">
+                      <div
+                        class="pt-medium pb-small container-fluid h-100 bg-dark-3"
+                        data-arts-theme-text="light"
+                      >
+                        <div
+                          class="figure-project d-flex justify-content-between flex-column w-100 h-100"
+                          data-arts-hover-class="hover-zoom-underline"
+                        >
+                          <a
+                            class="figure-project__wrapper-img h-100 mask-reveal js-arts-cursor-no-highlight"
+                            href="014-portfolio-details-masthead-boxed-horizontal.html"
+                            data-arts-hover="trigger"
+                            data-arts-cursor="true"
+                            data-arts-cursor-hide-native="true"
+                            data-arts-cursor-label="View Project"
+                            data-arts-cursor-scale="2.4"
+                            data-arts-cursor-color="#fff"
+                            data-arts-cursor-background-color="#ed4830"
+                          >
+                            <div class="hover-zoom__inner">
+                              <div
+                                class="mask-reveal__layer mask-reveal__layer-1"
+                              >
+                                <div
+                                  class="mask-reveal__layer mask-reveal__layer-2"
+                                >
+                                  <img
+                                    class="of-cover lazy-bg"
+                                    src="#"
+                                    data-src="/kinsey/img/assets/projects/project2/img-cover-2.jpg"
+                                    width="1920"
+                                    height="1280"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div></a
+                          >
+                          <div
+                            class="figure-project__content mt-4"
+                            data-arts-os-animation="true"
+                            data-arts-os-animation-name="animateText"
+                            data-arts-os-animation-params="{delay: 0.3}"
+                          >
+                            <div
+                              class="section-fullscreen-columns__subheading mb-2 figure-project__wrapper-meta arts-split-text js-arts-split-text"
+                              data-arts-split-text="lines,words"
+                              data-arts-split-text-set="words"
+                              data-arts-split-text-overflow-wrap="lines"
+                            >
+                              <ul
+                                class="post-meta post-meta_mini post-meta_mini-small"
+                              >
+                                <li>
+                                  <a href="#">Concept</a>
+                                  <div class="post-meta__divider"></div>
+                                </li>
+                                <li><a href="#">2024</a></li>
+                              </ul>
+                            </div><a
+                              class="d-inline-block js-arts-cursor-no-highlight"
+                              href="014-portfolio-details-masthead-boxed-horizontal.html"
+                              data-arts-hover="trigger"
+                              data-arts-cursor="true"
+                              data-arts-cursor-hide-native="true"
+                              data-arts-cursor-label="View Project"
+                              data-arts-cursor-scale="2.4"
+                              data-arts-cursor-color="#fff"
+                              data-arts-cursor-background-color="#ed4830"
+                            >
+                              <h2
+                                class="section-fullscreen-columns__heading h3 my-0 js-arts-split-text arts-split-text underline-hover__target"
+                                data-arts-split-text="lines"
+                                data-arts-split-text-set="lines"
+                                data-arts-split-text-overflow-wrap="lines"
+                              >
+                                Zero Audio Speaker
+                              </h2></a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="section-fullscreen-columns__border col-xl-4 col-lg-5 col-sm-6 col-12 mask-reveal"
+                  data-arts-horizontal-scroll="section"
+                  data-arts-os-animation="true"
+                  data-arts-os-animation-name="animateMask"
+                  data-arts-os-animation-params="{direction: 'down', scale: 1}"
+                >
+                  <div class="mask-reveal__layer mask-reveal__layer-1">
+                    <div class="mask-reveal__layer mask-reveal__layer-2">
+                      <div
+                        class="pt-medium pb-small container-fluid h-100 bg-dark-3"
+                        data-arts-theme-text="light"
+                      >
+                        <div
+                          class="figure-project d-flex justify-content-between flex-column w-100 h-100"
+                          data-arts-hover-class="hover-zoom-underline"
+                        >
+                          <a
+                            class="figure-project__wrapper-img h-100 mask-reveal js-arts-cursor-no-highlight"
+                            href="022-portfolio-details-masthead-boxed-vertical.html"
+                            data-arts-hover="trigger"
+                            data-arts-cursor="true"
+                            data-arts-cursor-hide-native="true"
+                            data-arts-cursor-label="View Project"
+                            data-arts-cursor-scale="2.4"
+                            data-arts-cursor-color="#fff"
+                            data-arts-cursor-background-color="#ed4830"
+                          >
+                            <div class="hover-zoom__inner">
+                              <div
+                                class="mask-reveal__layer mask-reveal__layer-1"
+                              >
+                                <div
+                                  class="mask-reveal__layer mask-reveal__layer-2"
+                                >
+                                  <img
+                                    class="of-cover lazy-bg"
+                                    src="#"
+                                    data-src="/kinsey/img/assets/projects/project10/img-cover-10.jpg"
+                                    width="1280"
+                                    height="1920"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div></a
+                          >
+                          <div
+                            class="figure-project__content mt-4"
+                            data-arts-os-animation="true"
+                            data-arts-os-animation-name="animateText"
+                            data-arts-os-animation-params="{delay: 0.3}"
+                          >
+                            <div
+                              class="section-fullscreen-columns__subheading mb-2 figure-project__wrapper-meta arts-split-text js-arts-split-text"
+                              data-arts-split-text="lines,words"
+                              data-arts-split-text-set="words"
+                              data-arts-split-text-overflow-wrap="lines"
+                            >
+                              <ul
+                                class="post-meta post-meta_mini post-meta_mini-small"
+                              >
+                                <li>
+                                  <a href="#">UI / UX</a>
+                                  <div class="post-meta__divider"></div>
+                                </li>
+                                <li><a href="#">2024</a></li>
+                              </ul>
+                            </div><a
+                              class="d-inline-block js-arts-cursor-no-highlight"
+                              href="022-portfolio-details-masthead-boxed-vertical.html"
+                              data-arts-hover="trigger"
+                              data-arts-cursor="true"
+                              data-arts-cursor-hide-native="true"
+                              data-arts-cursor-label="View Project"
+                              data-arts-cursor-scale="2.4"
+                              data-arts-cursor-color="#fff"
+                              data-arts-cursor-background-color="#ed4830"
+                            >
+                              <h2
+                                class="section-fullscreen-columns__heading h3 my-0 js-arts-split-text arts-split-text underline-hover__target"
+                                data-arts-split-text="lines"
+                                data-arts-split-text-set="lines"
+                                data-arts-split-text-overflow-wrap="lines"
+                              >
+                                Arrigo
+                              </h2></a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="section-fullscreen-columns__border col-xl-4 col-lg-5 col-sm-6 col-12 mask-reveal"
+                  data-arts-horizontal-scroll="section"
+                  data-arts-os-animation="true"
+                  data-arts-os-animation-name="animateMask"
+                  data-arts-os-animation-params="{direction: 'down', scale: 1}"
+                >
+                  <div class="mask-reveal__layer mask-reveal__layer-1">
+                    <div class="mask-reveal__layer mask-reveal__layer-2">
+                      <div
+                        class="pt-medium pb-small container-fluid h-100 bg-dark-3"
+                        data-arts-theme-text="light"
+                      >
+                        <div
+                          class="figure-project d-flex justify-content-between flex-column w-100 h-100"
+                          data-arts-hover-class="hover-zoom-underline"
+                        >
+                          <a
+                            class="figure-project__wrapper-img h-100 mask-reveal js-arts-cursor-no-highlight"
+                            href="024-portfolio-details-masthead-boxed-vertical.html"
+                            data-arts-hover="trigger"
+                            data-arts-cursor="true"
+                            data-arts-cursor-hide-native="true"
+                            data-arts-cursor-label="View Project"
+                            data-arts-cursor-scale="2.4"
+                            data-arts-cursor-color="#fff"
+                            data-arts-cursor-background-color="#ed4830"
+                          >
+                            <div class="hover-zoom__inner">
+                              <div
+                                class="mask-reveal__layer mask-reveal__layer-1"
+                              >
+                                <div
+                                  class="mask-reveal__layer mask-reveal__layer-2"
+                                >
+                                  <img
+                                    class="of-cover lazy-bg"
+                                    src="#"
+                                    data-src="/kinsey/img/assets/projects/project12/img-cover-12.jpg"
+                                    width="1280"
+                                    height="1920"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div></a
+                          >
+                          <div
+                            class="figure-project__content mt-4"
+                            data-arts-os-animation="true"
+                            data-arts-os-animation-name="animateText"
+                            data-arts-os-animation-params="{delay: 0.3}"
+                          >
+                            <div
+                              class="section-fullscreen-columns__subheading mb-2 figure-project__wrapper-meta arts-split-text js-arts-split-text"
+                              data-arts-split-text="lines,words"
+                              data-arts-split-text-set="words"
+                              data-arts-split-text-overflow-wrap="lines"
+                            >
+                              <ul
+                                class="post-meta post-meta_mini post-meta_mini-small"
+                              >
+                                <li>
+                                  <a href="#">Concept</a>
+                                  <div class="post-meta__divider"></div>
+                                </li>
+                                <li><a href="#">2022</a></li>
+                              </ul>
+                            </div><a
+                              class="d-inline-block js-arts-cursor-no-highlight"
+                              href="024-portfolio-details-masthead-boxed-vertical.html"
+                              data-arts-hover="trigger"
+                              data-arts-cursor="true"
+                              data-arts-cursor-hide-native="true"
+                              data-arts-cursor-label="View Project"
+                              data-arts-cursor-scale="2.4"
+                              data-arts-cursor-color="#fff"
+                              data-arts-cursor-background-color="#ed4830"
+                            >
+                              <h2
+                                class="section-fullscreen-columns__heading h3 my-0 js-arts-split-text arts-split-text underline-hover__target"
+                                data-arts-split-text="lines"
+                                data-arts-split-text-set="lines"
+                                data-arts-split-text-overflow-wrap="lines"
+                              >
+                                Anagrama
+                              </h2></a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- - section HORIZONTAL SCROLLING COLUMNS -->
+        </main>
+
+        <Footer />
+      </div>
+      <!-- - PAGE MAIN CONTAINER -->
+    </div>
+    <canvas id="js-webgl"></canvas>
+
+    <div
+      class="pswp"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+      data-arts-theme-text="light"
+    >
+      <!-- background -->
+      <div class="pswp__bg"></div>
+      <!-- - background -->
+      <!-- slider wrapper -->
+      <div class="pswp__scroll-wrap">
+        <!-- slides holder (don't modify)-->
+        <div class="pswp__container">
+          <div class="pswp__item">
+            <div class="pswp__img pswp__img--placeholder"></div>
+          </div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+        <!-- - slides holder (don't modify)-->
+        <!-- UI -->
+        <div class="pswp__ui pswp__ui--hidden">
+          <!-- top bar -->
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+            <button
+              class="pswp__button pswp__button--close"
+              title="Close (Esc)"
+              data-arts-cursor="data-arts-cursor"
+              data-arts-cursor-scale="1.4"
+              data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+              data-arts-cursor-hide-native="true"></button>
+            <button
+              class="pswp__button pswp__button--fs"
+              title="Toggle fullscreen"
+              data-arts-cursor="data-arts-cursor"
+              data-arts-cursor-scale="1.4"
+              data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+              data-arts-cursor-hide-native="true"></button>
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- - top bar -->
+          <!-- left arrow -->
+          <div
+            class="pswp__button pswp__button--arrow--left material-icons"
+            data-arts-cursor="data-arts-cursor"
+            data-arts-cursor-scale="1.7"
+            data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+            data-arts-cursor-hide-native="true"
+          >
+            keyboard_arrow_left
+          </div>
+          <!-- - left arrow -->
+          <!-- right arrow -->
+          <div
+            class="pswp__button pswp__button--arrow--right material-icons"
+            data-arts-cursor="data-arts-cursor"
+            data-arts-cursor-scale="1.7"
+            data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+            data-arts-cursor-hide-native="true"
+          >
+            keyboard_arrow_right
+          </div>
+          <!-- - right arrow -->
+          <!-- slide caption holder (don't modify) -->
+          <div class="pswp__caption">
+            <div class="pswp__caption__center text-center"></div>
+          </div>
+          <!-- - slide caption holder (don't modify) -->
+        </div>
+        <!-- - UI -->
+      </div>
+    </div>
+
+    <Cursor />
+
+    <!--Load JavaScript-->
+    <script defer type="text/javascript" src="/cocobasic/js/jquery.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="/cocobasic/js/imagesloaded.pkgd.js"></script>
+    <script defer type="text/javascript" src="/cocobasic/js/jquery.fitvids.js"
+    ></script>
+    <script
+      defer
+      type="text/javascript"
+      src="/cocobasic/js/jquery.smartmenus.min.js"></script>
+    <script defer type="text/javascript" src="/cocobasic/js/isotope.pkgd.js"
+    ></script>
+    <script
+      defer
+      type="text/javascript"
+      src="/cocobasic/js/jquery.easing.1.3.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="/cocobasic/js/jquery.justifiedGallery.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="/cocobasic/js/jquery.prettyPhoto.js"></script>
+    <script defer type="text/javascript" src="/cocobasic/js/slick.min.js"
+    ></script>
+    <script defer type="text/javascript" src="/cocobasic/js/main.js"></script>
+
+    <script defer src="/creative-mighty/assets/js/vendor/jquery.min.js"
+    ></script>
+    <script defer src="/creative-mighty/assets/js/plugins/bootstrap.min.js"
+    ></script>
+    <script defer src="/creative-mighty/assets/js/plugins/contact.form.js"
+    ></script>
+    <script defer src="/creative-mighty/assets/js/vendor/waypoint.js"></script>
+    <script defer src="/creative-mighty/assets/js/plugins/swiper.js"></script>
+
+    <!-- for side bar sticky -->
+    <script defer src="/creative-mighty/assets/js/plugins/resizer-sensor.js"
+    ></script>
+    <script defer src="/creative-mighty/assets/js/plugins/sticky-sidebar.js"
+    ></script>
+    <!-- for side bar sticky end-->
+    <script defer src="/creative-mighty/assets/js/plugins/isotop.js"></script>
+    <script
+      defer
+      src="/creative-mighty/assets/js/plugins/imagesloaded.pkgd.min.js"
+    ></script>
+
+    <script
+      defer
+      src="/creative-mighty/assets/js/plugins/smoothscroll-varticle.js"
+    ></script>
+    <script defer src="/creative-mighty/assets/js/vendor/gsap.js"></script>
+    <script defer src="/creative-mighty/assets/js/plugins/scrolltiger.js"
+    ></script>
+    <script defer src="/creative-mighty/assets/js/plugins/scrolltoplugin.js"
+    ></script>
+    <script defer src="/creative-mighty/assets/js/plugins/splittext.js"
+    ></script>
+    <script defer src="/creative-mighty/assets/js/plugins/smoothscroll.js"
+    ></script>
+
+    <!-- title opacity scroll magix -->
+    <script defer src="/creative-mighty/assets/js/plugins/scrollmagic.js"
+    ></script>
+    <script
+      defer
+      src="/creative-mighty/assets/js/plugins/animate-scrollmagic.js"></script>
+    <!-- title opacity scroll magic end -->
+    <script defer src="/creative-mighty/assets/js/plugins/tilt.js"></script>
+    <script defer src="/creative-mighty/assets/js/plugins/counterup.js"
+    ></script>
+
+    <script defer src="/creative-mighty/assets/js/vendor/waw.js"></script>
+    <!-- custom javascripts -->
+    <script defer src="/creative-mighty/assets/js/main.js"></script>
+    <!-- - PhotoSwipe Lightbox Container -->
+    <!-- VENDOR SCRIPTS -->
+    <script defer src="/kinsey/js/vendor.js"></script>
+    <!-- - VENDOR SCRIPTS -->
+    <!-- COMPONENTS -->
+    <script defer src="/kinsey/js/components.js"></script>
+    <!-- - COMPONENTS -->
+  </body>
+
+  <!-- Mirrored from artemsemkin.com/kinsey/html/007-portfolio-horizontal-scrolling-columns-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Apr 2025 16:06:46 GMT -->
+</html>

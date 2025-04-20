@@ -1,0 +1,61 @@
+---
+import Header from "./header.astro";
+import StyleSheets from "./stylesheets.astro";
+import Scripts from "./scripts.astro";
+import PreLoader from "./preloader.astro";
+import Progress from "./progress.astro";
+import Cursor from "./cursor.astro";
+import Footer from "./footer.astro";
+
+import clsx from "clsx";
+
+const { bodyClass = "" } = Astro.props as {
+  bodyClass: string;
+};
+---
+
+<!doctype html>
+<html lang="en" class="rts-dark">
+  <!-- Dark mode by default -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-style-mode" content="1" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="creative-mighty/assets/images/fav.png"
+    />
+    <title>Mighty - Creative Portfolio Template Accordion</title>
+    <StyleSheets />
+
+    <slot name="head" />
+  </head>
+
+  <body class={clsx("inner-page", bodyClass)}>
+    <!-- Scripts style two -->
+    <!-- header area srtart -->
+    <Header />
+    <!-- header area end -->
+    <!-- Scripts style two End -->
+
+    <slot name="body" />
+
+    <Footer />
+
+    <!-- Scripts style two -->
+    <PreLoader />
+
+    <!-- back to top start -->
+    <Progress />
+    <!-- back to top end -->
+
+    <!-- pre loader start -->
+    <Cursor />
+    <!-- pre loader end -->
+    <Scripts />
+
+    <slot name="scripts" />
+    <!-- Scripts style two End -->
+  </body><!-- Mirrored from html.themewant.com/mighty/coming-soon.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Apr 2025 15:17:11 GMT -->
+</html>

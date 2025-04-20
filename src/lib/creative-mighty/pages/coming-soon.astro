@@ -1,0 +1,159 @@
+---
+import PreLoader from "../preloader.astro";
+import Cursor from "../cursor.astro";
+import Progress from "../progress.astro";
+
+const socials = [
+  {
+    icon: "fa-brands fa-instagram",
+    href: "https://www.instagram.com/deeeartstudios?igsh=dnhodzE4ZjcxbDB3",
+  },
+  {
+    icon: "fa-brands fa-facebook-f",
+    href: "https://www.facebook.com/share/1APmAFFcLx/",
+  },
+] as {
+  icon: string;
+  href: string;
+}[];
+---
+
+<html lang="en" class="rts-dark">
+  <!-- Dark mode by default -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-style-mode" content="1" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="creative-mighty/assets/images/fav.png"
+    />
+    <title>Deee's Art Studio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i%7CLato:300,300i,400,400i,700,700i,900%7CMontserrat:900"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="/creative-mighty/assets/css/plugins/fontawesome-6.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/creative-mighty/assets/css/plugins/swiper.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/creative-mighty/assets/css/vendor/metismenu.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/creative-mighty/assets/css/plugins/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/creative-mighty/assets/css/vendor/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/creative-mighty/assets/css/style.css" />
+
+    <style>
+      .font-playfair {
+        font-family: "Playfair Display", serif !important;
+      }
+    </style>
+  </head>
+
+  <body class="inner-page coming-soon">
+    <div class="rts-coming-soon">
+      <div class="container">
+        <div
+          style="height: 56px; width: fit-content; margin-inline: auto; margin-block: 3rem;"
+        >
+          <img src="/assets/logo.png" style="height: 100%; width: auto;" />
+        </div>
+        <div class="section-inner text-center">
+          <h2 class="title-elements-parent font-playfair">
+            We're <i>Coming Soon</i>!
+          </h2>
+          <div id="countdown-time" class="countdown-time rt-coming-soon">
+            <span></span> : <span></span> : <span></span> : <span></span>
+          </div>
+          <p class="desc">
+            Comeback again when we’re live! Thank <br /> you for understanding and
+            patience!
+          </p>
+          <div class="social-area">
+            <h4 class="title">Follow Us</h4>
+            <ul class="social-wrapper">
+              {
+                socials.map((social) => (
+                  <li>
+                    <a href={social.href}>
+                      <i class={social.icon} />
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scripts style two -->
+    <PreLoader />
+
+    <!-- back to top start -->
+    <Progress />
+    <!-- back to top end -->
+
+    <!-- pre loader start -->
+    <Cursor />
+    <!-- pre loader end -->
+    <script defer src="creative-mighty/assets/js/vendor/jquery.min.js"></script>
+    <script defer src="creative-mighty/assets/js/plugins/bootstrap.min.js"
+    ></script>
+    <script defer src="creative-mighty/assets/js/plugins/contact.form.js"
+    ></script>
+    <script defer src="creative-mighty/assets/js/vendor/waypoint.js"></script>
+    <script defer src="creative-mighty/assets/js/plugins/swiper.js"></script>
+
+    <!-- for side bar sticky -->
+    <script defer src="creative-mighty/assets/js/plugins/resizer-sensor.js"
+    ></script>
+    <script defer src="creative-mighty/assets/js/plugins/sticky-sidebar.js"
+    ></script>
+    <!-- for side bar sticky end-->
+    <script defer src="creative-mighty/assets/js/plugins/isotop.js"></script>
+    <script
+      defer
+      src="creative-mighty/assets/js/plugins/imagesloaded.pkgd.min.js"></script>
+
+    <script
+      defer
+      src="creative-mighty/assets/js/plugins/smoothscroll-varticle.js"></script>
+    <script defer src="creative-mighty/assets/js/vendor/gsap.js"></script>
+    <script defer src="creative-mighty/assets/js/plugins/scrolltiger.js"
+    ></script>
+    <script defer src="creative-mighty/assets/js/plugins/scrolltoplugin.js"
+    ></script>
+    <script defer src="creative-mighty/assets/js/plugins/splittext.js"></script>
+    <script defer src="creative-mighty/assets/js/plugins/smoothscroll.js"
+    ></script>
+
+    <!-- title opacity scroll magix -->
+    <script defer src="creative-mighty/assets/js/plugins/scrollmagic.js"
+    ></script>
+    <script defer src="creative-mighty/assets/js/plugins/animate-scrollmagic.js"
+    ></script>
+    <!-- title opacity scroll magic end -->
+    <script defer src="creative-mighty/assets/js/plugins/tilt.js"></script>
+    <script defer src="creative-mighty/assets/js/plugins/counterup.js"></script>
+
+    <script defer src="creative-mighty/assets/js/vendor/waw.js"></script>
+    <!-- custom javascripts -->
+    <script defer src="creative-mighty/assets/js/main.js"></script>
+
+    <!-- Scripts style two End -->
+  </body><!-- Mirrored from html.themewant.com/mighty/coming-soon.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Apr 2025 15:17:11 GMT -->
+</html>
