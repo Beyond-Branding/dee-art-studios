@@ -88,7 +88,8 @@ body a:hover {
   position: absolute;
   left: -3%;
   bottom: 6px;
-  z-index: -1;
+  z-index: 1;
+  opacity: 0.5;
 }
 
 .slick-slider.image-slider {
@@ -133,6 +134,11 @@ body a:hover {
 /* ===================================
     1.1 Global Header Logo/Menu CSS
 ====================================== */
+
+.header-content {
+  margin-top: 8rem;
+  color: #fff;
+}
 
 .header-holder {
   margin: 80px auto 30px auto;
@@ -574,7 +580,7 @@ body a:hover {
   font-size: 48px;
   line-height: 60px;
   font-weight: 400;
-  color: #000;
+  color: #fff;
   margin: 0 auto;
   padding-top: 0;
   padding-bottom: 50px;
@@ -1165,75 +1171,6 @@ body a:hover {
 /* ===================================
     10. Footer CSS
 ====================================== */
-
-footer ul {
-  list-style: none;
-  padding-left: 0;
-  margin-left: 0;
-}
-
-.footer {
-  font-size: 16px;
-  line-height: 36px;
-  padding-top: 45px;
-  padding-bottom: 45px;
-  clear: both;
-  color: #fff;
-  text-align: center;
-  background: #000;
-}
-
-.footer a {
-  color: #fff;
-}
-
-.footer-text:before {
-  content: "";
-  display: block;
-  height: 77px;
-  width: 2px;
-  background: #1a1a1a;
-  position: absolute;
-  left: 50%;
-  margin-left: -2px;
-  top: -95px;
-}
-
-.footer-text {
-  position: relative;
-  margin-top: 80px;
-  padding-bottom: 50px;
-}
-
-ul.copyright-holder {
-  font-size: 14px;
-}
-
-ul.copyright-holder:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-li.copyright-footer {
-  float: left;
-  text-align: left;
-  width: 50%;
-}
-
-li.social-footer {
-  float: right;
-  text-align: right;
-  width: 50%;
-}
-
-li.social-footer a {
-  padding-left: 20px;
-}
-
-li.social-footer a:first-child {
-  padding-left: 0;
-}
 
 /* ===================================
     11. Responsive CSS
