@@ -9,8 +9,9 @@ import Footer from "./footer.astro";
 
 import clsx from "clsx";
 
-const { bodyClass = "" } = Astro.props as {
+const { bodyClass = "", disableFooter = false } = Astro.props as {
   bodyClass: string;
+  disableFooter: boolean;
 };
 ---
 
@@ -41,7 +42,7 @@ const { bodyClass = "" } = Astro.props as {
 
     <slot name="body" />
 
-    <Footer />
+    {!disableFooter && <Footer />}
 
     <!-- Scripts style two -->
     <PreLoader />
