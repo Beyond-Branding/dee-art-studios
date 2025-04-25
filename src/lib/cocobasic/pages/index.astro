@@ -2,6 +2,7 @@
 import Layout from "../../creative-mighty/layout.astro";
 import Stylesheets from "../stylesheets.astro";
 import Scripts from "../scripts.astro";
+import JourneyGrid from "../components/JourneryGrid";
 ---
 
 <Layout bodyClass="home blog">
@@ -17,84 +18,11 @@ import Scripts from "../scripts.astro";
             You can’t wait for <span class="underline"><i>inspiration</i></span
             >,
             <br />
-            you have to go after it with a club.
+            you have to go after it.
           </h1>
         </div>
 
-        <div class="blog-holder block center-relative content-1170">
-          <article
-            class="animate relative blog-item-holder center-relative has-post-thumbnail"
-          >
-            <div class="post-thumbnail">
-              <a href="single.html">
-                <img src="/cocobasic/images/home_img_01.jpg" alt="" />
-              </a>
-            </div>
-            <div class="entry-holder content-540">
-              <div class="entry-info">
-                <div class="cat-links">
-                  <ul>
-                    <li>
-                      <a href="#">Interior</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <h2 class="entry-title">
-                <a href="single.html"
-                  >Contemporary, classic and inspiring <i>innovation</i> details</a
-                >
-              </h2>
-              <div class="excerpt">
-                <p>
-                  Take root and flourish dream of the mind’s eye at the edge of
-                  forever shores of the cosmic
-                </p>
-              </div>
-              <p class="read-more-arrow">
-                <a href="single.html">
-                  <span class="fa fa-arrow-right" aria-hidden="true"></span>
-                </a>
-              </p>
-            </div>
-            <div class="clear"></div>
-          </article>
-
-          <article
-            class="animate relative blog-item-holder center-relative has-post-thumbnail"
-          >
-            <div class="post-thumbnail">
-              <a href="single.html">
-                <img src="/cocobasic/images/home_img_02.jpg" alt="" />
-              </a>
-            </div>
-            <div class="entry-holder content-540">
-              <div class="entry-info">
-                <div class="cat-links">
-                  <ul>
-                    <li><a href="#">Design</a></li>
-                  </ul>
-                </div>
-              </div>
-              <h2 class="entry-title">
-                <a href="single.html"
-                  >Nature details softly <i>crafted</i> by hand</a
-                >
-              </h2>
-              <div class="excerpt">
-                <p>
-                  Sincerity yet herefore forfeited his cell taint neglect
-                  questions uelderly amongst on distant
-                </p>
-              </div>
-              <p class="read-more-arrow">
-                <a href="single.html">
-                  <span class="fa fa-arrow-right" aria-hidden="true"></span>
-                </a>
-              </p>
-            </div>
-            <div class="clear"></div>
-          </article>
+          <JourneyGrid client:load/>
         </div>
       </div>
     </div>
