@@ -1,5 +1,7 @@
 ---
 import Header from "../../creative-mighty/header.astro";
+import Cursor from "../../creative-mighty/cursor.astro";
+import Slider from "../components/slider";
 ---
 
 <!doctype html>
@@ -41,6 +43,7 @@ import Header from "../../creative-mighty/header.astro";
     <link rel="stylesheet" href="/arrigo/fontawesome/fontawesome.css" />
     <link rel="stylesheet" href="/arrigo/css/vendor.css" />
     <link rel="stylesheet" href="/arrigo/css/main.css" />
+
     <!-- ICONS-->
   </head>
   <body class="inner-page">
@@ -48,243 +51,11 @@ import Header from "../../creative-mighty/header.astro";
     <div class="page-wrapper">
       <main class="site-main">
         <!-- section FULLSCREEN -->
-        <section
-          class="section section-fullscreen section-fullscreen_1"
-          data-os-animation="data-os-animation"
-        >
-          <div class="slider-fullscreen slider js-slider-fullscreen">
-            <div class="slider-fullscreen__wrapper-controls">
-              <div class="slider__controls slider-fullscreen__controls">
-                <div class="slider__dots js-slider-fullscreen__dots">
-                  <div class="slider__dot slider__dot_active"></div>
-                  <div class="slider__dot"></div>
-                  <div class="slider__dot"></div>
-                  <div class="slider__dot"></div>
-                </div>
-              </div>
-            </div>
-            <!-- - slider controls -->
-            <div class="slider-fullscreen__wrapper-img overflow">
-              <div class="overflow__curtain bg-accent"></div>
-              <div class="overflow__content">
-                <div
-                  class="swiper-container swiper slider-fullscreen-img js-slider-fullscreen__slider-img"
-                >
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide slider-fullscreen__slide">
-                      <img
-                        class="slider-fullscreen-img__slide-bg of-cover"
-                        src="/arrigo/img/assets/sectionFullscreen/slide_3-1.jpg"
-                        width="892"
-                        height="821"
-                        loading="lazy"
-                        alt=""
-                      />
-                    </div>
-                    <div class="swiper-slide slider-fullscreen__slide">
-                      <img
-                        class="slider-fullscreen-img__slide-bg of-cover"
-                        src="/arrigo/img/assets/sectionFullscreen/slide_3-2.jpg"
-                        width="892"
-                        height="821"
-                        loading="lazy"
-                        alt=""
-                      />
-                    </div>
-                    <div class="swiper-slide slider-fullscreen__slide">
-                      <img
-                        class="slider-fullscreen-img__slide-bg of-cover"
-                        src="/arrigo/img/assets/sectionFullscreen/slide_3-3.jpg"
-                        width="892"
-                        height="821"
-                        loading="lazy"
-                        alt=""
-                      />
-                    </div>
-                    <div class="swiper-slide slider-fullscreen__slide">
-                      <img
-                        class="slider-fullscreen-img__slide-bg of-cover"
-                        src="/arrigo/img/assets/sectionFullscreen/slide_3-4.jpg"
-                        width="892"
-                        height="821"
-                        loading="lazy"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- - slider image -->
-            <div class="slider-fullscreen__wrapper-content container">
-              <div class="row justify-content-xl-end">
-                <div class="col-xl-5 col-lg-6">
-                  <div class="slider-fullscreen__slide-headline"></div>
-                  <div
-                    class="swiper-container swiper slider-fullscreen-content js-slider-fullscreen__slider-content"
-                  >
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="slider-fullscreen__slide-content">
-                          <header class="slider-fullscreen__slide-header">
-                            <a href="portfolio-details-1-light.html">
-                              <h2>Silence and Noise</h2></a
-                            >
-                            <p>
-                              This does not explain why some of us find peace
-                              and other's find pain. But, such a philosophy will
-                              enable us all to find grace in knowing our lives
-                              create in our world facets of ourselves we all are
-                              a part of.
-                            </p>
-                          </header>
-                          <div class="slider-fullscreen__slide-wrapper-button">
-                            <a
-                              class="slider-fullscreen__slide-button button-square"
-                              href="portfolio-details-1-light.html"
-                              ><svg
-                                version="1.1"
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                              >
-                                <g fill="none" fill-rule="evenodd">
-                                  <rect class="rect" width="100%" height="100%"
-                                  ></rect>
-                                </g>
-                              </svg><span>arrow_forward</span></a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="slider-fullscreen__slide-content">
-                          <header class="slider-fullscreen__slide-header">
-                            <a href="portfolio-details-1-light.html">
-                              <h2>Eternal Art</h2></a
-                            >
-                            <p>
-                              One preferred sportsmen resolving the happiness
-                              continued. High at of in loud rich true. Oh
-                              conveying do immediate acuteness in he. Equally
-                              welcome her set nothing has gravity whether
-                              parties. Fertile suppose shyness mr up pointed in
-                              staying on respect.
-                            </p>
-                          </header>
-                          <div class="slider-fullscreen__slide-wrapper-button">
-                            <a
-                              class="slider-fullscreen__slide-button button-square"
-                              href="portfolio-details-1-light.html"
-                              ><svg
-                                version="1.1"
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                              >
-                                <g fill="none" fill-rule="evenodd">
-                                  <rect class="rect" width="100%" height="100%"
-                                  ></rect>
-                                </g>
-                              </svg><span>arrow_forward</span></a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="slider-fullscreen__slide-content">
-                          <header class="slider-fullscreen__slide-header">
-                            <a href="portfolio-details-1-light.html">
-                              <h2>Royal Plate Branding</h2></a
-                            >
-                            <p>
-                              Man entrance settling believed eat joy. Money as
-                              drift begin on to. Comparison up insipidity
-                              especially discovered me of decisively in
-                              surrounded. Points six way enough she its father.
-                              Folly sex downs tears ham green forty.
-                            </p>
-                          </header>
-                          <div class="slider-fullscreen__slide-wrapper-button">
-                            <a
-                              class="slider-fullscreen__slide-button button-square"
-                              href="portfolio-details-1-light.html"
-                              ><svg
-                                version="1.1"
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                              >
-                                <g fill="none" fill-rule="evenodd">
-                                  <rect class="rect" width="100%" height="100%"
-                                  ></rect>
-                                </g>
-                              </svg><span>arrow_forward</span></a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="slider-fullscreen__slide-content">
-                          <header class="slider-fullscreen__slide-header">
-                            <a href="portfolio-details-1-light.html">
-                              <h2 style="color: black; font-weight: bold  ;">
-                                Vehicle of the Future
-                              </h2></a
-                            >
-                            <p>
-                              Residence gentleman yet preserved few convinced.
-                              Coming regret simple longer little am sister on.
-                              Do danger in to adieus ladies houses oh eldest.
-                              Gone pure late gay ham. They sigh were not find
-                              are rent.
-                            </p>
-                          </header>
-                          <div class="slider-fullscreen__slide-wrapper-button">
-                            <a
-                              class="slider-fullscreen__slide-button button-square"
-                              href="portfolio-details-1-light.html"
-                              style="z-index: 100;"
-                              ><svg
-                                version="1.1"
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                              >
-                                <g fill="none" fill-rule="evenodd">
-                                  <rect class="rect" width="100%" height="100%"
-                                  ></rect>
-                                </g>
-                              </svg><span>arrow_forward</span></a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- - slider content -->
-            <div class="slider-fullscreen__wrapper-counter">
-              <div class="slider__counter-big">
-                <div
-                  class="swiper-container swiper slider__counter-big-current slider-fullscreen__counter-big-current js-slider-fullscreen__counter-current"
-                >
-                  <div class="swiper-wrapper"></div>
-                </div>
-                <div
-                  class="slider__counter-big-total js-slider-fullscreen__counter-total"
-                >
-                </div>
-              </div>
-            </div>
-            <!-- - slider counter -->
-          </div>
-          <div class="section-fullscreen__backgrounds">
-            <div class="section-fullscreen__inner-bg bg-dark"></div>
-            <div class="section-fullscreen__inner-bg bg-light"></div>
-          </div>
-        </section>
+        <Slider />
         <!-- - section FULLSCREEN -->
       </main>
       <!-- PAGE FOOTER -->
+      <Cursor />
       <footer
         class="footer footer_fixed site-footer"
         style="width: fit-content;"
@@ -310,54 +81,27 @@ import Header from "../../creative-mighty/header.astro";
       </footer>
       <!-- - PAGE FOOTER -->
     </div>
-    <script
-      defer
-      src="https://maps.googleapis.com/maps/api/js?callback=Function.prototype&key=AIzaSyArW7jnLU4wdvZGxBMN1jNXAq5dBxVBt4U"
-    ></script>
-    <!-- VENDOR SCRIPTS -->
+
     <script defer src="/arrigo/js/vendor.js"></script>
-    <!-- - VENDOR SCRIPTS -->
-    <!-- COMPONENTS -->
     <script defer src="/arrigo/js/components.js"></script>
 
-    <script defer src="creative-mighty/assets/js/vendor/jquery.min.js"></script>
-    <script defer src="creative-mighty/assets/js/plugins/bootstrap.min.js"
-    ></script>
-    <script defer src="creative-mighty/assets/js/vendor/waypoint.js"></script>
-
     <!-- for side bar sticky -->
-    <script defer src="creative-mighty/assets/js/plugins/resizer-sensor.js"
-    ></script>
-    <script defer src="creative-mighty/assets/js/plugins/sticky-sidebar.js"
-    ></script>
+
     <!-- for side bar sticky end-->
-    <script defer src="creative-mighty/assets/js/plugins/isotop.js"></script>
 
     <script
       defer
-      src="creative-mighty/assets/js/plugins/smoothscroll-varticle.js"></script>
-    <script defer src="creative-mighty/assets/js/vendor/gsap.js"></script>
-    <script defer src="creative-mighty/assets/js/plugins/scrolltiger.js"
+      src="/creative-mighty/assets/js/plugins/smoothscroll-varticle.js"
     ></script>
-    <script defer src="creative-mighty/assets/js/plugins/scrolltoplugin.js"
-    ></script>
-    <script defer src="creative-mighty/assets/js/plugins/splittext.js"></script>
-    <script defer src="creative-mighty/assets/js/plugins/smoothscroll.js"
+    <script defer src="/creative-mighty/assets/js/plugins/scrolltoplugin.js"
     ></script>
 
-    <!-- title opacity scroll magix -->
-    <script defer src="creative-mighty/assets/js/plugins/scrollmagic.js"
+    <script defer src="/creative-mighty/assets/js/plugins/counterup.js"
     ></script>
-    <script defer src="creative-mighty/assets/js/plugins/animate-scrollmagic.js"
-    ></script>
-    <!-- title opacity scroll magic end -->
-    <script defer src="creative-mighty/assets/js/plugins/tilt.js"></script>
-    <script defer src="creative-mighty/assets/js/plugins/counterup.js"></script>
 
-    <script defer src="creative-mighty/assets/js/vendor/waw.js"></script>
+    <script defer src="/creative-mighty/assets/js/vendor/waw.js"></script>
     <!-- custom javascripts -->
-    <script defer src="creative-mighty/assets/js/main.js"></script>
+    <script defer src="/creative-mighty/assets/js/main-without-swiper.js"
+    ></script>
   </body>
-
-  <!-- Mirrored from artemsemkin.com//arrigo/html/homepage-slider-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Apr 2025 18:12:03 GMT -->
 </html>
