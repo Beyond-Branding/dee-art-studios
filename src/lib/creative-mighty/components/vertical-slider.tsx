@@ -1,71 +1,66 @@
 const slideItems = [
   {
     // image: "https://res.cloudinary.com/daoju0r3c/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1745600296/IMG_0843_nptqzl.png",
-    image: "/creative-mighty/assets/images/product/40.png",
-    title: "TemplateTrove Studios",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/t_Sketch/v1745694926/IMG_2194_xv1tsh.jpg",
+    title: "Bond of Unity",
     paragraph: () => (
       <>
-        Transitioning from a tattoo apprentice to a professional tattoo artist
-        has been an incredible journey for me. I delved into the tattoo industry
-        four years ago with an unexpected desire to master the art of tattooing.
-        My apprenticeship lasted for a dedicated period of 15 months, during
-        which I was privileged to learn from none other than my senior tattoo
-        artist @ryantattoo who served as my mentor.
+        Symbolizing unity, partnership, friendship, love, or support. Also
+        representing a close bond between two individuals or thc idea ofhelping
+        and supporting each other through life's challenges. Itcan also bc a
+        symbol ofsolidarity and connection between people.
       </>
     ),
   },
   {
     image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1745600497/IMG_2584_v8j2yp.png",
-    title: "TemplateTrove Studios",
+      "https://res.cloudinary.com/daoju0r3c/image/upload/t_Sketch/v1745694927/IMG_1393_wuvwkb.jpg",
+    title: "Spirit of the Lion",
     paragraph: () => (
       <>
-        The apprenticeship phase was a transformative experience where I
-        absorbed the essence of tattoo culture and refined my skills under the
-        careful guidance of my mentor. I embraced every aspect of the training,
-        from observing and assisting in daily tasks to practicing drawing and
-        designing intricate tattoo concepts.
+        Symbolizes strength, courage. and leadership. It can also represent
+        protection, nobility, and loyalty. reflecting a person's inner power and
+        determination. Additionally, in various cultures, lions may have
+        specific rneanings related to honor and familial bonds. Overall, it
+        embodies a fierce spirit and a commitment to overcorning challenges.
       </>
     ),
   },
   {
-    image: "/creative-mighty/assets/images/product/40.png",
-    title: "TemplateTrove Studios",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/t_Sketch/v1745694927/IMG_2524_jbf9qr.jpg",
+    title: "Call of the Wild",
     paragraph: () => (
       <>
-        As I progressed through the apprenticeship, I transitioned from basic
-        tasks to more advanced techniques, gradually gaining confidence in my
-        abilities. The apprenticeship not only sharpened my technical skills but
-        also instilled in me the importance of professionalism, ethics, and
-        client interactions in the tattooing industry.
+        Symbolizes strength. loyalty. and a deep connection to nature. It often
+        represents a sense of freedom and the call of the wild, reflecting a
+        person' inner spirit and resilience. This powerful imagery can also
+        signify a longing for belonging and the importance of family or
+        community
       </>
     ),
   },
   {
-    image: "/creative-mighty/assets/images/product/40.png",
-    title: "TemplateTrove Studios",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/t_Sketch/v1745694926/IMG_2196_fhyerg.jpg",
+    title: "Eternal Bond",
     paragraph: () => (
       <>
-        Upon completing my apprenticeship, I embraced the role of a professional
-        tattoo artist with a profound sense of accomplishment. I am now at a
-        stage where I can create art independently, cater to clients with
-        creativity and skill, and uphold the values instilled in me during my
-        apprenticeship journey.
+        Symbolizing eternal love and commitment bctwccn partners or loved ones,
+        representing a lasting bond that transcends time and challenges.
       </>
     ),
   },
   {
-    image: "/creative-mighty/assets/images/product/40.png",
-    title: "TemplateTrove Studios",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/t_Sketch/v1745694926/IMG_2197_cyc5d4.jpg",
+    title: "Healing Heart",
     paragraph: () => (
       <>
-        The transition from apprentice to artist signifies not just a
-        professional milestone but a personal transformation. I am grateful for
-        the experiences and knowledge gained during my apprenticeship, which
-        have laid a solid foundation for my career as a tattoo artist. This
-        journey has sustained my passion for tattooing and inspired me to
-        continue pushing the boundaries of creativity in this dynamic and
-        artistic field.
+        Symbolizing the process of healing and moving on from emotional pain
+        caused by a broken heart, often incorporating elements representing
+        strength, resilience, growth, and self-love.
       </>
     ),
   },
