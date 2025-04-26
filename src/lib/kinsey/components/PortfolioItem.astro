@@ -4,6 +4,8 @@ const { title, image, background } = Astro.props as {
   image: string;
   background: string;
 };
+
+const { href = "#" } = Astro.props as { href: string };
 ---
 
 <div
@@ -26,7 +28,7 @@ const { title, image, background } = Astro.props as {
         >
           <a
             class="figure-project__wrapper-img h-100 mask-reveal js-arts-cursor-no-highlight"
-            href="015-portfolio-details-masthead-boxed-vertical.html"
+            href={href}
             data-arts-hover="trigger"
             data-arts-cursor="true"
             data-arts-cursor-hide-native="true"
@@ -40,7 +42,7 @@ const { title, image, background } = Astro.props as {
                 <div class="mask-reveal__layer mask-reveal__layer-2">
                   <img
                     class="of-cover lazy-bg"
-                    src="#"
+                    src={href}
                     data-src={image}
                     width="1280"
                     height="1920"

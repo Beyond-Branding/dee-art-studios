@@ -10,42 +10,49 @@ const portfolioItems = [
     image:
       "https://res.cloudinary.com/daoju0r3c/image/upload/t_Art Gallery Thumbnail/v1745682397/3d_Printing_work_converted_1_w5jbsk.png",
     background: "#212529",
+    href: "/showcase/three-dimensional-art",
   },
   {
     title: "Digital Artwork",
     image:
       "https://res.cloudinary.com/daoju0r3c/image/upload/t_Art Gallery Thumbnail/v1745682639/Digital_Artwork_hymbkw.jpg",
     background: "#343a40",
+    href: "/showcase/digital-artwork",
   },
   {
     title: "Escape Reality",
     image:
       "https://res.cloudinary.com/daoju0r3c/image/upload/t_Art Gallery Thumbnail/v1745682788/Escape_from_reality_hdl1rp.jpg",
     background: "#212529",
+    href: "/showcase/escape-from-reality",
   },
   {
     title: "Music Muse",
     image:
       "https://res.cloudinary.com/daoju0r3c/image/upload/t_Art Gallery Thumbnail/v1745682846/Music_Muse_pwaeyz.jpg",
     background: "#343a40",
+    href: "/showcase/music-muse",
   },
   {
     title: "Optical Illusion Art",
     image:
       "https://res.cloudinary.com/daoju0r3c/image/upload/t_Art Gallery Thumbnail/v1745682899/Optical_Illusion_Art_e2sldl.jpg",
     background: "#212529",
+    href: "/showcase/optical-illusion-art",
   },
   {
     title: "The Burnt Soul",
     image:
       "https://res.cloudinary.com/daoju0r3c/image/upload/t_Art Gallery Thumbnail/v1745682948/The_Burnt_Soul_qqxgrs.jpg",
     background: "#343a40",
+    href: "/showcase/the-burnt-soul",
   },
   {
     title: "The Chain of Life",
     image:
       "https://res.cloudinary.com/daoju0r3c/image/upload/t_Art Gallery Thumbnail/v1745683007/The_Chain_of_life_converted_rwhbex.png",
     background: "#212529",
+    href: "/showcase/the-chain-of-life",
   },
 ];
 ---
@@ -747,6 +754,7 @@ const portfolioItems = [
                     <PortfolioItem
                       image={element.image}
                       title={element.title}
+                      href={element.href}
                       background={element.background}
                     />
                   ))
