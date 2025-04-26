@@ -22,13 +22,12 @@ import JourneyGrid from "../components/JourneryGrid";
           </h1>
         </div>
 
-          <JourneyGrid client:load/>
-        </div>
+        <JourneyGrid client:only />
       </div>
     </div>
   </Fragment>
-
-  <Fragment slot="scripts">
-    <Scripts />
-  </Fragment>
 </Layout>
+
+<Fragment slot="scripts">
+  <Scripts />
+</Fragment>
