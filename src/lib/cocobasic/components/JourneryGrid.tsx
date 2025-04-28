@@ -11,6 +11,8 @@ const gridItems = [
         My contemporary, classic and inspiring <i>artistic</i> roots
       </>
     ),
+    subtitle:
+      "Rejected initially due to a weak portfolio, I reapplied with renewed effort, earning acceptance and a scholarship.",
     paragraphs: () => (
       <>
         <p>
@@ -44,6 +46,8 @@ const gridItems = [
         Nature details softly <i>crafted</i> by hand
       </>
     ),
+    subtitle:
+      "I sold paintings on Whyte Avenue on weekends until the pandemic hit, pushing me to seek a more stable path in the art world.",
     paragraphs: () => (
       <>
         <p>
@@ -66,6 +70,8 @@ const gridItems = [
     image:
       "https://res.cloudinary.com/daoju0r3c/image/upload/v1745597952/IMG_2524_uxghat.jpg",
     tag: "Tattoo Art & Sketches",
+    subtitle:
+      "A spontaneous decision led me to an apprenticeship at FX INC, where I built my tattoo skills from scratch and learned the value of trust and persistence.",
     title: () => (
       <>
         Connection of art and <i>tattoos</i>
@@ -97,6 +103,8 @@ const gridItems = [
     image:
       "https://res.cloudinary.com/daoju0r3c/image/upload/v1745598286/Eyebrow_1_ahbmtr.png",
     tag: "Piercing",
+    subtitle:
+      "I unexpectedly stepped into piercing, discovering a new creative outlet where each piece became part of someone’s self-expression.",
     title: () => (
       <>
         Design <i>piercing</i> ideas to life
@@ -121,6 +129,8 @@ const gridItems = [
     image:
       "https://res.cloudinary.com/daoju0r3c/image/upload/v1745598541/Forward_helix_helix_and_conch_pim6px.png",
     tag: "Onwards and upwards",
+    subtitle:
+      "Five years in, I embrace the uncertainty, moving forward with gratitude, passion, and a commitment to constant growth.",
     title: () => (
       <>
         Fresh born ideas <i>growing</i> every day
@@ -172,6 +182,7 @@ export default function JourneyGrid() {
             image={element.image}
             tag={element.tag}
             title={element.title}
+            subtitle={element.subtitle}
             paragraphs={element.paragraphs}
           />
         ))}
@@ -193,12 +204,13 @@ interface GridItemProps {
   index: number;
   image: string;
   tag: string;
+  subtitle: string;
   title: () => React.ReactElement;
   paragraphs: () => React.ReactElement;
 }
 
 function GridItem(props: GridItemProps) {
-  const { variant, image, tag, title, paragraphs, index } = props;
+  const { variant, image, tag, title, subtitle, index } = props;
 
   if (variant === "left") {
     return (
@@ -224,12 +236,12 @@ function GridItem(props: GridItemProps) {
           <h2 className="entry-title">
             <a href="#">{title()}</a>
           </h2>
-          <div className="excerpt">{paragraphs()}</div>
-          {/*  <p className="read-more-arrow">
-            <a href="single.html">
+          <div className="excerpt">{subtitle}</div>
+          <p className="read-more-arrow">
+            <a href="/journeys/music-muse">
               <span className="fa fa-arrow-right" aria-hidden="true"></span>
             </a>
-          </p> */}
+          </p>
         </div>
         <div className="clear"></div>
       </article>
@@ -260,12 +272,12 @@ function GridItem(props: GridItemProps) {
           <h2 className="entry-title">
             <a href="#">{title()}</a>
           </h2>
-          <div className="excerpt">{paragraphs()}</div>
-          {/*  <p className="read-more-arrow">
-            <a href="single.html">
+          <div className="excerpt">{subtitle}</div>
+          <p className="read-more-arrow">
+            <a href="/journeys/music-muse">
               <span className="fa fa-arrow-right" aria-hidden="true"></span>
             </a>
-          </p> */}
+          </p>
         </div>
         <div className="clear"></div>
       </article>

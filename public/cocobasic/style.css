@@ -496,7 +496,7 @@ body a:hover {
 }
 
 .read-more-arrow a:hover {
-  color: #fffaa3;
+  color: var(--color-accent);
 }
 
 .read-more-arrow a span {
@@ -931,9 +931,9 @@ body a:hover {
 .big-text {
   font-size: 24px;
   line-height: 28px;
-  color: #000;
+  color: white;
   font-weight: 900;
-  border-bottom: 5px solid #fffaa3;
+  border-bottom: 5px solid var(--color-accent);
   display: inline;
 }
 

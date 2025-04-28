@@ -1,5 +1,10 @@
 ---
-const { styles } = Astro.props as { styles: string };
+import clsx from "clsx";
+
+const { classNames, styles } = Astro.props as {
+  classNames: string;
+  styles: string;
+};
 ---
 
 <style>
@@ -13,7 +18,10 @@ const { styles } = Astro.props as { styles: string };
   }
 </style>
 
-<div class="footer rts-footer-two-area bg-footer-2 bg_image-1" style={styles}>
+<div
+  class={clsx("footer rts-footer-two-area bg-footer-2 bg_image-1", classNames)}
+  style={styles}
+>
   <div class="container-140">
     <div class="row">
       <div class="col-lg-12 pt--130 pt_sm--60 pb--100 pb_sm--60">
