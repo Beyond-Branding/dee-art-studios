@@ -1,4 +1,6 @@
 ---
+import clsx from "clsx";
+
 const navLinks = [
   {
     title: "Our Journey",
@@ -12,7 +14,7 @@ const navLinks = [
   { title: "Contact", href: "/contact-us" },
 ];
 
-const { containerStyles = "" } = Astro.props;
+const { containerStyles = "", classes = "" } = Astro.props;
 ---
 
 <style>
@@ -32,7 +34,10 @@ const { containerStyles = "" } = Astro.props;
   }
 </style>
 
-<div class="rts-header-area-two header--sticky" style={containerStyles}>
+<div
+  class={clsx("rts-header-area-two header--sticky", classes)}
+  style={containerStyles}
+>
   <div class="container-150">
     <div class="row">
       <div class="col-lg-12">

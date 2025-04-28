@@ -101,14 +101,20 @@ export default function Slider() {
                 <div className="swiper-wrapper">
                   {sliderItems.map((element, index) => (
                     <div className="swiper-slide">
-                      <div
-                        className="slider-fullscreen__slide-content"
-                        style={{ paddingTop: "2rem", paddingLeft: "1.5rem" }}
-                      >
-                        <header className="slider-fullscreen__slide-header">
-                          <h2 style={{ color: "black" }}>{element.title}</h2>
+                      <div className="slider-fullscreen__slide-content">
+                        <header className="slider-fullscreen__slide-header ">
+                          <h2
+                            style={{
+                              color: "black",
+                              fontFamily: "'Playfair Display', sans-serif",
+                            }}
+                          >
+                            {element.title}
+                          </h2>
 
-                          <p>{element.paragraph}</p>
+                          <p style={{ fontFamily: "'Lato', sans-serif" }}>
+                            {element.paragraph}
+                          </p>
                         </header>
                         <div className="slider-fullscreen__slide-wrapper-button">
                           <a
