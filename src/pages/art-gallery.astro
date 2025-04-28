@@ -3,55 +3,56 @@ import Cursor from "../lib/creative-mighty/cursor.astro";
 import Header from "../lib/creative-mighty/header.astro";
 import Footer from "../lib/creative-mighty/footer.astro";
 import PortfolioItem from "../lib/kinsey/components/PortfolioItem.astro";
+import Preloader from "../lib/creative-mighty/preloader.astro";
 
 const portfolioItems = [
   {
     title: "3D Printing Work",
     image:
       "https://res.cloudinary.com/daoju0r3c/image/upload/t_Art Gallery Thumbnail/v1745682397/3d_Printing_work_converted_1_w5jbsk.png",
-    background: "#212529",
+    background: "#0A0A0A",
     href: "/showcase/three-dimensional-art",
   },
   {
     title: "Digital Artwork",
     image:
       "https://res.cloudinary.com/daoju0r3c/image/upload/t_Art Gallery Thumbnail/v1745682639/Digital_Artwork_hymbkw.jpg",
-    background: "#343a40",
+    background: "#333333",
     href: "/showcase/digital-artwork",
   },
   {
     title: "Escape Reality",
     image:
       "https://res.cloudinary.com/daoju0r3c/image/upload/t_Art Gallery Thumbnail/v1745682788/Escape_from_reality_hdl1rp.jpg",
-    background: "#212529",
+    background: "#353839",
     href: "/showcase/escape-from-reality",
   },
   {
     title: "Music Muse",
     image:
       "https://res.cloudinary.com/daoju0r3c/image/upload/t_Art Gallery Thumbnail/v1745682846/Music_Muse_pwaeyz.jpg",
-    background: "#343a40",
+    background: "#262626",
     href: "/showcase/music-muse",
   },
   {
     title: "Optical Illusion Art",
     image:
       "https://res.cloudinary.com/daoju0r3c/image/upload/t_Art Gallery Thumbnail/v1745682899/Optical_Illusion_Art_e2sldl.jpg",
-    background: "#212529",
+    background: "#1C1C1C",
     href: "/showcase/optical-illusion-art",
   },
   {
     title: "The Burnt Soul",
     image:
       "https://res.cloudinary.com/daoju0r3c/image/upload/t_Art Gallery Thumbnail/v1745682948/The_Burnt_Soul_qqxgrs.jpg",
-    background: "#343a40",
+    background: "#262626",
     href: "/showcase/the-burnt-soul",
   },
   {
     title: "The Chain of Life",
     image:
       "https://res.cloudinary.com/daoju0r3c/image/upload/t_Art Gallery Thumbnail/v1745683007/The_Chain_of_life_converted_rwhbex.png",
-    background: "#212529",
+    background: "#2E2E2E",
     href: "/showcase/the-chain-of-life",
   },
 ];
@@ -689,15 +690,6 @@ const portfolioItems = [
     />
   </head>
   <body>
-    <div class="loading-screen" id="loading-screen">
-      <span class="bar top-bar"></span>
-      <span class="bar down-bar"></span>
-      <span class="progress-line"></span>
-      <span class="loading-counter"> </span>
-    </div>
-
-    <div class="bg-noise"></div>
-
     <Header />
 
     <div data-barba="wrapper" class="inner-page">

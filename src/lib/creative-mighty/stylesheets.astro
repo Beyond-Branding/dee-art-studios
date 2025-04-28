@@ -1,3 +1,7 @@
+---
+const { disablePreloader = false } = Astro.props;
+---
+
 <link
   rel="stylesheet"
   href="/creative-mighty/assets/css/plugins/fontawesome-6.css"
@@ -20,7 +24,13 @@
 />
 <link rel="stylesheet" href="/creative-mighty/assets/css/style.css" />
 
-<link rel="stylesheet" href="/arrigo/brands.css" />
-<link rel="stylesheet" href="/arrigo/fontawesome.css" />
-<link rel="stylesheet" href="/arrigo/css/vendor.css" />
-<link rel="stylesheet" href="/arrigo/css/main.css" />
+{
+  !disablePreloader && (
+    <>
+      <link rel="stylesheet" href="/arrigo/brands.css" />
+      <link rel="stylesheet" href="/arrigo/fontawesome.css" />
+      <link rel="stylesheet" href="/arrigo/css/vendor.css" />
+      <link rel="stylesheet" href="/arrigo/css/main.css" />
+    </>
+  )
+}

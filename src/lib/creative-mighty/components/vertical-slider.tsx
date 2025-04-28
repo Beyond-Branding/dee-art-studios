@@ -100,8 +100,8 @@ function SlideItem(props: SlideItemProps) {
           <div className="row pt--130 pt_sm--70 align-items-center">
             <div className="col-lg-6 col-md-6 one">
               <div className="banner-wrapper-seven pt--75 pt_sm--15">
-                <h1 className="title">{title}</h1>
-                <p className="disc">{paragraph()}</p>
+                <h1 className="title font-playfair">{title}</h1>
+                <p className="disc font-lato">{paragraph()}</p>
                 {/*  <a href="portfolio-details.html" className="learn-more-btn">
                   Learn More <i className="fa-solid fa-arrow-up-right"></i>
                 </a> */}

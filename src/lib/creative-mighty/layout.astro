@@ -13,10 +13,12 @@ import clsx from "clsx";
 const {
   bodyClass = "",
   disableFooter = false,
+  disablePreloader = false,
   footerClass = "",
 } = Astro.props as {
   bodyClass: string;
   disableFooter: boolean;
+  disablePreloader: boolean;
   footerClass: string;
 };
 ---
@@ -34,13 +36,13 @@ const {
       href="/creative-mighty/assets/images/fav.png"
     />
     <title>Mighty - Creative Portfolio Template Accordion</title>
-    <StyleSheets />
+    <StyleSheets disablePreloader={disablePreloader} />
     <GlobalStyles />
     <slot name="head" />
   </head>
 
   <body class={clsx("inner-page", bodyClass)}>
-    <PreLoader />
+    {!disablePreloader && <PreLoader />}
     <!-- Scripts style two -->
     <!-- header area srtart -->
     <Header />
@@ -60,7 +62,7 @@ const {
     <!-- pre loader start -->
     <Cursor />
     <!-- pre loader end -->
-    <Scripts />
+    <Scripts disablePreloader={disablePreloader} />
 
     <slot name="scripts" />
     <!-- Scripts style two End -->

@@ -1,3 +1,7 @@
+---
+const { disablePreloader = false } = Astro.props;
+---
+
 <script defer src="/creative-mighty/assets/js/vendor/jquery.min.js"></script>
 <script defer src="/creative-mighty/assets/js/plugins/bootstrap.min.js"
 ></script>
@@ -36,6 +40,11 @@
 <!-- custom javascripts -->
 <script defer src="/creative-mighty/assets/js/main.js"></script>
 
-<script defer src="/arrigo/js/vendor.js"></script>
-<!-- - VENDOR SCRIPTS --><!-- COMPONENTS -->
-<script defer src="/arrigo/js/components.js"></script>
+{
+  !disablePreloader && (
+    <Fragment>
+      <script defer src="/arrigo/js/vendor.js" />
+      <script defer src="/arrigo/js/components.js" />
+    </Fragment>
+  )
+}
