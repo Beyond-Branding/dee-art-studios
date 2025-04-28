@@ -6,6 +6,7 @@ import PreLoader from "./preloader.astro";
 import Progress from "./progress.astro";
 import Cursor from "./cursor.astro";
 import Footer from "./footer.astro";
+import GlobalStyles from "../common/stylesheets.astro";
 
 import clsx from "clsx";
 
@@ -29,11 +30,12 @@ const { bodyClass = "", disableFooter = false } = Astro.props as {
     />
     <title>Mighty - Creative Portfolio Template Accordion</title>
     <StyleSheets />
-
+    <GlobalStyles />
     <slot name="head" />
   </head>
 
   <body class={clsx("inner-page", bodyClass)}>
+    <PreLoader />
     <!-- Scripts style two -->
     <!-- header area srtart -->
     <Header />
@@ -45,7 +47,6 @@ const { bodyClass = "", disableFooter = false } = Astro.props as {
     {!disableFooter && <Footer />}
 
     <!-- Scripts style two -->
-    <PreLoader />
 
     <!-- back to top start -->
     <Progress />

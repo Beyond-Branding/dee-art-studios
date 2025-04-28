@@ -1,0 +1,43 @@
+<style is:global>
+  :root {
+    --color-accent: #9b724d;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display", serif !important;
+  }
+
+  p {
+    font-family: "Lato", sans-serif !important;
+  }
+
+  .underline {
+    position: relative;
+    display: inline-block;
+  }
+
+  .underline::after {
+    content: "";
+    display: block;
+    width: 106%;
+    height: 10px;
+    background-color: var(--color-accent);
+    position: absolute;
+    left: -3%;
+    bottom: 6px;
+    z-index: 1;
+    opacity: 0.5;
+  }
+
+  .bg-black {
+    background-color: #0e0e0e !important;
+  }
+
+  .bg-transparent {
+    background-color: none !important;
+  }
+</style>
