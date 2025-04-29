@@ -28,29 +28,28 @@ const { classNames, styles } = Astro.props as {
         <div class="footer-two-wrapper-content">
           <!-- footer left start -->
           <div class="footer-left-two">
-            <a href="/" class="logo">
-              <img src="/assets/dees-art-studio.png" alt="logo" />
+            <a href="index.html" class="logo">
+              <img
+                src="/creative-mighty/assets/images/logo/03.svg"
+                alt="logo"
+              />
             </a>
             <p class="disc">
-              Province: Alberta <br />
-              Monday to Saturday: 10 a.m. – 8 p.m. <br />
-              Sunday: 11 a.m. – 5 p.m.
+              Teor facilis porta maurs ligula vivamus <br /> nullam laoreet pharetra
+              posuere.
             </p>
             <div class="rts-social-area-one">
               <ul>
                 <li>
-                  <a href="mailto:fxtattoos@live.com"
-                    ><i class="fa-regular fa-envelope"></i></a
-                  >
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 </li>
                 <li>
-                  <a href="tel:+17804844856"
-                    ><i class="fa-regular fa-phone"></i></a
-                  >
+                  <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                 </li>
+                <li><a href="#"><i class="fa-brands fa-skype"></i></a></li>
               </ul>
             </div>
           </div>
@@ -60,21 +59,35 @@ const { classNames, styles } = Astro.props as {
           <div class="footer-right-two">
             <!-- contact info -->
             <div class="contact-information">
-              <h5
-                class="title font-hanken-grostek"
-                style="font-family: 'Hanken Grotesk' !important;"
+              <p class="title">Contact Info</p>
+              <a href="#" class="map"
+                >Maxuel Street, Frankfurt <br /> 2589 Germany.</a
               >
-                Contact Info
-              </h5>
-              <p class="map">
-                Located in: West Edmonton Mall <br />Address: 8882 170 St NW
-                #1401, Edmonton, <br /> AB T5T 4V4
-              </p>
-              <a href="mailto:fxtattoos@live.com" class="mail"
-                >fxtattoos@live.com</a
-              >
-              <a href="tel:+17804844856" class="number">(780) 484-4856</a>
+              <a href="#" class="mail">information.mighty.com</a>
+              <a href="tel:28586235932159" class="number">+2858 62359 32159</a>
             </div>
+            <!-- contact info end -->
+            <!-- contact info -->
+            <div class="contact-information input">
+              <p class="title">Subscribe Newsletter</p>
+              <p class="map">
+                Subscribe our newsletter for future updates. don’t <br /> worry we
+                don’t spam your email address
+              </p>
+              <form action="#" class="form-footer-2">
+                <label for="email-1"
+                  ><i class="fa-regular fa-envelope"></i></label
+                >
+                <input
+                  id="email-1"
+                  type="email"
+                  placeholder="Enter your email..."
+                  required
+                />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+            <!-- contact info end -->
           </div>
           <!-- footer right area end -->
         </div>
@@ -82,9 +95,7 @@ const { classNames, styles } = Astro.props as {
       <div class="col-lg-12">
         <!-- copyright-area-start -->
         <div class="copy-right-area-start-two">
-          <p class="left">
-            {new Date().getFullYear()} © Dee's Art Studio. All rights reserved.
-          </p>
+          <p class="left">2023 © Mighty. All rights reserved.</p>
         </div>
         <!-- copyright-area-end -->
       </div>
