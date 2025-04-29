@@ -29,14 +29,11 @@ const { classNames, styles } = Astro.props as {
           <!-- footer left start -->
           <div class="footer-left-two">
             <a href="index.html" class="logo">
-              <img
-                src="/creative-mighty/assets/images/logo/03.svg"
-                alt="logo"
-              />
+              <img src="/assets/dees-art-studio.png" alt="logo" />
             </a>
             <p class="disc">
-              Teor facilis porta maurs ligula vivamus <br /> nullam laoreet pharetra
-              posuere.
+              Mon–Sat 10 a.m.–8 p.m., Sun 11 a.m.–5 p.m. <br />
+              Dee's Hours: Wed–Sat 12 p.m.–8 p.m., Sun 12 p.m.–5 p.m.
             </p>
             <div class="rts-social-area-one">
               <ul>
@@ -49,7 +46,6 @@ const { classNames, styles } = Astro.props as {
                 <li>
                   <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                 </li>
-                <li><a href="#"><i class="fa-brands fa-skype"></i></a></li>
               </ul>
             </div>
           </div>
@@ -60,19 +56,22 @@ const { classNames, styles } = Astro.props as {
             <!-- contact info -->
             <div class="contact-information">
               <p class="title">Contact Info</p>
-              <a href="#" class="map"
-                >Maxuel Street, Frankfurt <br /> 2589 Germany.</a
+              <a href="#" class="map">
+                West Edmonton Mall Address: <br /> 8882 170 St NW #1401, Edmonton,
+                <br />
+                AB T5T 4V4</a
               >
-              <a href="#" class="mail">information.mighty.com</a>
-              <a href="tel:28586235932159" class="number">+2858 62359 32159</a>
+              <a href="#" class="mail">fxtattoos@live.com</a>
+              <a href="tel:(780) 484-4856" class="number">(780) 484-4856</a>
             </div>
             <!-- contact info end -->
             <!-- contact info -->
             <div class="contact-information input">
-              <p class="title">Subscribe Newsletter</p>
+              <p class="title">Contact Us</p>
               <p class="map">
-                Subscribe our newsletter for future updates. don’t <br /> worry we
-                don’t spam your email address
+                Reach out to us for any inquiries. We're here to assist you <br
+                />
+                without overwhelming your inbox.
               </p>
               <form action="#" class="form-footer-2">
                 <label for="email-1"
@@ -95,7 +94,9 @@ const { classNames, styles } = Astro.props as {
       <div class="col-lg-12">
         <!-- copyright-area-start -->
         <div class="copy-right-area-start-two">
-          <p class="left">2023 © Mighty. All rights reserved.</p>
+          <p class="left">
+            {new Date().getFullYear()} © Beyond Branding. All rights reserved.
+          </p>
         </div>
         <!-- copyright-area-end -->
       </div>

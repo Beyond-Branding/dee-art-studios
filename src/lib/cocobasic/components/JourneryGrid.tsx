@@ -177,7 +177,7 @@ export default function JourneyGrid() {
         {toShow.map((element, index) => (
           <GridItem
             key={index}
-            index={gridItems.length - index}
+            index={index}
             variant={element.variant}
             image={element.image}
             tag={element.tag}
@@ -238,7 +238,7 @@ function GridItem(props: GridItemProps) {
           </h2>
           <div className="excerpt">{subtitle}</div>
           <p className="read-more-arrow">
-            <a href="/journeys/music-muse">
+            <a href={`/journeys/${index + 1}`}>
               <span className="fa fa-arrow-right" aria-hidden="true"></span>
             </a>
           </p>
@@ -274,7 +274,7 @@ function GridItem(props: GridItemProps) {
           </h2>
           <div className="excerpt">{subtitle}</div>
           <p className="read-more-arrow">
-            <a href="/journeys/music-muse">
+            <a href={`/journeys/${index + 1}`}>
               <span className="fa fa-arrow-right" aria-hidden="true"></span>
             </a>
           </p>

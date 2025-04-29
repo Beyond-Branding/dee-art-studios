@@ -1,5 +1,7 @@
 ---
 import Layout from "../../creative-mighty/layout.astro";
+
+const { image } = Astro.props;
 ---
 
 <style>
@@ -66,66 +68,12 @@ import Layout from "../../creative-mighty/layout.astro";
         <article class="post">
           <div class="entry-header content-830 center-relative">
             <h1 class="entry-title text-white">
-              Contemporary, classic and inspiring <i>innovation</i> details
+              <slot name="title" />
             </h1>
-            <div class="entry-info">
-              <div class="entry-date published">May 9.2018</div>
-              <div class="cat-links">
-                <ul>
-                  <li>
-                    <a href="#">Interior</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="author-nickname">
-                <a href="#" title="Posts by Leah Faye" rel="author">Leah Faye</a
-                >
-              </div>
-            </div>
           </div>
           <div class="entry-content bg-black text-white">
             <div class="content-570 center-relative">
-              <p>
-                At as in understood an remarkably solicitude. Mean them very
-                seen she she. Use totally written the observe pressed justice.
-                Instantly cordially far intention recommend estimable yet her
-                his. Ladies stairs enough esteem add fat all enable. Needed its
-                design number winter see.
-              </p>
-              <br />
-              <p class="big-text">
-                Finite but unbounded the only home we’ve ever known
-                consciousness are the cosmos.
-              </p>
-              <br />
-              <p>
-                Laws of physics Drake equation Sea of Tranquility? Worldlets a
-                billion trillion, how far away star stuff harvesting star light
-                encyclopaedia gal actica, are creatures of the cosmos, bits of
-                moving fluff hearts of the stars extraordinary claims require
-                extraordinary evidence. Oh be me sure wise sons no. Piqued ye of
-                am spirit regret. Stimulated discretion impossible admiration in
-                particular conviction up.
-              </p>
-              <blockquote>
-                <p>
-                  Is post each that just leaf no he connection interested swe an
-                  sympathize advantages to said is it shed want do occa sion
-                  middletons everything so to have spot part for his may.
-                </p>
-              </blockquote>
-              <p>
-                Mauris at mi ut lectus semper aliquet. Mauris viverra
-                pellentesque elementum. Integer efficitur in nulla eu iaculis.
-                Nam non lacus in ligula gravida maximus. Cras ullamcorper auctor
-                lobortis. Nam posuere sapien at mollis elementum. Donec dictum
-                lorem non eros dictum viverra. Praesent non odio sit amet tortor
-                faucibus commodo eu vitae ex. Proin mattis viverra nulla a
-                lacinia. Fusce aliquet metus ut mi varius, ac convallis arcu
-                pulvinar. Fusce sed massa eget neque ullamcorper condimentum id
-                non ex. Quisque fermentum leo magna, eu scelerisque.
-              </p>
-              <br />
+              <slot name="content" />
             </div>
             <div class="full-post-width content-1170 center-relative">
               <script>
@@ -134,34 +82,15 @@ import Layout from "../../creative-mighty/layout.astro";
                 var slider1_hover = "true";
                 var slider1_dots = "true";
               </script>
-              <div class="image-slider-wrapper relative">
+              <div
+                class="image-slider-wrapper relative"
+                style="margin-top: 5rem;"
+              >
                 <div id="slider1" class="image-slider slider animate">
                   <div class="slick-slide">
-                    <img src="/cocobasic/images/blog_img_02.jpg" alt="" />
-                  </div>
-                  <div class="slick-slide">
-                    <img src="/cocobasic/images/blog_img_03.jpg" alt="" />
-                  </div>
-                  <div class="slick-slide">
-                    <img src="/cocobasic/images/blog_img_04.jpg" alt="" />
+                    <img src={image} alt="" />
                   </div>
                 </div>
-              </div>
-              <div class="content-570 center-relative">
-                <br />
-                <p>
-                  Nam non lacus in ligula gravida maximus. Cras ullamcorper
-                  auctor lobortis. Nam posuere sapien at mollis elementum. Donec
-                  dictum lorem non eros dictum viverra. Praesent non odio sit
-                  amet tortor faucibus commodo eu vitae ex. Proin mattis viverra
-                  nulla a lacinia. Fusce aliquet metus ut mi varius, ac
-                  convallis arcu pulvinar. Nam non lacus in ligula gravida
-                  maximus. Cras ullamcorper auctor lobortis. Nam posuere sapien
-                  at mollis elementum. Donec dictum lorem non eros dictum
-                  viverra. Praesent non odio sit amet tortor faucibus commodo eu
-                  vitae ex. Proin mattis viverra nulla a lacinia. Fusce aliquet
-                  metus ut mi varius, ac convallis arcu pulvinar.
-                </p>
               </div>
             </div>
           </div>
