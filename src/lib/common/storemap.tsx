@@ -3,6 +3,19 @@ import { useEffect } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
+import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png?url";
+import markerIcon from "leaflet/dist/images/marker-icon.png?url";
+import markerShadow from "leaflet/dist/images/marker-shadow.png?url";
+
+// Fix for missing default icon in Leaflet + Vite/Astro
+delete (L.Icon.Default.prototype as any)._getIconUrl;
+
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: markerIcon2x,
+  iconUrl: markerIcon,
+  shadowUrl: markerShadow,
+});
+
 export default function StoreMap() {
   useEffect(() => {
     const map = L.map("map", {
