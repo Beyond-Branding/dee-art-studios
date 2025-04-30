@@ -23663,6 +23663,7 @@ main {
 .swiper-testimonails-style-one-main-wrapper .swiper-button-next::after {
   content: "\f061";
   font-family: "fontawesome";
+  font-size: 1rem !important;
 }
 .swiper-testimonails-style-one-main-wrapper .swiper-button-prev {
   right: 60px;
@@ -23672,6 +23673,7 @@ main {
 .swiper-testimonails-style-one-main-wrapper .swiper-button-prev::after {
   content: "\f060";
   font-family: "fontawesome";
+  font-size: 1rem !important;
 }
 
 .swiper-testimonials-wrapper-main-2 {
@@ -27762,7 +27764,7 @@ body::-webkit-scrollbar-thumb {
 .section-separator {
   position: relative;
 }
-.section-separator::after {
+/* .section-separator::after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -27774,7 +27776,7 @@ body::-webkit-scrollbar-thumb {
   left: 50%;
   transform: translateX(-50%);
 }
-
+ */
 .section-separator-bg-dark {
   position: relative;
 }
