@@ -69,7 +69,7 @@ const slideItems = [
 export default function VerticalSlider() {
   return (
     <div className="swiper-portfolio-main-wrapper-7">
-      <div className="swiper mySwiper-7-varticle pl--150 pl_md--100 pl_sm--40">
+      <div className="swiper mySwiper-7-varticle ">
         <div className="swiper-wrapper">
           {slideItems.map((element, index) => (
             <SlideItem
