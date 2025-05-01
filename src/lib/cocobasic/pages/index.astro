@@ -5,7 +5,7 @@ import Scripts from "../scripts.astro";
 import JourneyGrid from "../components/JourneryGrid";
 ---
 
-<Layout bodyClass="home blog">
+<Layout title="My Journey | Deee's Art Studios" bodyClass="home blog">
   <Fragment slot="head">
     <Stylesheets />
   </Fragment>
@@ -22,7 +22,7 @@ import JourneyGrid from "../components/JourneryGrid";
           </h1>
         </div>
 
-        <JourneyGrid client:visible />
+        <JourneyGrid client:only />
       </div>
     </div>
   </Fragment>

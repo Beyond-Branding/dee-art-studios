@@ -4,7 +4,7 @@ const gridItems = [
   {
     variant: "left",
     image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/v1745597271/Facetune_14-10-2024-20-33-23-min_aly0vg.png",
+      "https://res.cloudinary.com/daoju0r3c/image/upload/c_pad,b_gen_fill,w_720,h_660/v1745951298/Facetune_14-10-2024-20-33-23-min_aly0vg_d1b9f6.png",
     tag: "HELLO, I’m Diksha Dubb",
     title: () => (
       <>
@@ -39,7 +39,7 @@ const gridItems = [
   {
     variant: "right",
     image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/v1745597394/The_Chain_of_life_gruhjs.png",
+      "https://res.cloudinary.com/daoju0r3c/image/upload/c_fill,w_720,h_660/v1746095080/Card_2_mk9h1a.jpg",
     tag: "Art Gallery",
     title: () => (
       <>
@@ -68,7 +68,7 @@ const gridItems = [
   {
     variant: "left",
     image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/v1745597952/IMG_2524_uxghat.jpg",
+      "https://res.cloudinary.com/daoju0r3c/image/upload/c_pad,b_gen_fill,w_720,h_660/v1745597952/IMG_2524_uxghat.jpg",
     tag: "Tattoo Art & Sketches",
     subtitle:
       "A spontaneous decision led me to an apprenticeship at FX INC, where I built my tattoo skills from scratch and learned the value of trust and persistence.",
@@ -101,7 +101,7 @@ const gridItems = [
   {
     variant: "right",
     image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/v1745598286/Eyebrow_1_ahbmtr.png",
+      "https://res.cloudinary.com/daoju0r3c/image/upload/c_fill,w_720,h_660/v1746095697/Card_4_image_1_combine_hazso2.jpg",
     tag: "Piercing",
     subtitle:
       "I unexpectedly stepped into piercing, discovering a new creative outlet where each piece became part of someone’s self-expression.",
@@ -127,7 +127,7 @@ const gridItems = [
   {
     variant: "left",
     image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/v1745598541/Forward_helix_helix_and_conch_pim6px.png",
+      "https://res.cloudinary.com/daoju0r3c/image/upload/c_pad,b_gen_fill,w_720,h_660/v1746095800/Card_5_erddlf.jpg",
     tag: "Onwards and upwards",
     subtitle:
       "Five years in, I embrace the uncertainty, moving forward with gratitude, passion, and a commitment to constant growth.",
