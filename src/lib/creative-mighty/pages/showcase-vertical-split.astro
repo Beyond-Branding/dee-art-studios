@@ -1,16 +1,23 @@
 ---
+import TattoosList from "../components/tattoo-item";
 import Layout from "../layout.astro";
 ---
 
-<Layout bodyClass="portfolio-nine vertical-split" disableFooter>
+<Layout
+  title="Tattoos | Deee's Art Studios"
+  bodyClass="portfolio-nine vertical-split"
+  disableFooter
+>
   <Fragment slot="body">
     <div class="portfolio-nine-wrapper-main">
       <div class="container-full">
         <div class="row">
           <div class="col-lg-5">
             <div class="banner-portfolio-nine">
-              <span class="pre font-playfair">Business Brand, July 2023 </span>
-              <h1 class="title font-playfair">
+              <span class="pre font-playfair font-normal-case"
+                >Business Brand, July 2025
+              </span>
+              <h1 class="title font-playfair font-normal-case">
                 Brand <i class="underline">Identity</i>
                 <br />
                 and <i class="underline">Strategy</i>
@@ -19,9 +26,6 @@ import Layout from "../layout.astro";
                 Showcasing the agency's work in creating visually <br /> appealing,
                 user-friendly, and responsive websites
               </p>
-              <a href="portfolio-one.html" class="learn-more-btn font-lato"
-                >View Case <i class="fa-solid fa-arrow-up-right"></i></a
-              >
             </div>
           </div>
           <div class="col-lg-7">
@@ -35,96 +39,7 @@ import Layout from "../layout.astro";
               </h1>
             </div>
             <!-- product-wrapper -->
-            <div class="product-wrapper-9 rts-team__area rts-portfolio-area">
-              <div class="product-row pt--200 pt_md--50 pt_sm--30">
-                <div class="inner">
-                  <!-- single product -->
-                  <div class="single-product-9 rts-team__item">
-                    <a href="portfolio-details.html">
-                      <img
-                        src="https://res.cloudinary.com/daoju0r3c/image/upload/t_journey_1/v1745671705/tattoo_1_c_fill_w_411_h_595_xwqn8c.png"
-                        alt="product"
-                      />
-                    </a>
-                    <div class="inner-content">
-                      <span>web design</span>
-                      <a href="portfolio-details.html"
-                        >Website Build Maintenance
-                      </a>
-                    </div>
-                  </div>
-                  <!-- single product end -->
-                  <!-- single product -->
-                  <div class="single-product-9 rts-team__item">
-                    <a href="portfolio-details.html">
-                      <img
-                        src="https://res.cloudinary.com/daoju0r3c/image/upload/t_journey_1/v1745671354/FullSizeRender_converted_lugpo6.png"
-                        alt="product"
-                      />
-                    </a>
-                    <div class="inner-content">
-                      <span>web design</span>
-                      <a href="portfolio-details.html"
-                        >Website Build Maintenance
-                      </a>
-                    </div>
-                  </div>
-                  <!-- single product end -->
-                  <!-- single product -->
-                  <div class="single-product-9 rts-team__item">
-                    <a href="portfolio-details.html">
-                      <img
-                        src="https://res.cloudinary.com/daoju0r3c/image/upload/t_journey_1/v1745671353/IMG_0335_converted_yxtpy0.png"
-                        alt="product"
-                      />
-                    </a>
-                    <div class="inner-content">
-                      <span>web design</span>
-                      <a href="portfolio-details.html"
-                        >Website Build Maintenance
-                      </a>
-                    </div>
-                  </div>
-                  <!-- single product end -->
-                </div>
-              </div>
-              <div class="product-row two">
-                <div class="inner">
-                  <!-- single product -->
-                  <div class="single-product-9 rts-team__item">
-                    <a href="portfolio-details.html">
-                      <img
-                        src="https://res.cloudinary.com/daoju0r3c/image/upload/t_journey_1/v1745671354/IMG_0336_converted_iwanc7.png"
-                        alt="product"
-                      />
-                    </a>
-                    <div class="inner-content">
-                      <span>web design</span>
-                      <a href="portfolio-details.html"
-                        >Website Build Maintenance
-                      </a>
-                    </div>
-                  </div>
-                  <!-- single product end -->
-                  <!-- single product -->
-                  <div class="single-product-9 rts-team__item">
-                    <a href="portfolio-details.html">
-                      <img
-                        src="https://res.cloudinary.com/daoju0r3c/image/upload/t_journey_1/v1745671354/IMG_2584_converted_z29rmi.png"
-                        alt="product"
-                      />
-                    </a>
-                    <div class="inner-content">
-                      <span>web design</span>
-                      <a href="portfolio-details.html"
-                        >Website Build Maintenance
-                      </a>
-                    </div>
-                  </div>
-                  <!-- single product end -->
-                </div>
-              </div>
-            </div>
+            <TattoosList />
             <!-- product-wrapper end -->
           </div>
         </div>
