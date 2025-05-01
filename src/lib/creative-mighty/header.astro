@@ -133,7 +133,9 @@ const { containerStyles = "", classes = "" } = Astro.props;
                         {
                           navLinks.map((item) => (
                             <li class="menu-item">
-                              <a href={item.href}>{item.title}</a>
+                              <a href={item.href} class="font-times-new-roman">
+                                {item.title}
+                              </a>
                             </li>
                           ))
                         }
