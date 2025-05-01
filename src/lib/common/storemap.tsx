@@ -35,7 +35,7 @@ export default function StoreMap() {
       .bindPopup(
         `
          <a href="https://maps.app.goo.gl/REPiWYVimuy2B5XP7" target="_blank" rel="noopener noreferrer">
-            Deee's Art Studios (Open in Maps)
+            Fx Inc (Open in Maps)
         </a>`
       )
       .openPopup();
