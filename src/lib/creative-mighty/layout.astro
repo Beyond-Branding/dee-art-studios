@@ -11,11 +11,13 @@ import GlobalStyles from "../common/stylesheets.astro";
 import clsx from "clsx";
 
 const {
+  title = "Dee's Art Studios",
   bodyClass = "",
   disableFooter = false,
   disablePreloader = false,
   footerClass = "",
 } = Astro.props as {
+  title: string;
   bodyClass: string;
   disableFooter: boolean;
   disablePreloader: boolean;
@@ -35,7 +37,7 @@ const {
       type="image/x-icon"
       href="/creative-mighty/assets/images/fav.png"
     />
-    <title>Mighty - Creative Portfolio Template Accordion</title>
+    <title>{title}</title>
     <StyleSheets disablePreloader={disablePreloader} />
     <GlobalStyles />
     <slot name="head" />

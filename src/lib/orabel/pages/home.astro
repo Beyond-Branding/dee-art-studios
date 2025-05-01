@@ -2,6 +2,46 @@
 import Layout from "../../creative-mighty/layout.astro";
 import Stylesheets from "../stylesheets.astro";
 import Scripts from "../scripts.astro";
+import TestimonialItem from "../../creative-mighty/components/testimonial-item";
+
+const testimonials = [
+  {
+    testimonial:
+      "Fantastic service, quick and efficient, very clean, friendly staff, easy to work with. Tattoos on me and my mom, piercings on me and my sister.",
+  },
+  {
+    testimonial:
+      "Honestly was really hesitant to come here. I only wen cause my dad got me a gift card here.. but Dee did an amazing job. and the receptionist is lovely.",
+  },
+  {
+    testimonial:
+      "I've gotten all my tattoos done by Diksha. She is incredibly talented, meticulous, and creative, turning my ideas into stunning works of art. Her attention to detail is remarkable, and every session has been a comfortable and enjoyable experience. I trust her completely with my tattoos and can't recommend her enough to anyone looking for some great tattoos.",
+  },
+  {
+    testimonial:
+      "Dee was great for my nose piercing. Quick and informative, easy process!",
+  },
+  {
+    testimonial:
+      "Had an amazing experience getting my sleeve done by artist Diksha Dubb. She created a stunning design, and the linework was flawless. The whole place has such a great vibe!",
+  },
+  {
+    testimonial:
+      "Diksha Dubb is an amazing tattoo artist! Her creativity and attention to detail alway impress me. I highly recommend her for great quality work every time.",
+  },
+  {
+    testimonial:
+      "I had an amazing experience with Diksha, Her attention to detail and creativity were outstanding. She took my vision and made it even better than I imagined. The process was professional, comfortable, and the final result is a beautiful piece of art. Highly recommend!",
+  },
+  {
+    testimonial:
+      "At 42 years old, I though that maybe a first tattoo wasn't gonna happen, due to my own unfamilarity and fear. But the right idea came to mind and I just happened to be in Edmotnon. FX was able to fit me in and Dee was out of this world professional and talented. What a fantastic experience.",
+  },
+  {
+    testimonial:
+      "Deee did a fantastic job on giving me the perfect fine line tatto. She was great at listening to what I wanted. She spent time looking at ",
+  },
+];
 ---
 
 <Layout footerClass="mt-0">
@@ -20,7 +60,7 @@ import Scripts from "../scripts.astro";
                 <div class="orb-position-fix">
                   <div class="orb-photo-frame orb-obj-1">
                     <img
-                      src="https://res.cloudinary.com/daoju0r3c/image/upload/v1745520267/Facetune_14-10-2024-23-33-34-min_esd4dy.png"
+                      src="https://res.cloudinary.com/daoju0r3c/image/upload/v1746092710/3._Or_kaq5vd.jpg"
                       alt="photo"
                     />
                   </div>
@@ -29,10 +69,10 @@ import Scripts from "../scripts.astro";
               <div class="orb-g-50 orb-sm-100">
                 <div class="orb-main-title">
                   <div class="orb-suptitle"></div>
-                  <h1>
-                    Story’s on skin - <br /> no <i class="underline"
-                      >subtitles</i
-                    >, <br /> no <i class="underline">spoilers</i>
+                  <h1 class="font-normal-case font-line-normal">
+                    Story’s On Skin - <br /> No <i
+                      class="underline font-playfair">Subtitles</i
+                    >, <br /> No <i class="underline font-playfair">Spoilers</i>
                   </h1>
                   <div class="orb-button-frame">
                     <div class="orb-btn-label"></div>
@@ -97,45 +137,12 @@ import Scripts from "../scripts.astro";
             <div class="swiper-testimonails-style-one-main-wrapper">
               <div class="swiper mySwiper-testimonial-1">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <!-- single tesinmonials area start -->
-                    <div class="single-testimonials-main-wrapper">
-                      <div class="star-area-start">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-                      <div class="body">
-                        <div class="quote-img">
-                          <img
-                            src="/creative-mighty/assets/images/testimonials/02.png"
-                            alt=""
-                          />
-                        </div>
-                        <p class="disc">
-                          The group at Baroque is unimaginably committed, <br />
-                          educated, and supportive. The completed item was <br
-                          /> delightful, and worth each penny. I would totally <br
-                          /> suggest Baroque...
-                        </p>
-                        <div class="author-area">
-                          <div class="thumbnail">
-                            <img
-                              src="/creative-mighty/assets/images/testimonials/01.png"
-                              alt="testimonials"
-                            />
-                          </div>
-                          <div class="info-wrapper">
-                            <h6 class="title">Adam Daniel Smith</h6>
-                            <span>Product Designer</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- single tesinmonials area start -->
-                  </div>
+                  <!-- single tesinmonials area start -->
+                  {
+                    testimonials.map((element) => (
+                      <TestimonialItem testimonal={element.testimonial} />
+                    ))
+                  }
                 </div>
                 <div class="button-area-next-prev">
                   <div class="swiper-button-next"></div>
@@ -149,7 +156,7 @@ import Scripts from "../scripts.astro";
               <div class="thumbnail-clients-img rts-reveal-two">
                 <img
                   class="rts-reveal-image-two"
-                  src="/creative-mighty/assets/images/about/04.jpg"
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1746092618/2_i2x9gw.jpg"
                   alt=""
                 />
               </div>

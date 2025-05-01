@@ -279,7 +279,7 @@
           let tl2 = gsap.timeline();
           tl2.to(".scrollingText-three", {
             x: 1000,
-            duration: 50,
+            duration: 10,
             repeat: -1,
             ease: "linear",
           });
@@ -438,6 +438,10 @@
         var swiper = new Swiper(".mySwiper-testimonial-1", {
           slidesPerView: 1,
           spaceBetween: 30,
+          autoplay: {
+            delay: 5000, // time in ms between slides
+            disableOnInteraction: false, // continue autoplay after interaction
+          },
           loop: true,
           pagination: {
             el: ".swiper-pagination",
