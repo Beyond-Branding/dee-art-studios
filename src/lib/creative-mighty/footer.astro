@@ -1,5 +1,6 @@
 ---
 import clsx from "clsx";
+import { navLinks } from "./header.astro";
 
 const { classNames, styles } = Astro.props as {
   classNames: string;
@@ -32,8 +33,10 @@ const { classNames, styles } = Astro.props as {
               <img src="/assets/dees-art-studio.png" alt="logo" />
             </a>
             <p class="disc">
-              Mon–Sat 10 a.m.–8 p.m., Sun 11 a.m.–5 p.m. <br />
-              Dee's Hours: Wed–Sat 12 p.m.–8 p.m., Sun 12 p.m.–5 p.m.
+              <b>Regular Hours:</b><br /> Monday–Saturday: 10 a.m.–8 p.m.,<br />
+              Sunday: 11 a.m.–5 p.m. <br />
+              <b>Dee's Hours</b>:<br /> Wednesday–Saturday: 12 p.m.–8 p.m.,<br
+              /> Sunday: 12 p.m.–5 p.m.
             </p>
             <div class="rts-social-area-one">
               <ul>
@@ -53,15 +56,29 @@ const { classNames, styles } = Astro.props as {
 
           <!-- footer right area start -->
           <div class="footer-right-two">
+            <div class="contact-information">
+              <p class="title">Useful Links</p>
+              <ul class="footer-nav">
+                {
+                  navLinks.map((element) => (
+                    <li>
+                      <a href={element.href} style="color: #74787c !important;">
+                        {element.title}
+                      </a>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
             <!-- contact info -->
             <div class="contact-information">
               <p class="title">Contact Info</p>
-              <a href="#" class="map">
+              <a href="/contact-us" class="map">
                 West Edmonton Mall Address: <br /> 8882 170 St NW #1401, Edmonton,
                 <br />
                 AB T5T 4V4</a
               >
-              <a href="#" class="mail">fxtattoos@live.com</a>
+              <a href="#" class="mail">ink@deesartstudios.com</a>
               <a href="tel:(780) 484-4856" class="number">(780) 484-4856</a>
             </div>
             <!-- contact info end -->
