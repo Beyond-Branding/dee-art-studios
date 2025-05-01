@@ -101,7 +101,7 @@ const gridItems = [
   {
     variant: "right",
     image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/c_fill,w_720,h_660/v1746095697/Card_4_image_1_combine_hazso2.jpg",
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746118142/Card_4_image_1__combine__heic_wzu9vd.jpg",
     tag: "Piercing",
     subtitle:
       "I unexpectedly stepped into piercing, discovering a new creative outlet where each piece became part of someone’s self-expression.",
