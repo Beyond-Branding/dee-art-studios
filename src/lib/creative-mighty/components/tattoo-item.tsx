@@ -19,6 +19,27 @@ const tattoosItems = [
     description:
       "Even if the world carves you from darkness, you choose what you become. Light stitched into every scar.",
   },
+  {
+    title: "Sacred Bloom",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746107147/Sacred_Bloom_u3ky4o.jpg",
+    description:
+      "A lily, eternal in ink and angles. Growth isn’t random — it’s sacred, even when built inside sharp edges.",
+  },
+  {
+    title: "They See. They Bleed",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/c_pad,b_gen_fill,w_2796,h_3728/v1746107222/They_See._They_Bleed_i6gpnu.jpg",
+    description:
+      "Eyes that don’t just see life — they survive it. Burning, crying, fighting forward.",
+  },
+  {
+    title: "We Wear Them All",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746107569/We_Wear_Them_All_nmaip7.jpg",
+    description:
+      "Behind every smile, a shadow; behind every laugh, a weight. This piece reminds us: masks aren’t fake — they’re survival.",
+  },
 ] as TattooItemCardProps[];
 
 function TattooItemCard(props: TattooItemCardProps) {

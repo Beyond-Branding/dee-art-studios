@@ -80,9 +80,9 @@ const { href = "#" } = Astro.props as { href: string };
                 data-arts-split-text="lines"
                 data-arts-split-text-set="lines"
                 data-arts-split-text-overflow-wrap="lines"
-                style="color: black !important; font-family: 'Playfair', serif;"
+                style="color: white !important; font-family: 'Playfair', serif;"
               >
-                {title}
+                <span set:html={title} />
               </h2></a
             >
           </div>
