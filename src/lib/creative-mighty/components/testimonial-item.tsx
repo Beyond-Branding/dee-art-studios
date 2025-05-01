@@ -1,9 +1,10 @@
 export interface TestimonialItemProps {
-  testimonal: string;
+  by: string;
+  testimonial: string;
 }
 
 export default function TestimonialItem(props: TestimonialItemProps) {
-  const { testimonal } = props;
+  const { by, testimonial } = props;
 
   return (
     <div className="swiper-slide">
@@ -22,17 +23,18 @@ export default function TestimonialItem(props: TestimonialItemProps) {
               alt=""
             />
           </div>
-          <p className="disc">{testimonal}</p>
+          <p className="disc">{testimonial}</p>
           <div className="author-area">
             <div className="thumbnail">
               <img
-                src="/creative-mighty/assets/images/testimonials/01.png"
+                src={`https://ui-avatars.com/api/?name=${encodeURIComponent(
+                  by
+                )}`}
                 alt="testimonials"
               />
             </div>
             <div className="info-wrapper">
-              <h6 className="title">Adam Daniel Smith</h6>
-              <span>Product Designer</span>
+              <h6 className="title">{by}</h6>
             </div>
           </div>
         </div>
