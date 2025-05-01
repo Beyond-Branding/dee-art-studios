@@ -142,15 +142,137 @@ const tattoosItems = [
     title: "Carved in Bloodlines",
     image:
       "https://res.cloudinary.com/daoju0r3c/image/upload/v1746116597/Carved_in_Bloodlines_fuwkaf.jpg",
-    description:
-      "Old English initials, stacked clean",
+    description: "Old English initials, stacked clean",
   },
   {
     title: "Small but deadly",
     image:
       "https://res.cloudinary.com/daoju0r3c/image/upload/v1746116670/Small_but_deadly_zhfm3d.jpg",
+    description: "Quick moves. No second chances.",
+  },
+  {
+    title: "Fight and grow.",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746114247/Fight_and_grow_yi8yi5.jpg",
     description:
-      "Quick moves. No second chances.",
+      "Built from heat, carried by calm. Fire raised the flowers, not the rain.",
+  },
+  {
+    title: "Howling Majesty",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746114440/Howling_Majesty_dwijho.jpg",
+    description:
+      " A detailed wolf portrait that doesn’t need words to say what it stands for — loyalty, instinct, and knowing exactly who you are without second-guessing.",
+  },
+  {
+    title: "Burn and Breathe",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746114505/Burn_and_Breathe_i60xd9.jpg",
+    description:
+      "A sun wrapped in smoke lines. This piece is about carrying your fire without losing your flow — a symbol of steady energy even when life feels scattered.",
+  },
+  {
+    title: "Strength Worn Softly",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746114647/Strength_Worn_Softly_tnnjrw.jpg",
+    description:
+      "A bull skull framed by roses — a reminder that toughness and tenderness can live side by side. Worn like a badge earned through survival.",
+  },
+  {
+    title: "Directions Carved in Skin",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746114715/Directions_Carved_in_Skin_bvgrpc.jpg",
+    description:
+      "A raw, almost sketch-like compass inked on the hand — worn as a permanent reminder to stay on course through chaos.",
+  },
+  {
+    title: "Both Sides of the Fire",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746114808/Both_Sides_of_the_Fire_cz6yhi.jpg",
+    description:
+      "Dragon for the strength, demon for the chaos. Sometimes you gotta wear both to make it through.",
+  },
+  {
+    title: "A Love That Stays",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746114856/A_Love_That_Stays_bnpygd.jpg",
+    description:
+      "A fingerprint turned into a butterfly — carrying the memory of her late husband close. This piece isn’t just a tattoo; it’s a reminder that even after someone’s gone, their touch never really leaves.",
+  },
+  {
+    title: "Quiet Warnings",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746114905/Quiet_Warnings_de2kir.jpg",
+    description: "No noise, no rush. Just what’s waiting at the end.",
+  },
+  {
+    title: "Silent Fear, Loud Legacy",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746114961/Silent_Fear__Loud_Legacy_nkficn.jpg",
+    description:
+      "A bold composition featuring the scream mask, “DEATH” banner, and gothic elements, paying tribute to horror culture.",
+  },
+  {
+    title: "Strength in Elegance",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746115011/Strength_in_Elegance_kzxu5x.jpg",
+    description: "Power carried with pride. Battle-born, not borrowed.",
+  },
+  /* {
+    title: "Guarded By Loyalty",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746115059/Guarded_By_Loyalty_il4n65.jpg",
+    description:
+      "Three Dobermans across the chest — bold, loyal, and always watching. It’s about protecting what matters, standing strong without saying much.",
+  }, */
+  {
+    title: "Ephemeral Beauty",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746115114/Ephemeral_Beauty_pkoblc.jpg",
+    description:
+      "Time cracks and things fall apart, but from it something lighter ishttps://res.cloudinary.com/daoju0r3c/image/upload/v1746115619/Fragments_of_Order__Threads_of_Freedom_wiakoc.jpg born. This piece is a reminder that growth often comes when everything feels like it’s breaking.",
+  },
+  {
+    title: "Built Sharp, Grown Wild",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746115175/Built_Sharp__Grown_Wild_vllm7y.jpg",
+    description:
+      "A sword that stayed sharp while life kept wrapping around it. It’s a piece about balance — knowing when to stay solid and when to let things grow naturally.",
+  },
+  {
+    title: "Fragments of Order, Threads of Freedom",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746115619/Fragments_of_Order__Threads_of_Freedom_wiakoc.jpg",
+    description:
+      "An intricate journey stitched along the skin- Sculpted faces, measured lines, and timeless figures woven together, capturing a mind that seeks both structure and liberation.",
+  },
+  {
+    title: "The Guardian & The Beast",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746115653/The_Guardian_The_Beast_kperap.jpg",
+    description:
+      "One protects, the other hunts. Together they form the full story — instinct, memory, and meaning beyond this world.",
+  },
+  {
+    title: "Sacred in Silence",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746115718/Sacred_in_Silence_gv5akr.jpg",
+    description:
+      "Minimal yet intricate, this fine-lined cross speaks without shouting — a quiet emblem of faith, strength, and inner stillness.",
+  },
+  {
+    title: "The Mark of Endurance",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746115767/The_Mark_of_Endurance_z4ch88.jpg",
+    description:
+      "Victory inked into skin. A symbol for those who’ve been through the storm and stood tall anyway.",
+  },
+  {
+    title: "Ace of Power",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746115815/Ace_of_Power_lxpwy0.jpg",
+    description:
+      "Not just a card — it’s a piece of the bigger game. Art, luck, and design all dealt in one shot.",
   },
 ] as TattooItemCardProps[];
 

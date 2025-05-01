@@ -11,7 +11,7 @@ const sliderItems = [
   {
     title: "Diverse Selection",
     image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/t_Piercings/v1745675531/Eyebrow_s5ra3a.png",
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746118272/Ashley_rux2gb.jpg",
     paragraph:
       "From classic ear piercings to bold body modifications, my collection features a wide range of styles to match every personality. Whether you prefer minimalist elegance or vibrant statement pieces, there’s something here for you.",
   },
@@ -39,9 +39,16 @@ const sliderItems = [
   {
     title: "Aftercare Support",
     image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/t_Piercings/v1745675528/Spider_bites_fx93l2.png",
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746118048/Card_4_image_2_combine_hypg6o.jpg",
     paragraph:
       "After your piercing, we provide comprehensive aftercare instructions and ongoing support, ensuring that your healing process is smooth and successful.",
+  },
+  {
+    title: "Premium Piercing Jewelry",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746118142/Card_4_image_1__combine__heic_wzu9vd.jpg",
+    paragraph:
+      "Implant-grade piercing jewelry from top brands and local makers, including 14k–18k gold options.",
   },
 ];
 

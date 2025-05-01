@@ -2,8 +2,8 @@ const slideItems = [
   {
     // image: "https://res.cloudinary.com/daoju0r3c/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1745600296/IMG_0843_nptqzl.png",
     image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/t_Sketch/v1745694926/IMG_2194_xv1tsh.jpg",
-    title: "Bond of Unity",
+      "https://res.cloudinary.com/daoju0r3c/image/upload/c_crop,w_1254,h_1254,x_0,y_3,ar_1:1/v1746115989/IMG_2194_caltsu.jpg",
+    title: "Bond of <i class='underline'>Unity</i>",
     paragraph: () => (
       <>
         Symbolizing unity, partnership, friendship, love, or support. Also
@@ -15,8 +15,8 @@ const slideItems = [
   },
   {
     image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/t_Sketch/v1745694927/IMG_1393_wuvwkb.jpg",
-    title: "Spirit of the Lion",
+      "https://res.cloudinary.com/daoju0r3c/image/upload/c_crop,ar_1:1/v1746115989/IMG_1393_xpf3a9.jpg",
+    title: "<i class='underline'>Spirit</i> of the Lion",
     paragraph: () => (
       <>
         Symbolizes strength, courage. and leadership. It can also represent
@@ -29,8 +29,8 @@ const slideItems = [
   },
   {
     image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/t_Sketch/v1745694927/IMG_2524_jbf9qr.jpg",
-    title: "Call of the Wild",
+      "https://res.cloudinary.com/daoju0r3c/image/upload/c_crop,ar_1:1/v1746115989/IMG_2524_dgjbm1.jpg",
+    title: "Call of the <i class='underline'>Wild</i>",
     paragraph: () => (
       <>
         Symbolizes strength. loyalty. and a deep connection to nature. It often
@@ -43,8 +43,8 @@ const slideItems = [
   },
   {
     image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/t_Sketch/v1745694926/IMG_2196_fhyerg.jpg",
-    title: "Eternal Bond",
+      "https://res.cloudinary.com/daoju0r3c/image/upload/c_crop,ar_1:1/v1746115988/IMG_2196_j3wnkm.jpg",
+    title: "Eternal <i class='underline'>Bond</i>",
     paragraph: () => (
       <>
         Symbolizing eternal love and commitment bctwccn partners or loved ones,
@@ -54,8 +54,8 @@ const slideItems = [
   },
   {
     image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/t_Sketch/v1745694926/IMG_2197_cyc5d4.jpg",
-    title: "Healing Heart",
+      "https://res.cloudinary.com/daoju0r3c/image/upload/c_crop,ar_1:1/v1746115989/IMG_2197_mu2rw7.jpg",
+    title: "Healing <i class='underline'>Heart</i>",
     paragraph: () => (
       <>
         Symbolizing the process of healing and moving on from emotional pain
@@ -100,7 +100,12 @@ function SlideItem(props: SlideItemProps) {
           <div className="row pt--130 pt_sm--70 align-items-center">
             <div className="col-lg-6 col-md-6 one">
               <div className="banner-wrapper-seven pt--75 pt_sm--15">
-                <h1 className="title font-playfair">{title}</h1>
+                <h1
+                  className="title font-playfair"
+                  dangerouslySetInnerHTML={{
+                    __html: title,
+                  }}
+                ></h1>
                 <p className="disc font-lato">{paragraph()}</p>
                 {/*  <a href="portfolio-details.html" className="learn-more-btn">
                   Learn More <i className="fa-solid fa-arrow-up-right"></i>
