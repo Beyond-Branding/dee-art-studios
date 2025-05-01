@@ -40,6 +40,13 @@ const tattoosItems = [
     description:
       "Behind every smile, a shadow; behind every laugh, a weight. This piece reminds us: masks aren’t fake — they’re survival.",
   },
+  {
+    title: "A Soul in the Scribbles",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746113817/A_Soul_in_the_Scribbles_b3shda.jpg",
+    description:
+      "This figure rises from the mess, proving that beauty and survival are found in the struggle itself.",
+  },
 ] as TattooItemCardProps[];
 
 function TattooItemCard(props: TattooItemCardProps) {
