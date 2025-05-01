@@ -119,9 +119,8 @@ const { classNames, styles } = Astro.props as {
         <div class="copy-right-area-start-two">
           <p class="left">
             {new Date().getFullYear()} © <a
-              href="https://www.instagram.com/beyondbranding_/"
-              target="_blank"
-              rel="noopener noreferrer external">Beyond Branding</a
+              onclick="window.open('https://www.instagram.com/beyondbranding_/', '_blank')"
+              >Beyond Branding</a
             >. All rights reserved.
           </p>
         </div>
