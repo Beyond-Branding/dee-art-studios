@@ -4,14 +4,14 @@ const sliderItems = [
   {
     title: "Piercing Collection",
     image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/t_Piercings/v1745675539/Vertical_lip_b7g3kl.png",
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746212647/Use_driulz.jpg",
     paragraph:
       "Piercing Collection, where artistry meets precision! I believe that body art is a powerful form of self-expression. Each piercing is not just a procedure; it’s an opportunity to enhance your individuality and celebrate your unique style.",
   },
   {
     title: "Diverse Selection",
     image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746118272/Ashley_rux2gb.jpg",
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1745675528/Spider_bites_fx93l2.png",
     paragraph:
       "From classic ear piercings to bold body modifications, my collection features a wide range of styles to match every personality. Whether you prefer minimalist elegance or vibrant statement pieces, there’s something here for you.",
   },
