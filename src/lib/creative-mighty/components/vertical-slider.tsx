@@ -54,7 +54,7 @@ const slideItems = [
   },
   {
     image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/c_crop,ar_1:1/v1746115989/IMG_2197_mu2rw7.jpg",
+      "https://res.cloudinary.com/daoju0r3c/image/upload/c_crop,w_747,h_747,x_76,y_481,ar_1:1/v1746115989/IMG_2197_mu2rw7.jpg",
     title: "Healing <i class='underline'>Heart</i>",
     paragraph: () => (
       <>
