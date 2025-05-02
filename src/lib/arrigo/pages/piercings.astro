@@ -2,6 +2,8 @@
 import Header from "../../creative-mighty/header.astro";
 import Cursor from "../../creative-mighty/cursor.astro";
 import Slider from "../components/slider";
+import Gallery from "../../common/lightbox";
+import Stylesheets from "../../common/stylesheets.astro";
 ---
 
 <!doctype html>
@@ -45,6 +47,8 @@ import Slider from "../components/slider";
     <link rel="stylesheet" href="/arrigo/fontawesome/fontawesome.css" />
     <link rel="stylesheet" href="/arrigo/css/vendor.css" />
     <link rel="stylesheet" href="/arrigo/css/main.css" />
+
+    <Stylesheets />
   </head>
   <body>
     <Header
@@ -54,7 +58,9 @@ import Slider from "../components/slider";
     <div class="page-wrapper">
       <main class="site-main">
         <!-- section FULLSCREEN -->
-        <Slider />
+        <Slider>
+          <Gallery slot="gallery" client:load />
+        </Slider>
         <!-- - section FULLSCREEN -->
       </main>
       <!-- PAGE FOOTER -->

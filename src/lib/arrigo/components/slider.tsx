@@ -52,7 +52,7 @@ const sliderItems = [
   },
 ];
 
-export default function Slider() {
+export default function Slider(props: any) {
   return (
     <section
       className="section section-fullscreen section-fullscreen_1"
@@ -124,26 +124,7 @@ export default function Slider() {
                           </p>
                         </header>
                         <div className="slider-fullscreen__slide-wrapper-button">
-                          <a
-                            className="slider-fullscreen__slide-button button-square"
-                            target="_blank"
-                            href="https://drive.google.com/drive/folders/1DxcW1LZptwtltrHvaeoSnidAQyf4QTpp?usp=drive_link"
-                          >
-                            <svg
-                              version="1.1"
-                              xmlns="http://www.w3.org/2000/svg"
-                              xmlnsXlink="http://www.w3.org/1999/xlink"
-                            >
-                              <g fill="none" fill-rule="evenodd">
-                                <rect
-                                  className="rect"
-                                  width="100%"
-                                  height="100%"
-                                ></rect>
-                              </g>
-                            </svg>
-                            <span>arrow_forward</span>
-                          </a>
+                          {props.gallery}
                         </div>
                       </div>
                     </div>
