@@ -11,7 +11,8 @@ const sliderItems = [
   {
     title: "Diverse Selection",
     image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/v1745675528/Spider_bites_fx93l2.png",
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746118142/Card_4_image_1__combine__heic_wzu9vd.jpg",
+
     paragraph:
       "From classic ear piercings to bold body modifications, my collection features a wide range of styles to match every personality. Whether you prefer minimalist elegance or vibrant statement pieces, there’s something here for you.",
   },
@@ -46,7 +47,7 @@ const sliderItems = [
   {
     title: "Premium Piercing Jewelry",
     image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746118142/Card_4_image_1__combine__heic_wzu9vd.jpg",
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1745675528/Spider_bites_fx93l2.png",
     paragraph:
       "Implant-grade piercing jewelry from top brands and local makers, including 14k–18k gold options.",
   },
