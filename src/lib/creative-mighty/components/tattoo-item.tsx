@@ -6,11 +6,32 @@ export interface TattooItemCardProps {
 
 const tattoosItems = [
   {
+    title: "The falling angel",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746116409/The_falling_angel_tcnoop.jpg",
+    description:
+      "They said stay low.He aimed higher.This tattoo isn’t about crashing — it’s about having the guts to rise when you know the risks.",
+  },
+  {
+    title: "Fragments of Order, Threads of Freedom",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746115619/Fragments_of_Order__Threads_of_Freedom_wiakoc.jpg",
+    description:
+      "An intricate journey stitched along the skin- Sculpted faces, measured lines, and timeless figures woven together, capturing a mind that seeks both structure and liberation.",
+  },
+  {
     title: "Earth. Air. Water. Fire.",
     image:
       "https://res.cloudinary.com/daoju0r3c/image/upload/v1746102200/Earth._Air._Water._Fire_aqvkgs.jpg",
     description:
       "Not just elements — instincts. Power stitched under the skin, echoing the oldest truths of the universe.",
+  },
+  {
+    title: "Ace of Power",
+    image:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746115815/Ace_of_Power_lxpwy0.jpg",
+    description:
+      "Not just a card — it’s a piece of the bigger game. Art, luck, and design all dealt in one shot.",
   },
   {
     title: "Made of Light",
@@ -124,13 +145,7 @@ const tattoosItems = [
     description:
       "Delicate florals unfurl across the collarbone, blending softness with strength in a dance of shaded petals and graceful leaves. A timeless symbol of growth, femininity, and quiet power that blooms beautifully against the skin.",
   },
-  {
-    title: "The falling angel",
-    image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746116409/The_falling_angel_tcnoop.jpg",
-    description:
-      "They said stay low.He aimed higher.This tattoo isn’t about crashing — it’s about having the guts to rise when you know the risks.",
-  },
+
   {
     title: "Bloom Where You Stand",
     image:
@@ -239,13 +254,7 @@ const tattoosItems = [
     description:
       "A sword that stayed sharp while life kept wrapping around it. It’s a piece about balance — knowing when to stay solid and when to let things grow naturally.",
   },
-  {
-    title: "Fragments of Order, Threads of Freedom",
-    image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746115619/Fragments_of_Order__Threads_of_Freedom_wiakoc.jpg",
-    description:
-      "An intricate journey stitched along the skin- Sculpted faces, measured lines, and timeless figures woven together, capturing a mind that seeks both structure and liberation.",
-  },
+
   {
     title: "The Guardian & The Beast",
     image:
@@ -266,13 +275,6 @@ const tattoosItems = [
       "https://res.cloudinary.com/daoju0r3c/image/upload/v1746115767/The_Mark_of_Endurance_z4ch88.jpg",
     description:
       "Victory inked into skin. A symbol for those who’ve been through the storm and stood tall anyway.",
-  },
-  {
-    title: "Ace of Power",
-    image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746115815/Ace_of_Power_lxpwy0.jpg",
-    description:
-      "Not just a card — it’s a piece of the bigger game. Art, luck, and design all dealt in one shot.",
   },
 ] as TattooItemCardProps[];
 
