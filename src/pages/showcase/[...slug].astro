@@ -108,6 +108,12 @@ const { title, paragraphs, image } = Astro.props;
     {title}
   </Fragment>
   <Fragment slot="paragraphs">
-    {paragraphs.map((element) => <p class="disc">{element}</p>)}
+    {
+      paragraphs.map((element) => (
+        <p class="disc" style="font-size: 1.5rem;">
+          {element}
+        </p>
+      ))
+    }
   </Fragment>
 </PortfolioPage>
