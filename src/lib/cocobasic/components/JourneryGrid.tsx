@@ -127,7 +127,7 @@ const gridItems = [
   {
     variant: "left",
     image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/c_pad,b_gen_fill,w_720,h_660/v1746095800/Card_5_erddlf.jpg",
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746217314/Card_5_gwthlb.jpg",
     tag: "Onwards and upwards",
     subtitle:
       "Five years in, I embrace the uncertainty, moving forward with gratitude, passion, and a commitment to constant growth.",
