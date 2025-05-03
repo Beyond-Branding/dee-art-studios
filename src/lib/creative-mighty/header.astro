@@ -1,5 +1,7 @@
 ---
-const navLinks = [
+import clsx from "clsx";
+
+export const navLinks = [
   {
     title: "Our Journey",
     href: "/journey",
@@ -7,26 +9,42 @@ const navLinks = [
   { title: "Tattoos", href: "/tattoos" },
   { title: "Piercings", href: "/piercings" },
   { title: "Art Gallery", href: "/art-gallery" },
+  { title: "Tattoo Sketches", href: "/sketches" },
+  { title: "Pricing", href: "/pricing" },
   { title: "Contact", href: "/contact-us" },
 ];
 
-const { containerStyles = "" } = Astro.props;
+const { containerStyles = "", classes = "" } = Astro.props;
 ---
 
-<style></style>
+<style>
+  .rts-header-area-two {
+    z-index: 1000;
+  }
 
-<div class="rts-header-area-two header--sticky" style={containerStyles}>
+  .nav-logo {
+    display: block;
+    height: 48px !important;
+  }
+
+  .nav-logo img {
+    height: 100%;
+    width: auto;
+  }
+</style>
+
+<div
+  class={clsx("rts-header-area-two header--sticky", classes)}
+  style={containerStyles}
+>
   <div class="container-150">
     <div class="row">
       <div class="col-lg-12">
         <div class="main-header-two">
           <div class="header-left-area">
             <div class="logo-area">
-              <a href="index.html" class="loog">
-                <img
-                  src="/creative-mighty/assets/images/logo/03.svg"
-                  alt="Brand__logo"
-                />
+              <a href="/" class="loog nav-logo">
+                <img src="/assets/dees-art-studio.png" alt="Brand__logo" />
               </a>
             </div>
           </div>
@@ -115,7 +133,9 @@ const { containerStyles = "" } = Astro.props;
                         {
                           navLinks.map((item) => (
                             <li class="menu-item">
-                              <a href={item.href}>{item.title}</a>
+                              <a href={item.href} class="font-times-new-roman">
+                                {item.title}
+                              </a>
                             </li>
                           ))
                         }

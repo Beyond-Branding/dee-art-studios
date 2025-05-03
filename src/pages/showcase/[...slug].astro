@@ -1,0 +1,119 @@
+---
+import PortfolioPage from "../../lib/creative-mighty/pages/portfolio.astro";
+
+export function getStaticPaths() {
+  const pages = [
+    {
+      slug: "three-dimensional-art",
+      image:
+        "https://res.cloudinary.com/daoju0r3c/image/upload/v1745682397/3d_Printing_work_converted_1_w5jbsk.png",
+      title: "3D Printing",
+      paragraphs: [
+        "This project was about combining a 3D printed object with a personal story.",
+        "I chose to recreate the staircase from my university and placed small colorful figures along the steps — each representing students taking a break, gathering energy, or finding small moments of connection.",
+        "The giant tea cup at the top symbolizes how, even in the chaos of academic life, coffee or tea becomes that one shared habit that keeps everyone going.",
+        "This piece turns the simple daily hustle of university life into something playful, relatable, and quietly meaningful.",
+      ],
+    },
+    {
+      slug: "digital-artwork",
+      image:
+        "https://res.cloudinary.com/daoju0r3c/image/upload/v1745682639/Digital_Artwork_hymbkw.jpg",
+      title: "Digital Artwork",
+      paragraphs: [
+        "This piece was inspired by the idea of people around the world, who, whether by choice or necessity, leave their homes and seek a brighter future in a developed country.",
+        "It represents their aspirations for a better life, peace, and a broader perspective on the world.",
+        "In this artwork, the wine glass plays a significant role, symbolizing the human being. The dominant red color represents the blood and sweat shed as a result of starting from scratch and adapting to a new way of life. ",
+        "The individuals moving towards the city symbolize the pursuit of their goals, each taking a different path but ultimately striving for success.  ",
+        "Overall, this artwork depicts how a developed country may appear from a distance-appealing and effortless.",
+        "However, as one approaches closer, the piece reveals the challenges and consequences faced in the pursuit of a livelihood.",
+      ],
+    },
+    {
+      slug: "escape-from-reality",
+      image:
+        "https://res.cloudinary.com/daoju0r3c/image/upload/v1745682788/Escape_from_reality_hdl1rp.jpg",
+      title: "Escape from Reality",
+      paragraphs: [
+        "In this piece, I invite you to a journey through a vibrant street adorned with floral dimensions, where butterflies emerge from a central point and dance along a singular pathway. This painting represents my contemplation of the beauty of our world and the intricate relationship between humanity and nature.",
+        "This artwork symbolizes our dual role as creators and destroyers of nature, represented by the figures in black. While we shape our environment, we must also recognize the profound impact that nature has on our lives. The pathway serves as a metaphor for our individual journeys, illustrating how even our small contributions can create significant change.",
+        "As you gaze upon this painting, I encourage you to escape from reality for a moment. Allow yourself to feel a spectrum of emotions, reflecting on your own personal experiences. The single pathway, framed by an explosion of colors, invites you to step into a serene paradise and experience the harmonious relationship between humanity and nature.",
+        "Let this piece inspire you to appreciate the beauty around us and the intricate connections we share with the world.",
+        "Size: 60 inch X 30 inch, 0.5 dept",
+        "Medium : Acrylic Paint",
+      ],
+    },
+    {
+      slug: "music-muse",
+      image:
+        "https://res.cloudinary.com/daoju0r3c/image/upload/v1746095080/Card_2_mk9h1a.jpg",
+      title: "Music Muse",
+      paragraphs: [
+        "This piece is called Music Muse. Honestly, I didn’t plan it out—sometimes the best ideas just hit you like a spontaneous rhythm. I just knew I wanted to capture the energy of a live concert, but in a way that felt raw, metallic, and unconventional. So, I grabbed some wire and just started bending, twisting, and shaping until these little musicians came to life.",
+        "The whole idea was to make this miniature concert scene feel dynamic and alive—like you could almost hear the beat drop. The lighting was crucial because it’s like the spotlight on a real stage, making the whole piece pop and drawing you into the performance.",
+        "I wanted each figure to have its own attitude—whether it’s the guitarist in full groove mode or the drummer completely immersed in their rhythm. The wires give it a skeletal, almost ghostly feel—like music itself: something you can feel, but not touch. It’s chaotic, it’s messy, but it’s got soul.",
+      ],
+    },
+    {
+      slug: "optical-illusion-art",
+      image:
+        "https://res.cloudinary.com/daoju0r3c/image/upload/v1745682899/Optical_Illusion_Art_e2sldl.jpg",
+      title: "Optical Illusion Art",
+      paragraphs: [
+        "This work was created during my time at MacEwan University as part of my exploration of spatial perception, line art, and shadow play. I worked with wire as a primary medium, deliberately choosing a simple material to create complexity through light and projection.",
+        "The idea was to challenge the viewer’s understanding of ‘form’ — presenting physical structures that are chaotic and abstract when seen directly, but reveal recognizable human faces when cast as shadows.",
+        "The distorted faces represent the fragile, shifting nature of identity: how much of what we ‘see’ about others — and about ourselves — is shaped by perspective, light, and the environment.",
+        "The use of wire and light together creates an optical illusion where the real and the imagined coexist, asking the viewer to question: what is more real — the object itself, or the image it creates?",
+        "By working with loose, fluid lines instead of rigid forms, I allowed imperfection to become part of the narrative, symbolizing the natural messiness of perception and existence.",
+      ],
+    },
+    {
+      slug: "the-burnt-soul",
+      image:
+        "https://res.cloudinary.com/daoju0r3c/image/upload/v1745682948/The_Burnt_Soul_qqxgrs.jpg",
+      title: "The Burnt Soul",
+      paragraphs: [
+        "The Burnt Soul’ was created during my university days at MacEwan, at a time when I was beginning to see how deep the scars of human destruction run across the earth. Using fragmented textures and deep, burnt tones, I tried to capture how nature’s life and vibrancy are slowly stripped away. This piece wasn’t just about beauty — it was about acknowledging the damage we’ve done, and asking what might be left behind when the burning stops.",
+      ],
+    },
+    {
+      slug: "the-chain-of-life",
+      image:
+        "https://res.cloudinary.com/daoju0r3c/image/upload/v1745683007/The_Chain_of_life_converted_rwhbex.png",
+      title: "The Chain of Life",
+      paragraphs: [
+        '"THE CHAIN OF LIFE," this painting emerged from a natural inspiration, reflecting on the universal opportunities we all possess to pursue our aspirations and reach the heights we dream of as the "Peak of success." However, amidst our individual journeys, we often overlook the profound impact others have on our path to achievement.',
+        "Just as one hand seeks another for support - whether in loyalty, betrayal, lost connections, or fear of new beginnings - we witness the intricate interplay of human relationships within the chain of existence. The dominant presence of red symbolizes the hard work, sacrifices, and betrayals woven into the fabric of our lives.",
+        "The chain of life reveals the paradox of ambition: the higher one climbs, the greater the challenges of upholding life's precious gifts.",
+        "The gift of life we all share requires consistent care and attention, as the journey of life continues without pause.",
+        "Size : 30 inch X 15 inch, 1.5 depth",
+        "Medium : Acrylic paint",
+      ],
+    },
+  ];
+
+  return pages.map(({ slug, title, image, paragraphs }) => {
+    return {
+      params: { slug },
+      props: { title, image, paragraphs },
+    };
+  });
+}
+
+const { title, paragraphs, image } = Astro.props;
+---
+
+<PortfolioPage image={image}>
+  <Fragment slot="title">
+    {title}
+  </Fragment>
+  <Fragment slot="paragraphs">
+    {
+      paragraphs.map((element) => (
+        <p class="disc" style="font-size: 1.5rem;">
+          {element}
+        </p>
+      ))
+    }
+  </Fragment>
+</PortfolioPage>

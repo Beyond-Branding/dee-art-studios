@@ -1,0 +1,79 @@
+<style is:global>
+  :root {
+    --color-accent: #9b724d;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display", serif !important;
+  }
+
+  h1 {
+    line-height: 72px;
+  }
+
+  p {
+    font-family: "Lato", sans-serif !important;
+  }
+
+  .font-playfair {
+    font-family: "Playfair Display", serif !important;
+  }
+
+  .font-white {
+    color: white !important;
+  }
+
+  .font-times-new-roman {
+    font-family: "Times New Roman", Times, serif !important;
+  }
+
+  .font-normal-case {
+    text-transform: none !important;
+  }
+
+  .font-line-normal {
+    line-height: normal !important;
+  }
+
+  .underline {
+    position: relative;
+    display: inline-block;
+  }
+
+  .underline::after {
+    content: "";
+    display: block;
+    width: 106%;
+    height: 10px;
+    background-color: var(--color-accent);
+    position: absolute;
+    left: -3%;
+    bottom: 6px;
+    z-index: 1;
+    opacity: 0.5;
+  }
+
+  .bg-black {
+    background-color: #0e0e0e !important;
+  }
+
+  .bg-transparent {
+    background-color: none !important;
+  }
+
+  /* Move navigation buttons to expected positions */
+
+  .yarl__button {
+    width: fit-content !important;
+  }
+  .yarl__navigation_prev {
+  }
+
+  .yarl__navigation_next {
+  }
+</style>

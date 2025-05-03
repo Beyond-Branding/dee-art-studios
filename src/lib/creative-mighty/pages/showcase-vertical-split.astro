@@ -1,0 +1,49 @@
+---
+import TattoosList from "../components/tattoo-item";
+import Layout from "../layout.astro";
+---
+
+<Layout
+  title="Tattoos | Deee's Art Studios"
+  bodyClass="portfolio-nine vertical-split"
+  disableFooter
+>
+  <Fragment slot="body">
+    <div class="portfolio-nine-wrapper-main">
+      <div class="container-full">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="banner-portfolio-nine">
+              <!-- <span class="pre font-playfair font-normal-case"
+                >Business Brand, July 2025
+              </span> -->
+              <h1 class="title font-playfair font-normal-case">
+                Tattoo <i class="underline">Artistry</i>
+                <br />
+                and <i class="underline">Culture</i>
+              </h1>
+              <p class="disc font-lato">
+                Highlighting bold, custom ink that tells your story —
+                <br />crafted with precision, passion, and style
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="page-title-area-portfolio-7">
+              <h1
+                class="title-work rts-portfolio-text font-lato"
+                style="opacity: 0.55;"
+              >
+                Our Latest <br />
+                Work
+              </h1>
+            </div>
+            <!-- product-wrapper -->
+            <TattoosList />
+            <!-- product-wrapper end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </Fragment>
+</Layout>

@@ -2,9 +2,93 @@
 import Layout from "../../creative-mighty/layout.astro";
 import Stylesheets from "../stylesheets.astro";
 import Scripts from "../scripts.astro";
+import TestimonialItem, {
+  type TestimonialItemProps,
+} from "../../creative-mighty/components/testimonial-item";
+
+const testimonials = [
+  {
+    by: "Sam Derozea-Figeat",
+    testimonial:
+      "Fantastic service, quick and efficient, very clean, friendly staff, easy to work with. Tattoos on me and my mom, piercings on me and my sister.",
+  },
+  {
+    by: "Kiera Nay",
+    testimonial:
+      "Honestly was really hesitant to come here. I only wen cause my dad got me a gift card here.. but Dee did an amazing job. and the receptionist is lovely.",
+  },
+  {
+    by: "yachna Atthi",
+    testimonial:
+      "I've gotten all my tattoos done by Diksha. She is incredibly talented, meticulous, and creative, turning my ideas into stunning works of art. Her attention to detail is remarkable, and every session has been a comfortable and enjoyable experience. I trust her completely with my tattoos and can't recommend her enough to anyone looking for some great tattoos.",
+  },
+  {
+    by: "Michaela McCann",
+    testimonial:
+      "Dee was great for my nose piercing. Quick and informative, easy process!",
+  },
+  {
+    by: "Harshal Sokhal",
+    testimonial:
+      "Had an amazing experience getting my sleeve done by artist Diksha Dubb. She created a stunning design, and the linework was flawless. The whole place has such a great vibe!",
+  },
+  {
+    by: "Kartik Dubb",
+    testimonial:
+      "Diksha Dubb is an amazing tattoo artist! Her creativity and attention to detail alway impress me. I highly recommend her for great quality work every time.",
+  },
+  {
+    by: "Harsh Atthi",
+    testimonial:
+      "I had an amazing experience with Diksha, Her attention to detail and creativity were outstanding. She took my vision and made it even better than I imagined. The process was professional, comfortable, and the final result is a beautiful piece of art. Highly recommend!",
+  },
+  {
+    by: "Jonatha Berkshire",
+    testimonial:
+      "At 42 years old, I though that maybe a first tattoo wasn't gonna happen, due to my own unfamilarity and fear. But the right idea came to mind and I just happened to be in Edmotnon. FX was able to fit me in and Dee was out of this world professional and talented. What a fantastic experience.",
+  },
+  {
+    by: "Hollie H",
+    testimonial:
+      "Deee did a fantastic job on giving me the perfect fine line tatto. She was great at listening to what I wanted. She spent time looking at ",
+  },
+  {
+    by: "Austin Larkin",
+    testimonial:
+      "I got a tattoo for my mom. Absolutely love it. The artist was amazing, highly recommend her - her name is Diksha. Thank you so much",
+  },
+  {
+    by: "Cherisse Struck",
+    testimonial: "D and Ryan did an awesome job on our tattoos, very happy",
+  },
+  {
+    by: "Sheriese Chatherine",
+    testimonial:
+      "Diksha did an amazing job on my tattoo, I love it so much! Definitely coming back for more Thank you for this special tattoo.",
+  },
+  {
+    by: "Georgia Gambroudes",
+    testimonial:
+      "We took 4 kids to get their ears pierced on Tuesday and it couldn't have gone any better! The two wonderful ladies at the front and the piercer were so kind helpful and great with the kids! All of them were so scared and they calmed them down and all kids got their ears done with NO TEARS! I would recommend FX to everyone!",
+  },
+  {
+    by: "Anna P Teddy",
+    testimonial:
+      "Friendly and clean shop, got most of my ink done at FX Inc. and I'll definitely be back. Thanks Dee, Ryan and the rest of the staff for doing an amazing job!",
+  },
+  {
+    by: "Dillion Pruden",
+    testimonial:
+      "Received my first tattoo with Dee And honestly, I have nothing but good things to say She's amazing at what she does, takes the time to explain what she's doing And really takes the time to do attention to detail for her work would definitely go back and see her",
+  },
+  {
+    by: "Daniel Lemus",
+    testimonial: "Amazing work by the amazing Diksha.",
+  },
+] as TestimonialItemProps[];
 ---
 
-<Layout>
+<Layout footerClass="mt-0">
   <Fragment slot="head">
     <Stylesheets />
   </Fragment>
@@ -19,21 +103,23 @@ import Scripts from "../scripts.astro";
               <div class="orb-g-25 orb-sm-100">
                 <div class="orb-position-fix">
                   <div class="orb-photo-frame orb-obj-1">
-                    <img src="/orabel/img/photo/36.jpg" alt="photo" />
+                    <img
+                      src="https://res.cloudinary.com/daoju0r3c/image/upload/v1746092710/3._Or_kaq5vd.jpg"
+                      alt="photo"
+                    />
                   </div>
                 </div>
               </div>
               <div class="orb-g-50 orb-sm-100">
                 <div class="orb-main-title">
-                  <div class="orb-suptitle">
-                    <span class="orb-number">01</span>
-                    <span>Fashion Discover</span>
-                  </div>
-                  <h1>The wind <br />of change</h1>
+                  <div class="orb-suptitle"></div>
+                  <h1 class="font-normal-case font-line-normal">
+                    Story’s On Skin - <br /> No <i
+                      class="underline font-playfair">Subtitles</i
+                    >, <br /> No <i class="underline font-playfair">Spoilers</i>
+                  </h1>
                   <div class="orb-button-frame">
-                    <div class="orb-btn-label">
-                      Show more photo for this project
-                    </div>
+                    <div class="orb-btn-label"></div>
                     <a href="/journey" class="orb-sm-button">
                       <div class="orb-arrow">
                         <img src="/orabel/img/ui/arrow-2.svg" alt="arrow" />
@@ -45,12 +131,81 @@ import Scripts from "../scripts.astro";
               <div class="orb-g-25 orb-sm-100">
                 <div class="orb-object-frame">
                   <div class="orb-photo-frame orb-obj-2">
-                    <img src="/orabel/img/photo/37.jpg" alt="photo" />
+                    <img
+                      src="https://res.cloudinary.com/daoju0r3c/image/upload/v1745519645/IMG_6264_unsvxg.jpg"
+                      alt="photo"
+                    />
                   </div>
                   <div class="orb-photo-frame orb-obj-3">
-                    <img src="/orabel/img/photo/38.jpg" alt="photo" />
+                    <img
+                      src="https://res.cloudinary.com/daoju0r3c/image/upload/c_fill,w_892,h_821/v1745669570/IMG_6217_hxqhc5.jpg"
+                      alt="photo"
+                    />
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="trusted-clients-area-start rts-section-gap bg-white section-separator"
+      style="margin-top: 4rem;"
+    >
+      <div class="right-shape-testi">
+        <img
+          src="/creative-mighty/assets/images/testimonials/03.png"
+          alt="testimonials"
+        />
+      </div>
+      <div class="container-full">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="main-wrapper-case-studies scrolltext-wrapper">
+              <div class="scrollingText-three">
+                <h2 class="title">
+                  our <span>Trusted Clients</span> Say . our <span
+                    >Trusted Clients</span
+                  > Say . our <span>Trusted Clients</span> Say .
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row g-5 mt--80">
+          <div class="col-lg-8 pr--100 pr_md--50 pr_sm--20">
+            <div class="swiper-testimonails-style-one-main-wrapper">
+              <div class="swiper mySwiper-testimonial-1">
+                <div class="swiper-wrapper">
+                  <!-- single tesinmonials area start -->
+                  {
+                    testimonials.map((element) => (
+                      <TestimonialItem
+                        by={element.by}
+                        testimonial={element.testimonial}
+                      />
+                    ))
+                  }
+                </div>
+                <div class="button-area-next-prev">
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="after-effect-testi-right-img">
+              <div class="thumbnail-clients-img rts-reveal-two">
+                <img
+                  class="rts-reveal-image-two"
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1746212428/WhatsApp_Image_2025-05-02_at_1.19.31_AM_oaq4sq.jpg"
+                  alt=""
+                />
               </div>
             </div>
           </div>

@@ -1,18 +1,36 @@
+---
+const { disablePreloader = false } = Astro.props;
+---
+
 <link
   rel="stylesheet"
-  href="creative-mighty/assets/css/plugins/fontawesome-6.css"
+  href="/creative-mighty/assets/css/plugins/fontawesome-6.css"
 />
 <link
   rel="stylesheet"
-  href="creative-mighty/assets/css/plugins/swiper.min.css"
-/>
-<link rel="stylesheet" href="creative-mighty/assets/css/vendor/metismenu.css" />
-<link
-  rel="stylesheet"
-  href="creative-mighty/assets/css/plugins/animate.min.css"
+  href="/creative-mighty/assets/css/plugins/swiper.min.css"
 />
 <link
   rel="stylesheet"
-  href="creative-mighty/assets/css/vendor/bootstrap.min.css"
+  href="/creative-mighty/assets/css/vendor/metismenu.css"
 />
-<link rel="stylesheet" href="creative-mighty/assets/css/style.css" />
+<link
+  rel="stylesheet"
+  href="/creative-mighty/assets/css/plugins/animate.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="/creative-mighty/assets/css/vendor/bootstrap.min.css"
+/>
+<link rel="stylesheet" href="/creative-mighty/assets/css/style.css" />
+
+{
+  !disablePreloader && (
+    <>
+      <link rel="stylesheet" href="/arrigo/brands.css" />
+      <link rel="stylesheet" href="/arrigo/fontawesome.css" />
+      <link rel="stylesheet" href="/arrigo/css/vendor.css" />
+      <link rel="stylesheet" href="/arrigo/css/main.css" />
+    </>
+  )
+}
