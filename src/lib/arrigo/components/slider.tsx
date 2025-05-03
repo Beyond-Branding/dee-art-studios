@@ -11,7 +11,7 @@ const sliderItems = [
   {
     title: "Diverse Selection",
     image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746118142/Card_4_image_1__combine__heic_wzu9vd.jpg",
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746287065/3rd_lobe_fkzthm.jpg",
 
     paragraph:
       "From classic ear piercings to bold body modifications, my collection features a wide range of styles to match every personality. Whether you prefer minimalist elegance or vibrant statement pieces, there’s something here for you.",
@@ -26,14 +26,14 @@ const sliderItems = [
   {
     title: "Top-Quality Jewelry",
     image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/t_Piercings/v1745675530/Double_helix_converted_pwxjmr.png",
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746286861/Eyebrow_hikjzm.jpg",
     paragraph:
       "Your safety and comfort are my top priorities. We use only the finest materials, from implant grade titanium, to ethically sourced gemstones, to ensure that your jewelry not only looks beautiful but is also safe for your skin.",
   },
   {
     title: "Custom Creations",
     image:
-      "https://res.cloudinary.com/daoju0r3c/image/upload/t_Piercings/v1745675529/Conch_converted_hkrkxb.png",
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1746286961/Helix_and_tragus_rlfavi.jpg",
     paragraph:
       "We offer custom piercing designs tailored to your vision. If you have a specific idea in mind, let’s collaborate to create a piece that reflects your personal style and story.",
   },
