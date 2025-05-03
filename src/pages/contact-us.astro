@@ -4,6 +4,15 @@ import Layout from "../lib/creative-mighty/layout.astro";
 ---
 
 <Layout title="Contact Us | Deee's Art Studios">
+  <Fragment slot="head">
+    <link
+      rel="preload"
+      href="/arrigo/fonts/Linearicons-Free54e9.woff2?w118d"
+      type="font/woff2"
+      as="font"
+      crossorigin=""
+    />
+  </Fragment>
   <Fragment slot="body" bodyClass="inner-page contact-page">
     <div class="rts-breadcrumb-area bg_image">
       <div class="container">
@@ -13,6 +22,35 @@ import Layout from "../lib/creative-mighty/layout.astro";
               <div class="inner">
                 <h1 class="title rts_hero__title">Contact Now</h1>
                 <span class="bg-text">Contact Now</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section-contact__wrapper-contacts">
+        <div class="row justify-content-center">
+          <div class="col-lg-3 section-contact__wrapper-contact">
+            <div class="figure-contact">
+              <div class="figure-contact__icon">near_me</div>
+              <div class="figure-contact__item">4575 Redbud Drive Brooklyn</div>
+              <div class="figure-contact__item">NY 11206 USA</div>
+            </div>
+          </div>
+          <div class="col-lg-3 section-contact__wrapper-contact">
+            <div class="figure-contact">
+              <div class="figure-contact__icon">phone</div>
+              <div class="figure-contact__item">+1 (347) 783-92-96</div>
+              <div class="figure-contact__item">+1 (347) 783-19-00</div>
+            </div>
+          </div>
+          <div class="col-lg-3 section-contact__wrapper-contact">
+            <div class="figure-contact">
+              <div class="figure-contact__icon">mail</div>
+              <div class="figure-contact__item">
+                <a href="#">arrigo@sabbani.com</a>
               </div>
             </div>
           </div>
