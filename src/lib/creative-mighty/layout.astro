@@ -16,17 +16,21 @@ const {
   disableFooter = false,
   disablePreloader = false,
   footerClass = "",
+  htmlClass = "rts-dark",
 } = Astro.props as {
   title: string;
   bodyClass: string;
   disableFooter: boolean;
   disablePreloader: boolean;
   footerClass: string;
+  htmlClass: string;
 };
+
+console.log(Astro.props);
 ---
 
 <!doctype html>
-<html lang="en" class="rts-dark">
+<html lang="en" class={htmlClass}>
   <!-- Dark mode by default -->
   <head>
     <meta charset="UTF-8" />

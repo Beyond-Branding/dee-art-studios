@@ -2757,6 +2757,9 @@
 
           // Check local storage for theme preference on page load
           var rtstheme = localStorage.getItem("rtstheme");
+
+          console.log(rtstheme);
+
           if (rtstheme === "rts-dark") {
             darkTheme();
           } else {
