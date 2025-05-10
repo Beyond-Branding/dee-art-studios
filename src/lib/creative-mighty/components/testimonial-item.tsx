@@ -23,7 +23,14 @@ export default function TestimonialItem(props: TestimonialItemProps) {
               alt=""
             />
           </div>
-          <p className="disc">{testimonial}</p>
+          <p
+            className="disc font-lato"
+            style={{
+              fontStyle: "normal !important",
+            }}
+          >
+            {testimonial}
+          </p>
           <div className="author-area">
             <div className="thumbnail">
               <img
