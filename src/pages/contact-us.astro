@@ -35,7 +35,9 @@ import Layout from "../lib/creative-mighty/layout.astro";
               <div class="figure-contact__item">
                 Fx Inc, 8882 170 St NW #1401,
               </div>
-              <div class="figure-contact__item">Edmonton, AB T5T 4V4</div>
+              <div class="figure-contact__item">
+                Edmonton, yarn add AB T5T 4V4
+              </div>
             </div>
           </div>
           <div class="col-lg-3 section-contact__wrapper-contact">
@@ -89,6 +91,7 @@ import Layout from "../lib/creative-mighty/layout.astro";
                     <label for="name">Your Name*</label>
                     <input
                       id="name"
+                      name="name"
                       type="text"
                       placeholder="Andrew Davis Kino...."
                       required
@@ -98,6 +101,7 @@ import Layout from "../lib/creative-mighty/layout.astro";
                     <label for="email">Your Email*</label>
                     <input
                       id="email"
+                      name="email"
                       type="text"
                       placeholder="jhon@doe.com"
                       required
@@ -109,6 +113,7 @@ import Layout from "../lib/creative-mighty/layout.astro";
                     <label for="name">What you are interested*</label>
                     <select
                       class="form-select"
+                      name="interestedIn"
                       aria-label="Default select example"
                     >
                       <option selected value="Tattoo">Tattoos</option>
@@ -121,12 +126,18 @@ import Layout from "../lib/creative-mighty/layout.astro";
                   <label for="message">Message*</label>
                   <textarea
                     id="message"
+                    name="message"
                     cols="30"
                     rows="10"
                     placeholder="Please tell us a bit about your self."
                   ></textarea>
                 </div>
-                <button class="submit-pd">Post Comment</button>
+                <button
+                  type="submit"
+                  id="submit-btn"
+                  style="background-color: white; padding-block: 1rem; border-radius: 1rem; margin-top: 1rem;"
+                  >Post Comment</button
+                >
               </form>
             </div>
             <!-- appoinment area two end -->
@@ -136,3 +147,60 @@ import Layout from "../lib/creative-mighty/layout.astro";
     </div>
   </Fragment>
 </Layout>
+
+<script>
+  import emailjs from "@emailjs/browser";
+
+  emailjs.init({
+    publicKey: import.meta.env.PUBLIC_EMAILJS_PUBLIC_KEY,
+    limitRate: {
+      throttle: 10000,
+    },
+  });
+
+  const contactForm = document.querySelector("form");
+  const submitButton = document.querySelector(
+    "#submit-btn"
+  ) as HTMLButtonElement;
+
+  contactForm?.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    submitButton.disabled = true;
+    submitButton.style.opacity = "0.5";
+
+    const form = e.target as HTMLFormElement;
+
+    const formData = new FormData(form);
+
+    const data = {} as any;
+    formData.forEach((value, key) => {
+      data[key] = value;
+    });
+
+    try {
+      await emailjs.send(
+        import.meta.env.PUBLIC_EMAILJS_SERVICE_ID,
+        import.meta.env.PUBLIC_EMAILJS_TEMPLATE_ID,
+        {
+          name: data["name"],
+          email: data["email"],
+          interestedIn: data["interestedIn"],
+          message: data["message"],
+        }
+      );
+
+      alert("Thank you for reaching out. We will contact you soon.");
+
+      form.reset();
+    } catch (e) {
+      console.log(e);
+      alert(
+        "Something went wrong while submitting the message. Please try again later."
+      );
+    }
+
+    submitButton.disabled = false;
+    submitButton.style.opacity = "1";
+  });
+</script>
